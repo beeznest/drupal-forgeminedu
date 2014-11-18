@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Easypage informative feature feature.
+ */
+
+include_once 'easypage_informative_feature.features.inc';

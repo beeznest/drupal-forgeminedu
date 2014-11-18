@@ -1,0 +1,17 @@
+name = Feature Wysiwyg
+description = Ckeditor has basic, intermedium and advance format editors.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = feature_wysiwyg
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg
+dependencies[] = wysiwyg_filter
+features[features_api][] = api:2
+features[filter][] = advance_ckeditor
+features[filter][] = basic_ckeditor
+features[filter][] = intermedium_ckeditor
+features[wysiwyg][] = advance_ckeditor
+features[wysiwyg][] = basic_ckeditor
+features[wysiwyg][] = intermedium_ckeditor
