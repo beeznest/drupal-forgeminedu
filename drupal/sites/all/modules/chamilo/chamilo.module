@@ -501,14 +501,14 @@ function chamilo_save_user_data(&$edit, &$account, $category, $register = FALSE)
     ->execute();
 
   if ($save_data) {
-    $edit = (object)array(
+    $edit_chamilo_user = (object)array(
       'user_id' => $account->uid,
       'duser' => $data['duser'],
       'apikey' => $data['apikey'],
       'course_visibility' => $data['course_visibility'],
       'agenda_time_frame' => $data['agenda_time_frame'],
     );
-    drupal_write_record('chamilo_user', $edit);
+    drupal_write_record('chamilo_user', $edit_chamilo_user);
   }
 }
 
