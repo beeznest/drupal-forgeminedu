@@ -715,11 +715,66 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           FOOTER            
  *---------------------------------------------------------------------------*/
-footer .region-footer {
+.footer {
+  margin-top: 40px;
+}
+
+.footer .region-footer {
   margin: 0 auto;
   width: 50%;
 }
 
-footer #block-menu-menu-footer-menu {
+.footer #block-menu-menu-footer-menu {
   float: left;
+  width: 70%;
+}
+
+.footer #block-menu-menu-footer-menu ul {
+  margin: 0;
+}
+
+.footer #block-menu-menu-footer-menu li {
+  border-right: 1px solid #000;
+  float: left;
+  list-style: none;
+  width: 45%;
+}
+
+.footer #block-menu-menu-footer-menu li a {
+  color: #000;
+  display: block;
+  font-family: 'Arial';
+  padding: 2px 0;
+  text-align: center;
+}
+
+.footer #block-search-form {
+  float: left;
+  width: 30%;
+}
+
+.footer #block-search-form form {
+  position: relative;
+  margin: 0;
+}
+
+.footer #block-search-form .form-text {
+  border-radius: 15px;
+  min-width: 0;
+  padding: 1px;
+  width: 100%;
+}
+
+.footer #edit-actions {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer #block-search-form .form-submit {
+  background: url('../img/search_icon.png') no-repeat transparent center 5px;
+  border: none !important;
+  text-indent: -9999px;
+  width: 35px;
 }
