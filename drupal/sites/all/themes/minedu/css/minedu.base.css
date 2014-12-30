@@ -641,6 +641,7 @@ textarea.error {
   display: block;
 }
 
+.view-publishes-and-resources-views .embed-icon iframe,
 .view-publishes-and-resources-views .file img {
   display: none !important;
 }
@@ -678,4 +679,47 @@ textarea.error {
   display: block;
   height: 48px;
   text-indent: -9999px;
+}
+
+/*-----------------------------------------------------------------------------
+ *           EVENTS AND COURSES            
+ *---------------------------------------------------------------------------*/
+.block-views .view-next-events-and-courses-views {
+  background: #e6e6e6;
+  border-bottom: 5px solid #a4a4a4;
+  margin-bottom: 45px;
+}
+
+.block-views .view-next-events-and-courses-views .views-row {
+  padding-bottom: 15px;
+}
+
+#block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
+  background: #f26b45;
+  border-radius: 5px 5px 0 0;
+}
+
+#block-views-b4277a93b7be59469ed54c2ce52dc9bb h4 {
+  padding: 5px 0;
+}
+
+#block-views-b4277a93b7be59469ed54c2ce52dc9bb h4 a {
+  color: #000;
+  font-size: 17px;
+}
+
+#block-views-b4277a93b7be59469ed54c2ce52dc9bb p {
+  font-size: 13px;
+}
+
+/*-----------------------------------------------------------------------------
+ *           FOOTER            
+ *---------------------------------------------------------------------------*/
+footer .region-footer {
+  margin: 0 auto;
+  width: 50%;
+}
+
+footer #block-menu-menu-footer-menu {
+  float: left;
 }
