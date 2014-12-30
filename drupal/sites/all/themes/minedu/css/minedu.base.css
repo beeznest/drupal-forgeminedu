@@ -625,7 +625,7 @@ textarea.error {
   height: 100px;
 }
 
-.block-views .view-publishes-and-resources-views .views-row > .views-field-nothing {
+.block-views .view-next-events-and-courses-views .views-row > .views-field-nothing {
   display: block;
   float: left;
   height: 100%;
@@ -635,11 +635,11 @@ textarea.error {
   width: 40px;
 }
 
-.block-views .view-publishes-and-resources-views .date-display-single {
+.block-views .view-next-events-and-courses-views .date-display-single {
   font-size: 28px;
 }
 
-.block-views .view-publishes-and-resources-views .date-display-single:nth-of-type(2) {
+.block-views .view-next-events-and-courses-views .date-display-single:nth-of-type(2) {
   font-size: 17px;
 }
 
