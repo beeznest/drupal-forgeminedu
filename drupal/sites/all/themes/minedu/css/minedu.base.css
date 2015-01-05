@@ -457,6 +457,14 @@ textarea.error {
   padding: 13px 20px;
 }
 
+.block h3 a {
+  color: #FFF;
+}
+
+.block h3 a:hover {
+  text-decoration: none;
+}
+
 /*-----------------------------------------------------------------------------
  *           HEADER            
  *---------------------------------------------------------------------------*/
@@ -717,6 +725,10 @@ textarea.error {
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
   background: #f26b45;
   border-radius: 5px 5px 0 0;
+}
+
+#block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 a {
+  color: #FFF;
 }
 
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h4 {
