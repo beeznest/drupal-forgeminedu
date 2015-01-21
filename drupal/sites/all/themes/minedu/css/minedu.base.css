@@ -280,7 +280,7 @@ form label {
   display: inline-block;
   font-size: 14px;
   font-weight: normal;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
                       
 form label.error {
@@ -305,7 +305,7 @@ form label.error {
   background: #fff;
   border: 1px solid #B8B3AE;
   clear: both;
-  color: #B8B3AE;
+  color: #808080;
   display: inline-block;
   margin-bottom: 10px;
   min-width: 200px;
@@ -533,10 +533,11 @@ input[readonly="readonly"] {
 }
 
 .node-type-webform .node form {
-  padding: 0 70px 50px;
+  padding: 10px 70px 50px;
 }
 
 .node-type-webform form .form-item label {
+  font-size: 18px;
   width: 20.5%;
 }
 
@@ -548,13 +549,25 @@ input[readonly="readonly"] {
   text-align: right;
 }
 
+.node-type-webform .form-select, 
+.node-type-webform .form-textarea,
+.node-type-webform .form-text {
+  background: #f9f9f9;
+  border: 1px solid #808285;
+  border-radius: 5px;
+  padding: 8px;
+  width: 79%;
+}
+
 .node-type-webform .form-actions input {
   background: url('../img/bg_button.png') repeat-x;
   border: 1px solid #24a3b4;
   border-radius: 5px;
+  color: #FFF;
   font-family: 'Arial';
   font-size: 16px;
-  padding: 17px 35px;
+  height: auto;
+  padding: 11px 35px;
 }
 
 /*-----------------------------------------------------------------------------
