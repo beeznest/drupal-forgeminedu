@@ -354,6 +354,12 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           MAIN STRUCTURE            
  *---------------------------------------------------------------------------*/
+.main-content > .container {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px #A09898;
+  padding: 50px 46px;
+}
+
 .logo-wrapper {
   padding-bottom: 65px;
 }
@@ -377,7 +383,8 @@ textarea.error {
   color: #FFF;
   display: block;
   font-size: 14px; 
-  margin: 4px 0;
+  line-height: 1;
+  margin: 7px 0;
   padding: 6px 15px;
 }
 
@@ -412,22 +419,51 @@ textarea.error {
   padding: 5px 10px;
 }
 
-#block-views-users-block-user-information {
-  float: left;  
+.block-views-general-links-block-link-home {
+  float: left;
+  padding: 7px;
 }
 
-#block-views-users-block-user-information .views-field,
+#block-views-users-block-user-information {
+  float: left;  
+  margin-right: 15px;
+}
+
 #block-views-users-block-user-information .user-picture {
   float: left;  
 }
 
-#block-views-users-block-user-information .views-field a {
+.wrapper-info-user {
+  background: #727376;
+}
+
+.wrapper-info-user .username {
   background: #727376;
   color: #FFF;
   display: block;
+  float: left;
   font-size: 14px;
-  margin-right: 10px;
-  padding: 15px 40px 15px 15px;
+  padding: 15px;
+}
+
+.user-option {
+  background: #191919;
+  cursor: pointer;
+  display: none;
+  padding: 15px;
+  position: absolute;
+}
+
+.user-option a {
+  color: #FFF;
+  font-size: 14px;
+}
+
+.user-button-option {
+  background: url('../img/arrow_user.png') no-repeat center center;
+  display: block;
+  float: left;
+  padding: 25px 20px;
 }
 
 #block-views-users-block-user-information .user-picture img {
@@ -455,6 +491,43 @@ textarea.error {
   color: #FFF;
   line-height: 1; 
   padding: 13px 20px;
+}
+
+.block h3 a {
+  color: #FFF;
+}
+
+.block h3 a:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+}
+
+.page-node .main-title {
+  font-size: 30px;
+  padding: 16px 0 13px;
+  text-transform: uppercase;
+}
+
+.page-node.not-front .node {
+  background: #f7f7f7;
+  border: 1px solid #99c89c;
+}
+
+.page-node.not-front .node h3 {
+  background: #99c89c;
+  border-radius: 8px 8px 0 0;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 1;
+  padding: 15px 40px;
+}
+
+.page .node form {
+  padding: 0 70px 50px;
+}
+
+.page .node form .field-name-field-webform-description {
+  padding: 0;
 }
 
 /*-----------------------------------------------------------------------------
@@ -598,7 +671,7 @@ textarea.error {
 }
 
 .block-views .view-capacity-building .views-row .capacity-inner-container {
-  background: #4d4c4e; 
+  background: #653074; 
   height: 187px;
 }
 
@@ -714,9 +787,17 @@ textarea.error {
   padding-bottom: 15px;
 }
 
+#block-views-13344de5441c4d38952f38cb573d38f8 h3 {
+  background: #b0b81c;
+}
+
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
   background: #f26b45;
   border-radius: 5px 5px 0 0;
+}
+
+#block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 a {
+  color: #FFF;
 }
 
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h4 {

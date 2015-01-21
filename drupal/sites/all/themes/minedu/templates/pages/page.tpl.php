@@ -114,7 +114,7 @@
           }
         ?>
         <?php if ($page['content']): ?>
-          <div class=''>
+          <div>
           <?php if ($messages): ?>
             <div class="console clearfix">
               <?php print $messages; ?>
