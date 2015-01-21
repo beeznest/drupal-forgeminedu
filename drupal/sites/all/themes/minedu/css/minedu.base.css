@@ -326,11 +326,6 @@ textarea.error {
   border: 1px solid #AB0000;
 }
 
-input[readonly="readonly"] {
-  background: transparent;
-  border: none;
-}
-
 .form-required {
   display: none;
 }
@@ -461,6 +456,7 @@ input[readonly="readonly"] {
   display: none;
   padding: 15px;
   position: absolute;
+  z-index: 10;
 }
 
 .user-option a {
@@ -470,6 +466,7 @@ input[readonly="readonly"] {
 
 .user-button-option {
   background: url('../img/arrow_user.png') no-repeat center center;
+  cursor: pointer;
   display: block;
   float: left;
   padding: 25px 20px;
@@ -541,6 +538,10 @@ input[readonly="readonly"] {
   width: 20.5%;
 }
 
+.node-type-webform form .form-item label:after {
+  content: ':';
+}
+
 .node-type-webform .node .field-name-field-webform-description {
   padding: 0;
 }
@@ -556,10 +557,19 @@ input[readonly="readonly"] {
   border: 1px solid #808285;
   border-radius: 5px;
   padding: 8px;
+}
+
+.node-type-webform .form-select, 
+.node-type-webform .form-text {
   width: 79%;
 }
 
-.node-type-webform .form-actions input {
+.node-type-webform input[readonly="readonly"] {
+  background: transparent;
+  border: none;
+}
+
+.node-type-webform .form-item input {
   background: url('../img/bg_button.png') repeat-x;
   border: 1px solid #24a3b4;
   border-radius: 5px;
