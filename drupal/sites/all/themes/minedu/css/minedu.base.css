@@ -354,6 +354,12 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           MAIN STRUCTURE            
  *---------------------------------------------------------------------------*/
+.main-content > .container {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px #A09898;
+  padding: 50px 46px;
+}
+
 .logo-wrapper {
   padding-bottom: 65px;
 }
@@ -417,18 +423,36 @@ textarea.error {
   float: left;  
 }
 
-#block-views-users-block-user-information .views-field,
 #block-views-users-block-user-information .user-picture {
   float: left;  
 }
 
-#block-views-users-block-user-information .views-field a {
+.wrapper-info-user .username {
   background: #727376;
   color: #FFF;
   display: block;
+  float: left;
   font-size: 14px;
   margin-right: 10px;
   padding: 15px 40px 15px 15px;
+}
+
+.user-option {
+  background: #191919;
+  display: none;
+  padding: 15px;
+}
+
+.user-option a {
+  color: #FFF;
+  font-size: 14px;
+}
+
+.user-button-option {
+  background: url('../img/arrow_user.png') no-repeat center center;
+  display: block;
+  float: left;
+  padding: 25px 15px;
 }
 
 #block-views-users-block-user-information .user-picture img {
@@ -465,6 +489,18 @@ textarea.error {
 .block h3 a:hover {
   color: #D5D5D5;
   text-decoration: none;
+}
+
+.page-node .main-title {
+  font-size: 30px;
+  padding: 16px 0 13px;
+  text-transform: uppercase;
+}
+
+.page-node .node.not-front {
+  background: #f7f7f7;
+  border: 1px solid #99c89c;
+  padding: 50px 70px;
 }
 
 /*-----------------------------------------------------------------------------
