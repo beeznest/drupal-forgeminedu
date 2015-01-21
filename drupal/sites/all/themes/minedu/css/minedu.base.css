@@ -326,6 +326,15 @@ textarea.error {
   border: 1px solid #AB0000;
 }
 
+input[readonly="readonly"] {
+  background: transparent;
+  border: none;
+}
+
+.form-required {
+  display: none;
+}
+
 .form-required {
   color: red;
   padding-right: 5px;
@@ -419,7 +428,7 @@ textarea.error {
   padding: 5px 10px;
 }
 
-.block-views-general-links-block-link-home {
+#block-views-general-links-block-link-home {
   float: left;
   padding: 7px;
 }
@@ -511,6 +520,7 @@ textarea.error {
 .page-node.not-front .node {
   background: #f7f7f7;
   border: 1px solid #99c89c;
+  border-radius: 10px 10px 0 0;
 }
 
 .page-node.not-front .node h3 {
@@ -522,12 +532,29 @@ textarea.error {
   padding: 15px 40px;
 }
 
-.page .node form {
+.node-type-webform .node form {
   padding: 0 70px 50px;
 }
 
-.page .node form .field-name-field-webform-description {
+.node-type-webform form .form-item label {
+  width: 20.5%;
+}
+
+.node-type-webform .node .field-name-field-webform-description {
   padding: 0;
+}
+
+.node-type-webform .form-actions {
+  text-align: right;
+}
+
+.node-type-webform .form-actions input {
+  background: url('../img/bg_button.png') repeat-x;
+  border: 1px solid #24a3b4;
+  border-radius: 5px;
+  font-family: 'Arial';
+  font-size: 16px;
+  padding: 17px 35px;
 }
 
 /*-----------------------------------------------------------------------------
