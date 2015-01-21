@@ -352,7 +352,7 @@ textarea.error {
 }
 
 .grippie {
-  display: none;
+  display: none !important;
 }
 
 /*-----------------------------------------------------------------------------
@@ -547,6 +547,7 @@ textarea.error {
 }
 
 .node-type-webform .form-actions {
+  padding-top: 20px;
   text-align: right;
 }
 
@@ -564,12 +565,16 @@ textarea.error {
   width: 79%;
 }
 
+.node-type-webform .form-textarea {
+  height: 200px;
+}
+
 .node-type-webform input[readonly="readonly"] {
   background: transparent;
   border: none;
 }
 
-.node-type-webform .form-item input {
+.node-type-webform .main-content .form-actions .form-submit {
   background: url('../img/bg_button.png') repeat-x;
   border: 1px solid #24a3b4;
   border-radius: 5px;
@@ -867,6 +872,7 @@ textarea.error {
  *           FOOTER            
  *---------------------------------------------------------------------------*/
 .footer {
+  margin-bottom: 20px;
   margin-top: 40px;
 }
 
@@ -926,6 +932,10 @@ textarea.error {
 .footer #block-search-form .form-submit {
   background: url('../img/search_icon.png') no-repeat transparent center 5px;
   border: none !important;
+  float: right;
+  position: absolute;
+  right: 0;
   text-indent: -9999px;
+  top: 0;
   width: 35px;
 }
