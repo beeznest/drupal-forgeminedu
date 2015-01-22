@@ -87,7 +87,7 @@
   </div>
 <?php endif; ?>
 
-<div class="main-content">
+<div class="main-content-not-logged-in">
   <?php if ($page['content_top']): ?>
     <div class="content-top">
       <div class="container">
@@ -123,12 +123,7 @@
               <?php print $messages; ?>
             </div>
           <?php endif; ?>
-              
-          <?php if ($tabs): ?>
-            <?php print render($tabs); ?>
-          <?php endif; ?>
 
-            <h2 class="main-title"><?php print $title; ?></h2>
             <?php print render($page['content']); ?>
           </div>
         <?php endif; ?>
@@ -157,18 +152,6 @@
           <?php print render($page['after_content']); ?>
         </div>
        </div>
-    </div>
-  </div>
-<?php endif; ?>
-
-<?php if ($page['footer']): ?>
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <?php print render($page['footer']); ?>
-        </div>
-      </div>
     </div>
   </div>
 <?php endif; ?>

@@ -356,6 +356,71 @@ textarea.error {
 }
 
 /*-----------------------------------------------------------------------------
+ *           ACCESS PAGE            
+ *---------------------------------------------------------------------------*/
+#block-bean-bloque-de-presentacion {
+  float: right;
+}
+
+#user-login {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px #A09898;
+  clear: none;
+  float: left;
+  margin-top: 0;
+  padding: 34px 24px;
+  width: 33.33333333%;
+}
+
+#user-login label {
+  color: #808285;
+  font-family: 'Arial';
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+#user-login input {
+  border: #808285 1px solid;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+#user-login .form-submit {
+  background: url('../img/bg_button.png') repeat-x #24a3b4;
+  border: 1px solid #24a3b4;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Arial';
+  font-size: 16px;
+  height: auto;
+  padding: 11px 0;
+  width: 40%;
+}
+
+#user-login .description {
+  display: none;
+}
+
+.main-content-not-logged-in .block > .content { 
+  background: #fafafa;
+  border-bottom: 2px solid #cfcfcf;
+  padding: 10px 43px 28px;
+}
+
+.main-content-not-logged-in .block h3 { 
+  background: #fafafa;
+  border-radius: 0;
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 28px;
+  padding-left: 43px;
+}
+
+
+/*-----------------------------------------------------------------------------
  *           MAIN STRUCTURE            
  *---------------------------------------------------------------------------*/
 .main-content > .container {
@@ -374,7 +439,18 @@ textarea.error {
 
 .header-top {
   background: #bdbfc1;
-  margin-bottom: 15px;
+  margin-bottom: 52px;
+}
+
+.header-top time {
+  color: #FFF;
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.header-top .field-name-field-link-block-link {
+  padding: 3px 0;
 }
 
 #block-bean-aula-virtual {
@@ -388,7 +464,7 @@ textarea.error {
   display: block;
   font-size: 14px; 
   line-height: 1;
-  margin: 7px 0;
+  margin: 4px 0;
   padding: 6px 15px;
 }
 
@@ -425,7 +501,7 @@ textarea.error {
 
 #block-views-general-links-block-link-home {
   float: left;
-  padding: 7px;
+  padding: 3px 7px;
 }
 
 #block-views-users-block-user-information {
@@ -447,7 +523,7 @@ textarea.error {
   display: block;
   float: left;
   font-size: 14px;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 .user-option {
@@ -469,12 +545,12 @@ textarea.error {
   cursor: pointer;
   display: block;
   float: left;
-  padding: 25px 20px;
+  padding: 20px;
 }
 
 #block-views-users-block-user-information .user-picture img {
-  height: 50px;
-  width: 55px;
+  height: 40px;
+  width: 45px;
 }
 
 #block-views-b1aaeabb6ab07ad6a7b0b7c72ac36204 {
@@ -510,7 +586,8 @@ textarea.error {
 
 .page-node .main-title {
   font-size: 30px;
-  padding: 16px 0 13px;
+  line-height: 1;
+  padding: 16px 0 30px;
   text-transform: uppercase;
 }
 
