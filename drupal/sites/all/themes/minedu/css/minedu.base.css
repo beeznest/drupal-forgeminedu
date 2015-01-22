@@ -387,6 +387,14 @@ textarea.error {
   width: 100%;
 }
 
+#edit-remember-me {
+  width: auto;
+}
+
+#user-login .form-item-remember-me label {
+  font-weight: normal;
+}
+
 #user-login .form-submit {
   background: url('../img/bg_button.png') repeat-x #24a3b4;
   border: 1px solid #24a3b4;
@@ -903,6 +911,133 @@ textarea.error {
   display: block;
   height: 48px;
   text-indent: -9999px;
+}
+
+/*-----------------------------------------------------------------------------
+ *           SEARCH            
+ *---------------------------------------------------------------------------*/
+.page-faq-page .main-title,
+.page-search .main-title {
+  background: transparent;
+  color: #000;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 16px 0;
+  text-transform: uppercase;
+}
+
+.faq-description, 
+.page-search h2 {
+  background: #99c89c;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 16px 20px 13px;
+}
+
+.search-results {
+  border: 1px solid #99c89c;
+  margin: 0;
+  padding: 35px 30px 35px 0px;
+}
+
+.search-results .search-result {
+  margin-left: 35px;
+}
+
+.search-result .title {
+  line-height: 1;
+  padding: 5px 0;
+}
+
+.search-result .title a {
+  color: #000;
+  font-size: 20px;
+}
+
+.search-result .search-snippet-info p {
+  color: #4d4d4d;
+  font-family: 'Arial';
+  font-size: 16px;
+}
+
+.search-result .search-snippet-info {
+  border-bottom: 1px dotted #808285;
+  margin-left: -14px;
+  padding: 0 0 15px;
+}
+
+.search-form {
+  margin-top: 0;
+}
+
+.search-form #edit-basic label {
+  color: #999999;
+  display: block;
+  font-size: 16px;
+}
+
+.search-form .criterion .form-type-textfield input {
+  display: block;
+  width: 100%;
+}
+
+.search-form #edit-basic input {
+  border: 1px solid #808285;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-right: 0.5%;
+  padding: 7px;
+  width: 89%;
+}
+
+.search-form #edit-basic .form-submit {
+  background: url('../img/bg_button.png') repeat-x #24a3b4;
+  border: 1px solid #24a3b4;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Arial';
+  font-size: 16px;
+  height: auto;
+  padding: 6px 0;
+  width: 9.5%;
+}
+
+/*-----------------------------------------------------------------------------
+ *           FAQ            
+ *---------------------------------------------------------------------------*/
+.faq-question-answer {
+  background: #fcfcfc;
+  padding: 20px 40px;
+}
+
+.faq-question-answer .faq-question {
+  background: url('../img/faq_icon.png') no-repeat center left;
+  padding-left: 40px;
+}
+
+.faq-question-answer .faq-question a {
+  background: url('../img/faq_arrow.png') no-repeat center right;
+  color: #000;
+  display: block;
+  font-size: 18px;
+}
+
+.faq-question-answer .faq-qa-visible a {
+  background: url('../img/faq_arrow_active.png') no-repeat center right;
+}
+
+.faq-answer {
+  border-bottom: 1px dotted #b4b4b4;
+  padding: 25px 40px;
+}
+
+.faq-answer p {
+  font-family: 'Arial';
+  font-size: 16px;
 }
 
 /*-----------------------------------------------------------------------------

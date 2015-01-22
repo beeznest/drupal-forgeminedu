@@ -8,10 +8,10 @@
 <div class="header-top">
   <div class="container">
     <div class="row">
-      <?php if ($page['header_top']): ?>
         <div class="col-md-3">
           <time><?php print t(date('l d \d\e F \d\e\l Y')); ?></time>
         </div>
+      <?php if ($page['header_top']): ?>
         <div class="col-md-9">
         <?php print render($page['header_top']); ?>
         </div>
