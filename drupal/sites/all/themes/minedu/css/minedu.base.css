@@ -592,6 +592,7 @@ textarea.error {
   text-decoration: none;
 }
 
+.page-sitemap .main-title,
 .page-node .main-title {
   font-size: 30px;
   line-height: 1;
@@ -1038,6 +1039,49 @@ textarea.error {
 .faq-answer p {
   font-family: 'Arial';
   font-size: 16px;
+}
+
+/*-----------------------------------------------------------------------------
+ *           SITEMAP            
+ *---------------------------------------------------------------------------*/
+.site-map-front-page,
+.page-sitemap h2 {
+  display: none;
+}
+
+.page-sitemap .main-title {
+  display: block;
+}
+
+#site-map {
+  border: 1px solid #58585a;
+}
+
+#site-map .site-map-box {
+  margin-bottom: 0;
+}
+
+#site-map .site-map-box ul {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#site-map .site-map-box ul a {
+  background: #f9f9f9;
+  border-bottom: 3px solid #FFF;
+  display: block;
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-left: 3.5em;
+  padding-top: 15px;
+}
+
+#site-map li {
+  list-style: none;
+}
+
+#site-map a {
+  color: #000;
 }
 
 /*-----------------------------------------------------------------------------
