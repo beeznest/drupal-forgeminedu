@@ -87,10 +87,10 @@
   </div>
 <?php endif; ?>
 
-<div class="main-content">
+<div class="main-content container">
   <?php if ($page['content_top']): ?>
     <div class="content-top">
-      <div class="container">
+      <div class="">
         <div class="row">
           <div class="col-md-12">
             <?php print render($page['content_top']); ?>
