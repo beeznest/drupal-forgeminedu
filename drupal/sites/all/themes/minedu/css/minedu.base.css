@@ -924,6 +924,20 @@ textarea.error {
   text-indent: -9999px;
 }
 
+.view-resources a[type*="document"] {
+  background: url('../img/resource/big_doc_icon.png') no-repeat center center;
+  display: block;
+  height: 78px;
+  text-indent: -9999px;
+}
+
+.view-publishes-and-resources-views a[type*="document"] {
+  background: url('../img/resource/doc_icon.png') no-repeat;
+  display: block;
+  height: 48px;
+  text-indent: -9999px;
+}
+
 .view-resources a[type*="pdf"] {
   background: url('../img/resource/big_pdf_icon.png') no-repeat center center;
   display: block;
