@@ -4,7 +4,6 @@
  * @description: Modified elements to html5 and add conditional
  **/
 ?>
-
 <div class="header-top">
   <div class="container">
     <div class="row">
@@ -88,6 +87,7 @@
 <?php endif; ?>
 
 <div class="main-content container">
+  <h2 class="special-main-title"><?php print $title; ?></h2>
   <?php if ($page['content_top']): ?>
     <div class="content-top">
       <div class="">
@@ -99,7 +99,7 @@
       </div>
     </div>
   <?php endif; ?>
-  <div class="container">
+  <div class="inner-container">
     <div class="row">
       <?php if ($page['sidebar_left']): ?>
       <div class="sidebar col-md-3">
