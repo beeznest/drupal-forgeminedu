@@ -883,6 +883,24 @@ textarea.error {
   color: #000;
 }
 
+.publish .counter-link {
+  display: none;
+}
+
+.resource-document {
+  position: relative;
+}
+
+.counter-link {
+  background: rgb(135, 205, 222);
+  border-radius: 25px;
+  color: #FFF;
+  padding: 6px 8px;
+  position: absolute;
+  right: 20px;
+  top: 31px;
+}
+
 .view-resources .file,
 .block-views .view-publishes-and-resources-views .file {
   display: block;
