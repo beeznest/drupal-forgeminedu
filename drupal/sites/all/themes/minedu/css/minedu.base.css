@@ -481,9 +481,12 @@ textarea.error {
   padding-bottom: 65px;
 }
 
+.relative {
+  position: relative;
+}
+
 .region-header-top {
   float: right;
-  position: relative;
 }
 
 #block-clock-clock {
@@ -944,7 +947,7 @@ textarea.error {
   background: rgb(135, 205, 222);
   border-radius: 25px;
   color: #FFF;
-  padding: 6px 8px;
+  padding: 2px 5px;
   position: absolute;
   right: 20px;
   top: 31px;
@@ -1309,6 +1312,7 @@ textarea.error {
   display: none;
 }
 
+#cboxWrapper .field-name-field-publish-file .file > a,
 #cboxWrapper .field-name-field-resource-document-file .file > a {
   background: url('../img/bg_button.png') repeat-x #24a3b4;
   border-radius: 5px;
@@ -1321,6 +1325,18 @@ textarea.error {
   padding: 20px 47px;
   text-align: center;
   width: 50%;
+}
+
+#cboxWrapper .node-publish .field-name-field-publish-image {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+#cboxWrapper .node-publish img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
 }
 
 #cboxClose {
