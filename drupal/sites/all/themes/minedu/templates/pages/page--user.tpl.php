@@ -22,7 +22,7 @@
 
 <div class="logo-wrapper container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-9">
       <?php if ($logo): ?>
         <?php print l('<img src="' . $logo . '" alt="' . $site_name . '" />', '', array('attributes' => array('title' => $site_name, 'class' => 'logo' ), 'html' => TRUE)); ?>
         <h1>
@@ -35,6 +35,9 @@
           ?>
         </h1>
       <?php endif; ?>
+    </div>
+    <div class="col-md-3">
+      <img class="notfront_capacity_logo" src="<?php print $base_path . $directory . '/img/notfront_image_logo.jpg'; ?>"/>
     </div>
   </div>
 </div>
