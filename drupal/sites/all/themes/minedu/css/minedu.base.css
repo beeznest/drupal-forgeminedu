@@ -474,8 +474,31 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           PROFILE            
  *---------------------------------------------------------------------------*/
-.page-user fieldset {
+.main-content-not-logged-in .sidebar .block-views-users-block-user-photo > .content {
+  border: none;
   padding: 0;
+}
+
+.main-content-not-logged-in .sidebar .block-views-users-block-user-photo > .content img {
+  height: auto;
+  width: 100%;
+}
+
+.page-user fieldset {
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+#block-views-users-block-user-photo {
+  background: #f7f7f7;
+  padding: 5px;
+}
+
+#block-views-users-block-user-photo h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page-user fieldset .fieldset-title {
@@ -492,7 +515,7 @@ textarea.error {
 }
 
 .page-user fieldset.collapsed .fieldset-title {
-  background: url('../img/user_accordion_active.png') #99c89c;
+  background: url('../img/user_accordion_active.png') #99c89c no-repeat 95% center;
 }
 
 .page-user fieldset .fieldset-title:hover {
