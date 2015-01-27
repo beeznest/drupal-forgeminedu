@@ -577,7 +577,7 @@ textarea.error {
 
 .block h3 {
   background: #797a7d;
-  border-radius: 10px;
+  border-radius: 5px 5px 0 0;
   color: #FFF;
   line-height: 1; 
   padding: 13px 20px;
@@ -1572,18 +1572,28 @@ textarea.error {
   padding: 15px 40px;
 }
 
+.node-type-activity .inner-container .view-activities-views,
 .page-actividades .inner-container .view-activities-views {
+  background: #FFF; 
   border: 1px solid #808080;
   padding: 38px 30px;
 }
 
+.node-type-activity .inner-container .view-activities-views .views-row,
+.page-actividades .inner-container .view-activities-views .views-row {
+  margin-bottom: 50px;
+}
+
+.node-type-activity .inner-container .view-activities-views h4 a,
 .page-actividades .inner-container .view-activities-views h4 a {
   color: #000;
   font-size: 20px;
 }
 
+.node-type-activity .inner-container .view-activities-views h4 a:hover,
 .page-actividades .inner-container .view-activities-views h4 a:hover {
   color: #f26b45;
+  text-decoration: none;
 }
 
 .date-inner-container {
