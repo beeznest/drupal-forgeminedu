@@ -485,6 +485,7 @@ textarea.error {
 }
 
 .page-user fieldset {
+  border: none;
   margin-bottom: 22px;
   padding: 0;
 }
@@ -520,6 +521,19 @@ textarea.error {
 
 html.js fieldset.collapsed {
   height: auto;
+}
+
+.page-user fieldset .fieldset-legend {
+  background: #99c89c;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1; 
+  padding: 30px 25px 25px;
+  text-transform: uppercase;
 }
 
 .page-user fieldset.collapsed .fieldset-title {
