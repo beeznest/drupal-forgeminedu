@@ -1471,6 +1471,7 @@ textarea.error {
   padding: 20px 35px 20px;
 }
 
+.node-type-activity .node,
 .content-top .block-views .view-activities-views {
   background: #FFF;
   border: 1px solid #F26B45;
@@ -1535,6 +1536,7 @@ textarea.error {
   background: #b0b81c;
 }
 
+.node-type-activity .main-title,
 #block-views-a1a0aa12cf8e7208cf774596c33303a5 h3,
 #block-views-f1948c3660201af294027381d83212d4 h3,
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
@@ -1576,7 +1578,7 @@ textarea.error {
 .page-actividades .inner-container .view-activities-views {
   background: #FFF; 
   border: 1px solid #808080;
-  padding: 38px 30px;
+  padding: 38px 30px 0;
 }
 
 .node-type-activity .inner-container .view-activities-views .views-row,
@@ -1611,6 +1613,24 @@ textarea.error {
 
 .date-inner-container .date-display-single:nth-of-type(2) {
   font-size: 26px;
+}
+
+.node-type-activity .field-name-field-activity-image {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.node-type-activity .field-name-field-activity-date {
+  background: #f2f2f2;
+  border-radius: 5px 5px 0 0;
+  border-top: 6px #e2001a solid;
+  clear: both;
+  display: block;
+  float: left;
+  margin-right: 40px;
+  padding: 23px;
+  width: 224px;
 }
 
 /*-----------------------------------------------------------------------------
