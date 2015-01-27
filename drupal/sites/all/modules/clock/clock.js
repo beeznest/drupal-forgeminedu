@@ -1,5 +1,5 @@
 (function ($) {
- 
+
 /**
  * Gets the date format and time zone related parameters from PHP and formats
  * the date according to the PHP date formatters. Visit http://php.net/date for
@@ -10,124 +10,97 @@
 Drupal.behaviors.clockDisplay = {
   attach: function (context, settings) {
 
-    // Get the correct variables from PHP.
-    // The name of the timezone, e.g. 'Europe/London'.
-    var timezoneName = Drupal.settings['time_zone'];
-    // A PHP date format string.
-    var dateFormat = Drupal.settings['date_format'];
-    // Whether or not to update the clock continuously.
-    var update = Drupal.settings['update'];
-    // The name of the offset, e.g. 'GMT'.
-    var offsetName = Drupal.settings['offset_name'];
-    // The time zone offset in seconds.
-    var offsetSeconds = Drupal.settings['offset_seconds'];
-    // Daylight Savings Time information. '1' for yes, '0' for no.
-    var daylightSavingsTime = Drupal.settings['daylight_savings_time'];
-    // Creates a JavaScript date object, by calculating the difference between
-    // the target offset and the current offset and adding that to the current
-    // time.
-    // Note that due to JavaScript's inferior time zone handling, time zone
-    // related date formatters will return the time zone of the Drupal site, not
-    // the visiting user if the time zone is set to 'Local'.
-    var date = new Date();
-    // JavaScript returns the time zone offset reversely signed as PHP,
-    // therefore we calculate the difference in the absolute values by adding
-    // the two numbers.
-    if (!Drupal.settings['local']) {
-      date = new Date(date.getTime() + (offsetSeconds/60 + date.getTimezoneOffset())*60000);
-    }
-
     // Create an array containing month names.
-    var monthNames = new Array();
-    monthNames[1] = new Object();
-    monthNames[1]['long'] = Drupal.t('January');
-    monthNames[1]['short'] = Drupal.t('Jan');
-    monthNames[2] = new Object();
-    monthNames[2]['long'] = Drupal.t('February');
-    monthNames[2]['short'] = Drupal.t('Feb');
-    monthNames[3] = new Object();
-    monthNames[3]['long'] = Drupal.t('March');
-    monthNames[3]['short'] = Drupal.t('Mar');
-    monthNames[4] = new Object();
-    monthNames[4]['long'] = Drupal.t('April');
-    monthNames[4]['short'] = Drupal.t('Apr');
-    monthNames[5] = new Object();
-    monthNames[5]['long'] = Drupal.t('May');
-    // Use context if http://drupal.org/node/488496 gets in.
-    monthNames[5]['short'] = Drupal.t('May');
-    monthNames[6] = new Object();
-    monthNames[6]['long'] = Drupal.t('June');
-    monthNames[6]['short'] = Drupal.t('Jun');
-    monthNames[7] = new Object();
-    monthNames[7]['long'] = Drupal.t('July');
-    monthNames[7]['short'] = Drupal.t('Jul');
-    monthNames[8] = new Object();
-    monthNames[8]['long'] = Drupal.t('August');
-    monthNames[8]['short'] = Drupal.t('Aug');
-    monthNames[9] = new Object();
-    monthNames[9]['long'] = Drupal.t('September');
-    monthNames[9]['short'] = Drupal.t('Sep');
-    monthNames[10] = new Object();
-    monthNames[10]['long'] = Drupal.t('October');
-    monthNames[10]['short'] = Drupal.t('Oct');
-    monthNames[11] = new Object();
-    monthNames[11]['long'] = Drupal.t('November');
-    monthNames[11]['short'] = Drupal.t('Nov');
-    monthNames[12] = new Object();
-    monthNames[12]['long'] = Drupal.t('December');
-    monthNames[12]['short'] = Drupal.t('Dec');
+    var monthNames = new Array(
+      // The 0 key is unneeded.
+      {},
+      {long: Drupal.t('January'), short: Drupal.t('Jan')},
+      {long: Drupal.t('February'), short: Drupal.t('Feb')},
+      {long: Drupal.t('March'), short: Drupal.t('Mar')},
+      {long: Drupal.t('April'), short: Drupal.t('Apr')},
+      // Use context if http://drupal.org/node/488496 gets in.
+      {long: Drupal.t('May'), short: Drupal.t('May')},
+      {long: Drupal.t('June'), short: Drupal.t('Jun')},
+      {long: Drupal.t('July'), short: Drupal.t('Jul')},
+      {long: Drupal.t('August'), short: Drupal.t('Aug')},
+      {long: Drupal.t('September'), short: Drupal.t('Sep')},
+      {long: Drupal.t('October'), short: Drupal.t('Oct')},
+      {long: Drupal.t('November'), short: Drupal.t('Nov')},
+      {long: Drupal.t('December'), short: Drupal.t('Dec')}
+    );
 
     // Create an array containing weekday names.
-    var weekdayNames = new Array();
-    weekdayNames[0] = new Object();
-    weekdayNames[0]['long'] = Drupal.t('Sunday');
-    weekdayNames[0]['short'] = Drupal.t('Sun');
-    weekdayNames[1] = new Object();
-    weekdayNames[1]['long'] = Drupal.t('Monday');
-    weekdayNames[1]['short'] = Drupal.t('Mon');
-    weekdayNames[2] = new Object();
-    weekdayNames[2]['long'] = Drupal.t('Tuesday');
-    weekdayNames[2]['short'] = Drupal.t('Tue');
-    weekdayNames[3] = new Object();
-    weekdayNames[3]['long'] = Drupal.t('Wednesday');
-    weekdayNames[3]['short'] = Drupal.t('Wed');
-    weekdayNames[4] = new Object();
-    weekdayNames[4]['long'] = Drupal.t('Thursday');
-    weekdayNames[4]['short'] = Drupal.t('Thu');
-    weekdayNames[5] = new Object();
-    weekdayNames[5]['long'] = Drupal.t('Friday');
-    weekdayNames[5]['short'] = Drupal.t('Fri');
-    weekdayNames[6] = new Object();
-    weekdayNames[6]['long'] = Drupal.t('Saturday');
-    weekdayNames[6]['short'] = Drupal.t('Sat');
+    var weekdayNames = new Array(
+      {long: Drupal.t('Sunday'), short: Drupal.t('Sun')},
+      {long: Drupal.t('Monday'), short: Drupal.t('Mon')},
+      {long: Drupal.t('Tuesday'), short: Drupal.t('Tue')},
+      {long: Drupal.t('Wednesday'), short: Drupal.t('Wed')},
+      {long: Drupal.t('Thursday'), short: Drupal.t('Thu')},
+      {long: Drupal.t('Friday'), short: Drupal.t('Fri')},
+      {long: Drupal.t('Saturday'), short: Drupal.t('Sat')}
+    );
 
-    // Prepare the timezone array.
-    var timezone = new Array();
-    timezone['name'] = timezoneName;
-    timezone['offsetSeconds'] = offsetSeconds;
-    timezone['daylightSavingsTime'] = daylightSavingsTime;
-    timezone['offsetName'] = offsetName;
+    var allSettings = Drupal.settings['clock'];
+    var clocks = new Array();
+    for (var i = 0; i < allSettings['names'].length; i++) {
+      var cid = allSettings['names'][i];
+      var settings = allSettings['clocks'][cid];
 
-    // Format the clock.
-    clock = formatDate(date, dateFormat, timezone, monthNames, weekdayNames);
-    $('div.clock').html(clock);
-
-    if (update == 1) {
-      // Recalculate the date every second.
-      window.setInterval(function () {
-        // Add 1 second (1000 milliseconds) to the time.
-        var clockTimestamp = date.getTime();
-        clockTimestamp = clockTimestamp + 1000;
-        date = new Date(clockTimestamp);
-
-        // Format the clock.
-        clock = formatDate(date, dateFormat, timezone, monthNames, weekdayNames);
-        $('div.clock').html(clock);
-      }, 1000);
+      // Initialize variables.
+      // A PHP date format string.
+      var dateFormat = settings['date_format'];
+      // Prepare the timezone object.
+      var timeZone = {
+        // The name of the timezone, e.g. 'Europe/London'.
+        name: settings['time_zone'],
+        // The time zone offset in seconds.
+        offsetSeconds: settings['offset_seconds'],
+        // Daylight Savings Time information. '1' for yes, '0' for no.
+        daylightSavingsTime: settings['daylight_savings_time'],
+        // The name of the offset, e.g. 'GMT'.
+        offsetName: settings['offset_name']
+      };
+      // Creates a JavaScript date object, by calculating the difference between
+      // the target offset and the current offset and adding that to the current
+      // time.
+      // Note that due to JavaScript's inferior time zone handling, time zone
+      // related date formatters will return the time zone of the Drupal site, not
+      // the visiting user if the time zone is set to 'Local'.
+      var date = new Date();
+      // JavaScript returns the time zone offset reversely signed as PHP,
+      // therefore we calculate the difference in the absolute values by adding
+      // the two numbers.
+      if (!settings['local']) {
+        date = new Date(date.getTime() + (timeZone.offsetSeconds/60 + date.getTimezoneOffset())*60000);
+      }
+      
+      clocks[cid] = {
+        date: date,
+        dateFormat: dateFormat,
+        timeZone: timeZone
+      }
     }
 
-  }
+    var cid = allSettings['names'][0];
+    clock = clocks[cid];
+    $('span.' + cid).each(function () {
+      $(this).once(cid, function() {
+        window.setInterval(function () {
+          for (var i = 0; i < allSettings['names'].length; i++) {
+            cid = allSettings['names'][i];
+            clock = clocks[cid];
+            var timestamp = clock.date.getTime();
+            timestamp += 1000;
+            clock.date = new Date(timestamp);
+            formattedDate = formatDate(clock.date, clock.dateFormat, clock.timeZone, monthNames, weekdayNames);
+            $('span.' + cid).text(formattedDate);
+            clocks[cid] = clock;
+          };
+        }, 1000);
+      });
+    });
 
+  }
 };
 
 })(jQuery);
@@ -159,11 +132,11 @@ Drupal.behaviors.clockDisplay = {
  * @return
  *   A formatted date string.
  */
-function formatDate(date, dateFormat, timezone, monthNames, weekdayNames) {
-  var timezoneName = timezone['name'];
-  var offsetSeconds = timezone['offsetSeconds'];
-  var offsetName = timezone['offsetName'];
-  var daylightSavingsTime = timezone['daylightSavingsTime'];
+function formatDate(date, dateFormat, timeZone, monthNames, weekdayNames) {
+  var timezoneName = timeZone.name;
+  var offsetSeconds = timeZone.offsetSeconds;
+  var offsetName = timeZone.offsetName;
+  var daylightSavingsTime = timeZone.daylightSavingsTime;
 
   // Initialize the 'formattedDate' variable for later use.
   var formattedDate = '';
@@ -185,11 +158,12 @@ function formatDate(date, dateFormat, timezone, monthNames, weekdayNames) {
 
   // Month-related.
   var month = date.getMonth();
+  
   // JavaScript starts counting the months with 0 instead of 1.
   month++;
   var monthLeadingZero = ((month < 10) ? '0' + month : month);
-  var monthLongName = monthNames[month]['long'];
-  var monthShortName = monthNames[month]['short'];
+  var monthLongName = monthNames[month].long;
+  var monthShortName = monthNames[month].short;
   var day = date.getDate();
   var dayLeadingZero = ((day < 10) ? '0' + day : day);
   switch (day) {
@@ -211,19 +185,21 @@ function formatDate(date, dateFormat, timezone, monthNames, weekdayNames) {
       break;
   }
   // Create an array containing month names and lengths.
-  var months = new Array();
-  months[1] = 31;
-  months[2] = ((leapYear == 1) ? 29 : 28);
-  months[3] = 31;
-  months[4] = 30;
-  months[5] = 31;
-  months[6] = 30;
-  months[7] = 31;
-  months[8] = 31;
-  months[9] = 30;
-  months[10] = 31;
-  months[11] = 30;
-  months[12] = 31;
+  var months = new Array(
+    0, // The 0 key is unneeded.
+    31, // January
+    ((leapYear == 1) ? 29 : 28), // February
+    31, // March
+    30, // April
+    31, // May
+    30, // June
+    31, // July
+    31, // August
+    30, // September
+    31, // Oktober
+    30, // November
+    31 // Dezember
+  );
   // To calculate the days of the year, iterate through all passed months and then add the current days of the month.
   var daysOfYear = 0;
   for (var m = 1; m < month; m++) {
@@ -240,8 +216,8 @@ function formatDate(date, dateFormat, timezone, monthNames, weekdayNames) {
     var weekNumber = Math.floor((daysOfYear - weekday) / 7) + 1;
   }
   var weekNumberLeadingZero = ((weekNumber < 10) ? '0' + weekNumber : weekNumber);
-  var weekdayLongName = weekdayNames[weekday]['long'];
-  var weekdayShortName = weekdayNames[weekday]['short'];
+  var weekdayLongName = weekdayNames[weekday].long;
+  var weekdayShortName = weekdayNames[weekday].short;
 
   // Offset-related.
   if (offsetSeconds < 0) {
@@ -461,4 +437,3 @@ function formatDate(date, dateFormat, timezone, monthNames, weekdayNames) {
   }
   return formattedDate;
 }
-
