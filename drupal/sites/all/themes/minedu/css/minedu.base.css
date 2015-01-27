@@ -479,7 +479,7 @@ textarea.error {
 }
 
 .page-user fieldset .fieldset-title {
-  background: url('../img/user_accordion.png') #99c89c;
+  background: url('../img/user_accordion.png') #99c89c no-repeat 95% center;
   border-radius: 5px 5px 0 0;
   color: #FFF;
   display: block;
@@ -503,7 +503,7 @@ textarea.error {
   width: 100%;
 }
 
-.page-user fieldset legend .fieldset-wrapper {
+.page-user fieldset .fieldset-wrapper {
   background: #f7f7f7;
   padding: 30px;
 }

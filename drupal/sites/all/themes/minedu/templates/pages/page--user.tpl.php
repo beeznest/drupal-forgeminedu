@@ -4,6 +4,8 @@
  * @description: Modified elements to html5 and add conditional
  **/
 ?>
+<!-- /.hide user picture -->
+<?php hide($page['content']['system_main']['user_picture']); ?>
 
 <div class="header-top">
   <div class="container">
