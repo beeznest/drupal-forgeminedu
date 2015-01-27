@@ -1460,7 +1460,7 @@ textarea.error {
 }
 
 /*-----------------------------------------------------------------------------
- *           EVENTS AND COURSES            
+ *           ACTIVITIES            
  *---------------------------------------------------------------------------*/
 .block-views .view-activities-views {
   background: #e6e6e6;
@@ -1489,6 +1489,40 @@ textarea.error {
 
 .block-views .view-activities-views .views-row p {
   padding: 0 0 0 65px;
+}
+
+/* BLOCK NEXT ACTIVITIES*/
+.content-top .view-activities-views h4 a {
+  color: #f26b45; 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-top .view-activities-views p {
+  font-family: 'Arial';
+  font-size: 16px;
+  text-align: left;
+}
+
+.next-activity-inner-container {
+  margin-right: 40px;
+}
+
+.next-activity-inner-container img {
+  margin-bottom: 10px;
+}
+
+.next-activity-inner-container .date-display-single {
+  background: #f2f2f2;
+  border-radius: 5px 5px 0 0;
+  border-top: 5px #e2001a solid;
+  color: #808080;
+  display: block;  
+  font-size: 25px;
+  line-height: 1;
+  padding: 23px 44px;
+  text-align: center;
+  width: 224px;
 }
 
 #block-views-13344de5441c4d38952f38cb573d38f8 h3 {
