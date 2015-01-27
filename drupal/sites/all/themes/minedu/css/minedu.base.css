@@ -976,6 +976,7 @@ textarea.error {
 
 .page-node .main-content,
 .page-recursos .main-content,
+.page-actividades .main-content,
 .page-publicaciones .main-content {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
@@ -1176,6 +1177,7 @@ textarea.error {
   display: none;
 }
 
+.page-actividades .special-main-title,
 .page-publicaciones .special-main-title,
 .page-recursos .special-main-title {
   display: block;
@@ -1493,7 +1495,7 @@ textarea.error {
 
 /* BLOCK NEXT ACTIVITIES*/
 .content-top .view-activities-views h4 a {
-  color: #f26b45; 
+  color: #f26b45 !important; 
   font-size: 18px;
   font-weight: bold;
 }
@@ -1512,17 +1514,21 @@ textarea.error {
   margin-bottom: 10px;
 }
 
-.next-activity-inner-container .date-display-single {
+.next-activity-inner-container .date-container {
   background: #f2f2f2;
   border-radius: 5px 5px 0 0;
-  border-top: 5px #e2001a solid;
+  border-top: 6px #e2001a solid;
+  padding: 23px;
+  width: 224px;
+}
+
+.next-activity-inner-container .date-display-single {
   color: #808080;
   display: block;  
-  font-size: 25px;
-  line-height: 1;
-  padding: 23px 44px;
+  font-size: 25px !important;
+  font-weight: bold;
+  line-height: 0.9;
   text-align: center;
-  width: 224px;
 }
 
 #block-views-13344de5441c4d38952f38cb573d38f8 h3 {
@@ -1552,6 +1558,49 @@ textarea.error {
 
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb p {
   font-size: 13px;
+}
+
+/* PAGE ACTIVITIES */
+.page-actividades .main-title {
+  background: #808080;
+  border-radius: 8px 8px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 15px 40px;
+}
+
+.page-actividades .inner-container .view-activities-views {
+  border: 1px solid #808080;
+  padding: 38px 30px;
+}
+
+.page-actividades .inner-container .view-activities-views h4 a {
+  color: #000;
+  font-size: 20px;
+}
+
+.page-actividades .inner-container .view-activities-views h4 a:hover {
+  color: #f26b45;
+}
+
+.date-inner-container {
+  background: #f48464;
+  margin-right: 15px;
+  padding: 13px 18px;
+}
+
+.date-inner-container .date-display-single {
+  color: #FFF;
+  display: block;
+  font-size: 43px;
+  line-height: 1;
+}
+
+.date-inner-container .date-display-single:nth-of-type(2) {
+  font-size: 26px;
 }
 
 /*-----------------------------------------------------------------------------
