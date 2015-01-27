@@ -491,6 +491,7 @@ textarea.error {
 
 #block-views-users-block-user-photo {
   background: #f7f7f7;
+  box-shadow: 0 0 10px 0 #BDBDBD;
   padding: 5px;
 }
 
@@ -517,8 +518,8 @@ textarea.error {
   text-transform: uppercase;
 }
 
-.page-user fieldset.collapsed {
-  margin-top: 85px;
+html.js fieldset.collapsed {
+  height: auto;
 }
 
 .page-user fieldset.collapsed .fieldset-title {
@@ -540,12 +541,16 @@ textarea.error {
 
 .page-user .fieldset-wrapper .field-label {
   float: left; 
-  width: 30%;
+  width: 40%;
 }
 
-.page-user .fieldset-wrapper .field-label {
+.page-user .fieldset-wrapper .field-items {
   float: left; 
-  width: 70%;
+  width: 60%;
+}
+
+.page-user .fieldset-wrapper .field-items li {
+  list-style: none;
 }
 
 /*-----------------------------------------------------------------------------
