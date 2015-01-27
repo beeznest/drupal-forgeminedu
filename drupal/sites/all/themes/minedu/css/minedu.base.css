@@ -839,7 +839,7 @@ textarea.error {
   height: 100px;
 }
 
-.block-views .view-next-events-and-courses-views .views-row > .views-field-nothing {
+.block-views .view-activities-views .views-row > .views-field-nothing {
   display: block;
   float: left;
   height: 100%;
@@ -850,11 +850,11 @@ textarea.error {
   width: 56px;
 }
 
-.block-views .view-next-events-and-courses-views .date-display-single {
+.block-views .view-activities-views .date-display-single {
   font-size: 28px;
 }
 
-.block-views .view-next-events-and-courses-views .date-display-single:nth-of-type(2) {
+.block-views .view-activities-views .date-display-single:nth-of-type(2) {
   font-size: 17px;
 }
 
@@ -1462,26 +1462,41 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           EVENTS AND COURSES            
  *---------------------------------------------------------------------------*/
-.block-views .view-next-events-and-courses-views {
+.block-views .view-activities-views {
   background: #e6e6e6;
   border-bottom: 5px solid #a4a4a4;
-  margin-bottom: 45px;
-  padding-top: 15px;
+  margin-bottom: 30px;
+  padding: 20px 35px 20px;
 }
 
-.block-views .view-next-events-and-courses-views .views-row {
+.block-views .view-activities-views .views-row {
   padding-bottom: 15px;
+}
+
+.block-views .view-activities-views .views-row h4 {
+  font-size: 16px;
+  padding: 9px 0 0 65px;
+}
+
+.block-views .view-activities-views .views-row h4 a {
+  color: #000;
+}
+
+.block-views .view-activities-views .views-row p {
+  padding: 0 0 0 65px;
 }
 
 #block-views-13344de5441c4d38952f38cb573d38f8 h3 {
   background: #b0b81c;
 }
 
+#block-views-f1948c3660201af294027381d83212d4 h3,
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
   background: #f26b45;
   border-radius: 5px 5px 0 0;
 }
 
+#block-views-f1948c3660201af294027381d83212d4 h3 a,
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 a {
   color: #FFF;
 }
