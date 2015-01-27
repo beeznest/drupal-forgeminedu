@@ -764,6 +764,19 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           CAPACITY BUILDING 
  *---------------------------------------------------------------------------*/
+.capacity_logo {
+  display: block;
+  height: auto;
+  margin: 0 auto 25px;
+  width: 700px;
+}
+
+.notfront_capacity_logo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .view-capacity-building img {
   height: auto;
   width: 100%;
@@ -1468,13 +1481,18 @@ textarea.error {
   background: #e6e6e6;
   border-bottom: 5px solid #a4a4a4;
   margin-bottom: 30px;
-  padding: 20px 35px 20px;
+  padding: 20px 35px;
 }
 
 .node-type-activity .node,
 .content-top .block-views .view-activities-views {
   background: #FFF;
   border: 1px solid #F26B45;
+}
+
+.node-type-activity .node {
+  margin-bottom: 30px;
+  padding: 20px 35px;
 }
 
 .block-views .view-activities-views .views-row {
@@ -1523,6 +1541,7 @@ textarea.error {
   width: 224px;
 }
 
+.node-type-activity .field-name-field-activity-date .date-display-single,
 .next-activity-inner-container .date-display-single {
   color: #808080;
   display: block;  
@@ -1530,6 +1549,10 @@ textarea.error {
   font-weight: bold;
   line-height: 0.9;
   text-align: center;
+}
+
+.node-type-activity .field-name-field-activity-date .date-display-single {
+  margin: 0 16%;
 }
 
 #block-views-13344de5441c4d38952f38cb573d38f8 h3 {
@@ -1542,6 +1565,13 @@ textarea.error {
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
   background: #f26b45;
   border-radius: 5px 5px 0 0;
+}
+
+.node-type-activity .main-title {
+  color: #FFF;
+  font-size: 22px;
+  padding: 13px 20px;
+  text-transform: none;
 }
 
 #block-views-f1948c3660201af294027381d83212d4 h3 a,
