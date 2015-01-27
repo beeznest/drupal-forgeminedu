@@ -89,20 +89,24 @@ a:active {
 .pager:before,
 .pager:after,
 .clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.fieldset-wrapper .field:after, 
+.fieldset-wrapper .field:before {
   content: " ";
   display: table;
 }
 
 .form:after,
 .pager:after,
-.clearfix:after {
+.clearfix:after,
+.fieldset-wrapper .field:after {
   clear: both;
 }
 
 .form,
 .pager,
-.clearfix {
+.clearfix,
+.fieldset-wrapper .field:after {
   *zoom: 1;
 }
 
@@ -467,6 +471,52 @@ textarea.error {
   padding-left: 43px;
 }
 
+/*-----------------------------------------------------------------------------
+ *           PROFILE            
+ *---------------------------------------------------------------------------*/
+.page-user fieldset {
+  padding: 0;
+}
+
+.page-user fieldset .fieldset-title {
+  background: url('../img/user_accordion.png') #99c89c;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1; 
+  padding: 30px 25px 25px;
+  text-transform: uppercase;
+}
+
+.page-user fieldset.collapsed .fieldset-title {
+  background: url('../img/user_accordion_active.png') #99c89c;
+}
+
+.page-user fieldset .fieldset-title:hover {
+  text-decoration: none;
+}
+
+.page-user fieldset legend {
+  width: 100%;
+}
+
+.page-user fieldset legend .fieldset-wrapper {
+  background: #f7f7f7;
+  padding: 30px;
+}
+
+.page-user .fieldset-wrapper .field-label {
+  float: left; 
+  width: 30%;
+}
+
+.page-user .fieldset-wrapper .field-label {
+  float: left; 
+  width: 70%;
+}
 
 /*-----------------------------------------------------------------------------
  *           MAIN STRUCTURE            
