@@ -86,6 +86,8 @@ a:active {
 /* CLEARFIX */
 .form:before,
 .form:after,
+.pager:before,
+.pager:after,
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -93,11 +95,13 @@ a:active {
 }
 
 .form:after,
+.pager:after,
 .clearfix:after {
   clear: both;
 }
 
 .form,
+.pager,
 .clearfix {
   *zoom: 1;
 }
@@ -116,6 +120,36 @@ a:active {
 
 .clear {
   clear: both;
+}
+
+.pager {
+  display: block;
+  margin: 34px 0 0;
+}
+
+.pager li {
+  display: block;
+  float: left;
+  list-style: none;
+}
+
+.pager-current,
+.pager li a {
+  background: #808285;
+  color: #FFF;
+  float: left;
+  line-height: 1;
+  margin-right: 12px;
+  padding: 10px 15px;
+}
+
+.pager-current {
+  background: #ccc;
+}
+
+.pager a:hover {
+  background: #ccc;
+  text-decoration: none;
 }
 
 /*-----------------------------------------------------------------------------
@@ -1006,6 +1040,7 @@ textarea.error {
 }
 
 .page-node .main-content,
+.page-search .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
 .page-publicaciones .main-content {
