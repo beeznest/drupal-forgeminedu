@@ -9,7 +9,6 @@
   <div class="container">
     <div class="row">
         <div class="col-md-3">
-          <time><?php print t(date('l d \d\e F \d\e\l Y')); ?></time>
         </div>
       <?php if ($page['header_top']): ?>
         <div class="col-md-9">

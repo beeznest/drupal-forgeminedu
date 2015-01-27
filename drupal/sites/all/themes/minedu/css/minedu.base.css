@@ -86,6 +86,8 @@ a:active {
 /* CLEARFIX */
 .form:before,
 .form:after,
+.pager:before,
+.pager:after,
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -93,11 +95,13 @@ a:active {
 }
 
 .form:after,
+.pager:after,
 .clearfix:after {
   clear: both;
 }
 
 .form,
+.pager,
 .clearfix {
   *zoom: 1;
 }
@@ -116,6 +120,36 @@ a:active {
 
 .clear {
   clear: both;
+}
+
+.pager {
+  display: block;
+  margin: 34px 0 0;
+}
+
+.pager li {
+  display: block;
+  float: left;
+  list-style: none;
+}
+
+.pager-current,
+.pager li a {
+  background: #808285;
+  color: #FFF;
+  float: left;
+  line-height: 1;
+  margin-right: 12px;
+  padding: 10px 15px;
+}
+
+.pager-current {
+  background: #ccc;
+}
+
+.pager a:hover {
+  background: #ccc;
+  text-decoration: none;
 }
 
 /*-----------------------------------------------------------------------------
@@ -362,6 +396,12 @@ textarea.error {
   float: right;
 }
 
+#block-bean-bloque-de-presentacion .field-name-field-presentation-block-image {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
 #user-login {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
@@ -441,8 +481,20 @@ textarea.error {
   padding-bottom: 65px;
 }
 
+.relative {
+  position: relative;
+}
+
 .region-header-top {
   float: right;
+}
+
+#block-clock-clock {
+  color: #FFF;
+  float: left;
+  left: 0;
+  padding: 10px 0;
+  position: absolute;
 }
 
 .header-top {
@@ -883,6 +935,24 @@ textarea.error {
   color: #000;
 }
 
+.publish .counter-link {
+  display: none;
+}
+
+.resource-document {
+  position: relative;
+}
+
+.counter-link {
+  background: rgb(135, 205, 222);
+  border-radius: 25px;
+  color: #FFF;
+  padding: 2px 5px;
+  position: absolute;
+  right: 20px;
+  top: 31px;
+}
+
 .view-resources .file,
 .block-views .view-publishes-and-resources-views .file {
   display: block;
@@ -988,6 +1058,7 @@ textarea.error {
 }
 
 .page-node .main-content,
+.page-search .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
 .page-publicaciones .main-content {
@@ -1241,6 +1312,7 @@ textarea.error {
   display: none;
 }
 
+#cboxWrapper .field-name-field-publish-file .file > a,
 #cboxWrapper .field-name-field-resource-document-file .file > a {
   background: url('../img/bg_button.png') repeat-x #24a3b4;
   border-radius: 5px;
@@ -1253,6 +1325,18 @@ textarea.error {
   padding: 20px 47px;
   text-align: center;
   width: 50%;
+}
+
+#cboxWrapper .node-publish .field-name-field-publish-image {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+#cboxWrapper .node-publish img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
 }
 
 #cboxClose {
