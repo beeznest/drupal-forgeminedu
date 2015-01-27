@@ -8,10 +8,8 @@
 <div class="header-top">
   <div class="container">
     <div class="row">
-        <div class="col-md-3">
-        </div>
       <?php if ($page['header_top']): ?>
-        <div class="col-md-9">
+        <div class="col-md-12">
         <?php print render($page['header_top']); ?>
         </div>
       <?php endif; ?>
@@ -156,4 +154,18 @@
        </div>
     </div>
   </div>
+<?php endif; ?>
+
+<?php if ($logged_in): ?>
+  <?php if ($page['footer']): ?>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <?php print render($page['footer']); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
 <?php endif; ?>

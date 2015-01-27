@@ -4,8 +4,14 @@
       $(document).ready(function() {
 
         //Add Class to counter link
-        $('.publish .file a:last-of-type').addClass('counter-link');
-        $('.resource-document .file a:last-of-type').addClass('counter-link');
+        $('.publish .file a:nth-child(3)').addClass('counter-link');
+        $('.resource-document .file a:nth-child(3)').addClass('counter-link');
+
+        $( ".file a" ).each(function( index ) {
+          if (!$(this).hasClass('counter-link')) {
+            $(this).attr( "href", "#");
+          };
+        });
 
         // Accordion effect to blocks in sidebar 
         $('.user-button-option').unbind('click');

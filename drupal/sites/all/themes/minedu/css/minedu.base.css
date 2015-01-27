@@ -927,6 +927,7 @@ textarea.error {
   color: #000;
   float: right;
   font-size: 14px;
+  min-height: 56px;
   padding: 0 0 0 68px;
   width: 225px;
 }
@@ -1337,6 +1338,10 @@ textarea.error {
   display: block;
   margin: 0 auto;
   width: auto;
+}
+
+#cboxWrapper .node-publish .file img {
+  display: none;
 }
 
 #cboxClose {
