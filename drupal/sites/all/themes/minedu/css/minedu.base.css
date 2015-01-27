@@ -507,7 +507,7 @@ textarea.error {
 }
 
 .page-user fieldset .fieldset-title {
-  background: url('../img/user_accordion.png') #99c89c no-repeat 95% center;
+  background: url('../img/user_accordion.png') #99c89c no-repeat 100% center;
   border-radius: 5px 5px 0 0;
   color: #FFF;
   display: block;
@@ -515,7 +515,6 @@ textarea.error {
   font-weight: bold;
   letter-spacing: 0.5px;
   line-height: 1; 
-  padding: 30px 25px 25px;
   text-transform: uppercase;
 }
 
