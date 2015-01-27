@@ -1536,6 +1536,10 @@ html.js fieldset.collapsed {
   padding: 35px 30px 35px 0px;
 }
 
+.search-results ol.search-results li {
+  margin-left: 3em;
+}
+
 .search-results .search-result {
   margin-left: 35px;
 }
