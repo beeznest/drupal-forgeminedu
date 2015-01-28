@@ -126,6 +126,7 @@
             </div>
           <?php endif; ?>
 
+            <h2 class="special-main-title"><?php print $title; ?></h2>
             <?php print render($page['content']); ?>
           </div>
         <?php endif; ?>

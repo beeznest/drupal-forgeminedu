@@ -88,8 +88,10 @@ a:active {
 .form:after,
 .pager:before,
 .pager:after,
-.clearfix:before,
 .clearfix:after,
+.clearfix:before,
+.fieldset-wrapper:after,
+.fieldset-wrapper:before,
 .fieldset-wrapper .field:after, 
 .fieldset-wrapper .field:before {
   content: " ";
@@ -99,6 +101,7 @@ a:active {
 .form:after,
 .pager:after,
 .clearfix:after,
+.fieldset-wrapper:after,
 .fieldset-wrapper .field:after {
   clear: both;
 }
@@ -106,7 +109,8 @@ a:active {
 .form,
 .pager,
 .clearfix,
-.fieldset-wrapper .field:after {
+.fieldset-wrapper,
+.fieldset-wrapper .field {
   *zoom: 1;
 }
 
@@ -572,12 +576,86 @@ html.js fieldset.collapsed {
 }
 
 .page-user-edit fieldset fieldset .fieldset-legend {
-  padding: 13px;
   font-size: 16px;
+  padding: 13px;
+}
+
+.page-user-edit fieldset fieldset {
+  margin-top: 35px;
 }
 
 .page-user-edit fieldset fieldset .fieldset-wrapper {
   border: 1px solid #99c89c;
+  padding: 0 15px 10px;
+}
+
+.form-item-duser .description,
+.form-item-language .description,
+.form-item-timezone .description,
+.field-name-field-user-belongs-to .description,
+.field-name-field-user-department .description,
+.page-user-edit fieldset fieldset .description {
+  margin-bottom: 0 !important;
+}
+
+.field-name-field-user-belongs-to select,
+.field-name-field-user-department select {
+  margin-right: 15px;
+}
+
+.page-user-edit .chosen-container-single {
+  border: none; 
+  padding: 0;
+}
+
+#user-profile-form {
+  margin-top: 0;
+}
+
+#edit-account,
+#user-profile-form > div > .form-type-textfield {
+  background: #f7f7f7;
+  margin-bottom: 20px;
+  padding: 30px 60px;
+}
+
+.page-user-edit form label {
+  width: 20%;
+}
+
+.page-user-edit #edit-account label {
+  color: #99c89c;
+  font-size: 16px;
+  width: 35%;
+}
+
+.page-user-edit .form-item .description {
+  color: #716D6D;
+  font-family: Arial;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+.page-user-edit .form-item {
+  margin: 5px 0 0;
+}
+
+.page-user-edit .form-text, 
+.page-user-edit .form-select, 
+.page-user-edit .form-textarea {
+  font-family: 'Arial';
+  margin-bottom: 5px;
+  padding: 6px;
+}
+
+.page-user-edit .form-type-radio label, 
+.page-user-edit .form-type-checkbox label {
+  font-family: 'Arial';
+}
+
+.page-user-edit .user-picture {
+  float: left;
+  margin-right: 30px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -1374,6 +1452,7 @@ html.js fieldset.collapsed {
   display: none;
 }
 
+.page-user-edit .special-main-title,
 .page-actividades .special-main-title,
 .page-publicaciones .special-main-title,
 .page-recursos .special-main-title {
@@ -1381,6 +1460,19 @@ html.js fieldset.collapsed {
   font-size: 30px;
   padding-left: 0;
   padding-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.page-user-edit .special-main-title {
+  background: #99c89c;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  padding: 15px 25px 10px !important;
   text-transform: uppercase;
 }
 
@@ -1590,6 +1682,7 @@ html.js fieldset.collapsed {
   width: 89%;
 }
 
+.page-user-edit .form-submit,
 .search-form #edit-basic .form-submit {
   background: url('../img/bg_button.png') repeat-x #24a3b4;
   border: 1px solid #24a3b4;
