@@ -4,15 +4,14 @@
  * @description: Modified elements to html5 and add conditional
  **/
 ?>
+<!-- /.hide user picture -->
+<?php hide($page['content']['system_main']['user_picture']); ?>
 
 <div class="header-top">
   <div class="container">
     <div class="row">
-        <div class="col-md-3">
-          <time><?php print t(date('l d \d\e F \d\e\l Y')); ?></time>
-        </div>
       <?php if ($page['header_top']): ?>
-        <div class="col-md-9">
+        <div class="col-md-12">
         <?php print render($page['header_top']); ?>
         </div>
       <?php endif; ?>
@@ -22,7 +21,7 @@
 
 <div class="logo-wrapper container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-9">
       <?php if ($logo): ?>
         <?php print l('<img src="' . $logo . '" alt="' . $site_name . '" />', '', array('attributes' => array('title' => $site_name, 'class' => 'logo' ), 'html' => TRUE)); ?>
         <h1>
@@ -35,6 +34,9 @@
           ?>
         </h1>
       <?php endif; ?>
+    </div>
+    <div class="col-md-3">
+      <img class="notfront_capacity_logo" src="<?php print $base_path . $directory . '/img/notfront_image_logo.jpg'; ?>"/>
     </div>
   </div>
 </div>
@@ -154,4 +156,18 @@
        </div>
     </div>
   </div>
+<?php endif; ?>
+
+<?php if ($logged_in): ?>
+  <?php if ($page['footer']): ?>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <?php print render($page['footer']); ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php endif; ?>
 <?php endif; ?>

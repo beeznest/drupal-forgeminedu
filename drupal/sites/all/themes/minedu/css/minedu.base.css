@@ -86,19 +86,27 @@ a:active {
 /* CLEARFIX */
 .form:before,
 .form:after,
+.pager:before,
+.pager:after,
 .clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.fieldset-wrapper .field:after, 
+.fieldset-wrapper .field:before {
   content: " ";
   display: table;
 }
 
 .form:after,
-.clearfix:after {
+.pager:after,
+.clearfix:after,
+.fieldset-wrapper .field:after {
   clear: both;
 }
 
 .form,
-.clearfix {
+.pager,
+.clearfix,
+.fieldset-wrapper .field:after {
   *zoom: 1;
 }
 
@@ -116,6 +124,36 @@ a:active {
 
 .clear {
   clear: both;
+}
+
+.pager {
+  display: block;
+  margin: 34px 0 0;
+}
+
+.pager li {
+  display: block;
+  float: left;
+  list-style: none;
+}
+
+.pager-current,
+.pager li a {
+  background: #808285;
+  color: #FFF;
+  float: left;
+  line-height: 1;
+  margin-right: 12px;
+  padding: 10px 15px;
+}
+
+.pager-current {
+  background: #ccc;
+}
+
+.pager a:hover {
+  background: #ccc;
+  text-decoration: none;
 }
 
 /*-----------------------------------------------------------------------------
@@ -362,6 +400,12 @@ textarea.error {
   float: right;
 }
 
+#block-bean-bloque-de-presentacion .field-name-field-presentation-block-image {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
 #user-login {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
@@ -427,6 +471,114 @@ textarea.error {
   padding-left: 43px;
 }
 
+/*-----------------------------------------------------------------------------
+ *           PROFILE            
+ *---------------------------------------------------------------------------*/
+.main-content-not-logged-in .sidebar #block-views-users-block-user-photo > .content {
+  border: none;
+  padding: 0;
+}
+
+.main-content-not-logged-in .sidebar #block-views-users-block-user-photo > .content img {
+  height: auto;
+  width: 100%;
+}
+
+.page-user fieldset {
+  border: none;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+#block-views-users-block-user-photo {
+  background: #f7f7f7;
+  box-shadow: 0 0 10px 0 #BDBDBD;
+  padding: 5px;
+}
+
+#block-views-users-block-user-photo h4 {
+  background: #f7f7f7;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 15px 10px 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-user fieldset .fieldset-title {
+  background: url('../img/user_accordion.png') #99c89c no-repeat 100% center;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1; 
+  text-transform: uppercase;
+}
+
+html.js fieldset.collapsed {
+  height: auto;
+}
+
+.page-user fieldset .fieldset-legend {
+  background: #99c89c;
+  border-radius: 5px 5px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1; 
+  padding: 30px 25px 25px;
+  text-transform: uppercase;
+}
+
+.page-user fieldset.collapsed .fieldset-title {
+  background: url('../img/user_accordion_active.png') #99c89c no-repeat 100% center;
+}
+
+.page-user-edit fieldset .fieldset-legend,
+.page-user-edit fieldset .fieldset-title {
+  padding: 15px 25px 10px;
+}
+
+.page-user fieldset .fieldset-title:hover {
+  text-decoration: none;
+}
+
+.page-user fieldset legend {
+  width: 100%;
+}
+
+.page-user fieldset .fieldset-wrapper {
+  background: #f7f7f7;
+  padding: 30px;
+}
+
+.page-user .fieldset-wrapper .field-label {
+  float: left; 
+  width: 40%;
+}
+
+.page-user .fieldset-wrapper .field-items {
+  float: left; 
+  width: 60%;
+}
+
+.page-user .fieldset-wrapper .field-items li {
+  list-style: none;
+}
+
+.page-user-edit fieldset fieldset .fieldset-legend {
+  padding: 13px;
+  font-size: 16px;
+}
+
+.page-user-edit fieldset fieldset .fieldset-wrapper {
+  border: 1px solid #99c89c;
+}
 
 /*-----------------------------------------------------------------------------
  *           MAIN STRUCTURE            
@@ -441,8 +593,20 @@ textarea.error {
   padding-bottom: 65px;
 }
 
+.relative {
+  position: relative;
+}
+
 .region-header-top {
   float: right;
+}
+
+#block-clock-clock {
+  color: #FFF;
+  float: left;
+  left: 0;
+  padding: 10px 0;
+  position: absolute;
 }
 
 .header-top {
@@ -577,7 +741,7 @@ textarea.error {
 
 .block h3 {
   background: #797a7d;
-  border-radius: 10px;
+  border-radius: 5px 5px 0 0;
   color: #FFF;
   line-height: 1; 
   padding: 13px 20px;
@@ -764,6 +928,19 @@ textarea.error {
 /*-----------------------------------------------------------------------------
  *           CAPACITY BUILDING 
  *---------------------------------------------------------------------------*/
+.capacity_logo {
+  display: block;
+  height: auto;
+  margin: 0 auto 25px;
+  width: 700px;
+}
+
+.notfront_capacity_logo {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
 .view-capacity-building img {
   height: auto;
   width: 100%;
@@ -862,12 +1039,31 @@ textarea.error {
   color: #000;
   float: right;
   font-size: 14px;
+  min-height: 56px;
   padding: 0 0 0 68px;
   width: 225px;
 }
 
 .block-views .view-publishes-and-resources-views h4 a {
   color: #000;
+}
+
+.publish .counter-link {
+  display: none;
+}
+
+.resource-document {
+  position: relative;
+}
+
+.counter-link {
+  background: rgb(135, 205, 222);
+  border-radius: 25px;
+  color: #FFF;
+  padding: 2px 5px;
+  position: absolute;
+  right: 20px;
+  top: 31px;
 }
 
 .view-resources .file,
@@ -975,7 +1171,9 @@ textarea.error {
 }
 
 .page-node .main-content,
+.page-search .main-content,
 .page-recursos .main-content,
+.page-actividades .main-content,
 .page-publicaciones .main-content {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
@@ -1176,6 +1374,7 @@ textarea.error {
   display: none;
 }
 
+.page-actividades .special-main-title,
 .page-publicaciones .special-main-title,
 .page-recursos .special-main-title {
   display: block;
@@ -1226,6 +1425,7 @@ textarea.error {
   display: none;
 }
 
+#cboxWrapper .field-name-field-publish-file .file > a,
 #cboxWrapper .field-name-field-resource-document-file .file > a {
   background: url('../img/bg_button.png') repeat-x #24a3b4;
   border-radius: 5px;
@@ -1238,6 +1438,22 @@ textarea.error {
   padding: 20px 47px;
   text-align: center;
   width: 50%;
+}
+
+#cboxWrapper .node-publish .field-name-field-publish-image {
+  float: left;
+  margin: 0;
+  width: 100%;
+}
+
+#cboxWrapper .node-publish img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+}
+
+#cboxWrapper .node-publish .file img {
+  display: none;
 }
 
 #cboxClose {
@@ -1318,6 +1534,10 @@ textarea.error {
   border: 1px solid #99c89c;
   margin: 0;
   padding: 35px 30px 35px 0px;
+}
+
+.search-results ol.search-results li {
+  margin-left: 3em;
 }
 
 .search-results .search-result {
@@ -1460,18 +1680,24 @@ textarea.error {
 }
 
 /*-----------------------------------------------------------------------------
- *           EVENTS AND COURSES            
+ *           ACTIVITIES            
  *---------------------------------------------------------------------------*/
 .block-views .view-activities-views {
   background: #e6e6e6;
   border-bottom: 5px solid #a4a4a4;
   margin-bottom: 30px;
-  padding: 20px 35px 20px;
+  padding: 20px 35px;
 }
 
+.node-type-activity .node,
 .content-top .block-views .view-activities-views {
   background: #FFF;
   border: 1px solid #F26B45;
+}
+
+.node-type-activity .node {
+  margin-bottom: 30px;
+  padding: 20px 35px;
 }
 
 .block-views .view-activities-views .views-row {
@@ -1491,15 +1717,66 @@ textarea.error {
   padding: 0 0 0 65px;
 }
 
+/* BLOCK NEXT ACTIVITIES*/
+.content-top .view-activities-views h4 a {
+  color: #f26b45 !important; 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-top .view-activities-views p {
+  font-family: 'Arial';
+  font-size: 16px;
+  text-align: left;
+}
+
+.next-activity-inner-container {
+  margin-right: 40px;
+}
+
+.next-activity-inner-container img {
+  margin-bottom: 10px;
+}
+
+.next-activity-inner-container .date-container {
+  background: #f2f2f2;
+  border-radius: 5px 5px 0 0;
+  border-top: 6px #e2001a solid;
+  padding: 23px;
+  width: 224px;
+}
+
+.node-type-activity .field-name-field-activity-date .date-display-single,
+.next-activity-inner-container .date-display-single {
+  color: #808080;
+  display: block;  
+  font-size: 25px !important;
+  font-weight: bold;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.node-type-activity .field-name-field-activity-date .date-display-single {
+  margin: 0 16%;
+}
+
 #block-views-13344de5441c4d38952f38cb573d38f8 h3 {
   background: #b0b81c;
 }
 
+.node-type-activity .main-title,
 #block-views-a1a0aa12cf8e7208cf774596c33303a5 h3,
 #block-views-f1948c3660201af294027381d83212d4 h3,
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb h3 {
   background: #f26b45;
   border-radius: 5px 5px 0 0;
+}
+
+.node-type-activity .main-title {
+  color: #FFF;
+  font-size: 22px;
+  padding: 13px 20px;
+  text-transform: none;
 }
 
 #block-views-f1948c3660201af294027381d83212d4 h3 a,
@@ -1518,6 +1795,77 @@ textarea.error {
 
 #block-views-b4277a93b7be59469ed54c2ce52dc9bb p {
   font-size: 13px;
+}
+
+/* PAGE ACTIVITIES */
+.page-actividades .main-title {
+  background: #808080;
+  border-radius: 8px 8px 0 0;
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 15px 40px;
+}
+
+.node-type-activity .inner-container .view-activities-views,
+.page-actividades .inner-container .view-activities-views {
+  background: #FFF; 
+  border: 1px solid #808080;
+  padding: 38px 30px 0;
+}
+
+.node-type-activity .inner-container .view-activities-views .views-row,
+.page-actividades .inner-container .view-activities-views .views-row {
+  margin-bottom: 50px;
+}
+
+.node-type-activity .inner-container .view-activities-views h4 a,
+.page-actividades .inner-container .view-activities-views h4 a {
+  color: #000;
+  font-size: 20px;
+}
+
+.node-type-activity .inner-container .view-activities-views h4 a:hover,
+.page-actividades .inner-container .view-activities-views h4 a:hover {
+  color: #f26b45;
+  text-decoration: none;
+}
+
+.date-inner-container {
+  background: #f48464;
+  margin-right: 15px;
+  padding: 13px 18px;
+}
+
+.date-inner-container .date-display-single {
+  color: #FFF;
+  display: block;
+  font-size: 43px;
+  line-height: 1;
+}
+
+.date-inner-container .date-display-single:nth-of-type(2) {
+  font-size: 26px;
+}
+
+.node-type-activity .field-name-field-activity-image {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.node-type-activity .field-name-field-activity-date {
+  background: #f2f2f2;
+  border-radius: 5px 5px 0 0;
+  border-top: 6px #e2001a solid;
+  clear: both;
+  display: block;
+  float: left;
+  margin-right: 40px;
+  padding: 23px;
+  width: 224px;
 }
 
 /*-----------------------------------------------------------------------------
