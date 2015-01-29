@@ -11,7 +11,7 @@
   <div class="container">
     <div class="row">
       <?php if ($page['header_top']): ?>
-        <div class="col-md-12">
+        <div class="col-sm-12">
         <?php print render($page['header_top']); ?>
         </div>
       <?php endif; ?>
@@ -21,7 +21,7 @@
 
 <div class="logo-wrapper container">
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-sm-9">
       <?php if ($logo): ?>
         <?php print l('<img src="' . $logo . '" alt="' . $site_name . '" />', '', array('attributes' => array('title' => $site_name, 'class' => 'logo' ), 'html' => TRUE)); ?>
         <h1>
@@ -35,7 +35,7 @@
         </h1>
       <?php endif; ?>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-3">
       <img class="notfront_capacity_logo" src="<?php print $base_path . $directory . '/img/notfront_image_logo.jpg'; ?>"/>
     </div>
   </div>
@@ -45,7 +45,7 @@
   <div class="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <?php print render($page['header']); ?>
         </div>
       </div>  
@@ -57,7 +57,7 @@
   <div class="header-bottom">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <?php print render($page['header_bottom']); ?>
         </div>
       </div>  
@@ -69,7 +69,7 @@
   <div class="highlighted">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <?php print render($page['highlighted']); ?>
         </div>
       </div>
@@ -81,7 +81,7 @@
   <div class="before-content">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <?php print render($page['before_content']); ?>
         </div>
        </div>
@@ -94,7 +94,7 @@
     <div class="content-top">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-sm-12">
             <?php print render($page['content_top']); ?>
           </div>
         </div>
@@ -104,18 +104,18 @@
   <div class="container">
     <div class="row">
       <?php if ($page['sidebar_left']): ?>
-      <div class="sidebar col-md-3">
+      <div class="sidebar col-sm-3">
         <?php print render($page['sidebar_left']); ?>
       </div>
       <?php endif; ?>
 
         <?php
           if ($page['sidebar_left'] && $page['sidebar_right']) {
-            print "<div class='col-md-6'>";
+            print "<div class='col-sm-6'>";
           } elseif ($page['sidebar_left'] || $page['sidebar_right']) {
-            print "<div class='col-md-9'>";
+            print "<div class='col-sm-9'>";
           } else {
-            print "<div class='col-md-12'>";
+            print "<div class='col-sm-12'>";
           }
         ?>
         <?php if ($page['content']): ?>
@@ -139,7 +139,7 @@
       </div>
 
       <?php if ($page['sidebar_right']): ?>
-      <div class="sidebar col-md-3">
+      <div class="sidebar col-sm-3">
         <?php print render($page['sidebar_right']); ?>
       </div>
       <?php endif; ?>
@@ -151,7 +151,7 @@
   <div class="after-content">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-sm-12">
           <?php print render($page['after_content']); ?>
         </div>
        </div>
@@ -164,7 +164,7 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-sm-12">
             <?php print render($page['footer']); ?>
           </div>
         </div>

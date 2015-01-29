@@ -1,0 +1,246 @@
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .node-type-webform form .form-item label,
+  .node-type-webform .form-select, .node-type-webform .form-text {
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  /* USER LOGIN */
+  .logo img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .notfront_capacity_logo {
+    margin: 6% auto 0;
+  }
+
+  .logo-wrapper {
+    padding-bottom: 30px;  
+  }
+
+  #user-login {
+    box-shadow: none;
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .capacity_logo {
+    width: 100%;
+  }
+
+  .block-views .view-publishes-and-resources-views h4 {
+    width: 100%;
+  }
+
+  #block-clock-clock {
+    display: none;
+  }
+
+  .region-header-top {
+    float: none;
+  }
+
+  .footer #block-menu-menu-footer-menu li {
+    border: none;
+    float: none;
+    width: 100%;
+  }
+
+  .footer #block-search-form,
+  .footer #block-menu-menu-footer-menu {
+    float: none;
+    width: auto;
+  }
+
+  .footer #block-search-form {
+    margin-top: 10px; 
+  }
+
+  #block-bean-aula-virtual {
+    float: right;
+  }
+
+  .main-content {
+    padding: 15px !important;
+  }
+
+  .node-type-webform .node form {
+    padding: 2% 5% 0;
+  }
+
+  .content-top .block-views .view-activities-views,
+  #block-views-resources-block-resources .view-resources,
+  .node-type-activity .inner-container .view-activities-views, 
+  .page-recursos .inner-container .view-resources .item-list,
+  .page-actividades .inner-container .view-activities-views {
+    padding: 10% 4% 0;
+  }
+
+  .node-type-activity .nodei {
+    padding: 2% 4%;
+  }
+
+  .main-content .view-display-id-page_activities_views h4 {
+    padding: 0;
+  }
+
+  #block-views-resources-block-resources .view-resources li {
+    width: 50%;
+  }
+
+  .page-publicaciones .inner-container .view-publish-views .views-row {
+    height: auto;
+    margin-bottom: 10%;
+  }
+
+  .view-publish-views .views-row h4,
+  .inner-container .view-publish-views h3 {
+    padding-top: 0;
+  }
+
+  .view-publish-views .views-row h4 a,
+  .inner-container .view-publish-views h3 a {
+    text-align: left;
+  }
+
+  .view-publish-views .views-row a img {
+    float: left;
+    margin-right: 5%;
+  }
+
+  .view-publish-views .views-row {
+    margin-bottom: 10%;
+  }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .page-recursos .inner-container .view-resources .file, 
+  .page-recursos .inner-container .view-resources .link-icon, 
+  .page-recursos .inner-container .view-resources .embed-icon {
+    width: 50%;
+  }
+
+  .page-recursos .main-title, .page-publicaciones .main-title, #block-views-resources-block-resources h3, #block-views-cf46b404572d9fa9e07f7d5ec92b99e0 h3, #views-exposed-form-publish-views-page .views-exposed-widget > label, #block-views-exp-resources-page .views-exposed-widget > label {
+    padding: 6% 16%;
+  }
+
+  .page-node .field-name-field-publish-image {
+    float: none;
+    margin: 0 0 10%;
+  }
+
+  .page-node .field-name-field-publish-image img {
+    height: auto;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width : 430px) {
+  .logo img {
+    width: 100%;
+  }
+
+  #block-bean-aula-virtual {
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+
+  #block-views-users-block-user-information {
+    float: right;
+  }
+
+  .block-views .view-activities-views .views-row {
+    border-bottom: 1px dotted #CCC;
+  }
+
+  .block-views .view-activities-views .views-row.views-row-last {
+    border: none; 
+  }
+
+  .block-views .view-activities-views .views-row > .views-field-nothing {
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  .block-views .view-activities-views .views-row p,
+  .block-views .view-activities-views .views-row h4 {
+    padding: 0;
+  }
+
+  .block-views .view-activities-views,
+  .block-views .view-publishes-and-resources-views {
+    padding: 20px 5px;
+  }
+
+  .next-activity-inner-container,
+  .node-type-activity .field-name-field-activity-image {
+    margin: 0 0 5%;
+    width: 100%;
+  }
+
+  .next-activity-inner-container img,
+  .next-activity-inner-container .date-container,
+  .node-type-activity .field-name-field-activity-image img,
+  .node-type-activity .field-name-field-activity-date {
+    height: auto;
+    width: 100%;
+  }
+
+  .node-type-activity .field-name-field-activity-date {
+    margin: 0 0 5%;
+  }
+
+  .pager {
+    margin: 5% 4% !important;
+  }
+
+  .pager li {
+    margin-bottom: 3%;
+  }
+
+  #block-views-resources-block-resources .view-resources li {
+    border-bottom: 1px dotted #CCC;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .page-recursos .inner-container .view-resources .file, 
+  .page-recursos .inner-container .view-resources .link-icon, 
+  .page-recursos .inner-container .view-resources .embed-icon {
+    width: 100%;
+    float: none;
+    margin-bottom: 5%;
+  }
+
+  .page-recursos .inner-container .view-resources h4 {
+    padding: 0; 
+  }
+
+  .node-type-resource-document .field-name-field-resource-document-file .file > a {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  .block-views .view-publishes-and-resources-views .views-row {
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
