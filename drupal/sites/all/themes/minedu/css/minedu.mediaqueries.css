@@ -230,6 +230,11 @@
     padding: 0; 
   }
 
+  .field-name-field-resource-link-include .file > a,
+  .field-name-field-resource-embed-include .file > a,
+  .field-name-field-resource-document-include .file > a,
+  .field-name-field-resource-audio-include .file > a,
+  .field-name-field-resource-video-include .file > a,
   .node-type-resource-document .field-name-field-resource-document-file .file > a {
     font-size: 16px;
     width: 100%;

@@ -1530,6 +1530,11 @@ html.js fieldset.collapsed {
   padding: 4% 1% !important;
 }
 
+.field-name-field-resource-embed-include,
+.field-name-field-resource-link-include,
+.field-name-field-resource-video-include,
+.field-name-field-resource-audio-include,
+.field-name-field-resource-document-include,
 .node-type-resource-document .field-name-field-resource-document-file,
 #cboxWrapper .field-name-field-resource-document-file {
   background: #000;
@@ -1541,11 +1546,21 @@ html.js fieldset.collapsed {
   margin: 0;
 }
 
+.field-name-field-resource-link-include .file > img,
+.field-name-field-resource-document-include .file > img,
+.field-name-field-resource-embed-include .file > img,
+.field-name-field-resource-audio-include .file > img,
+.field-name-field-resource-video-include .file > img,
 .node-type-resource-document .field-name-field-resource-document-file .file > img,
 #cboxWrapper .field-name-field-resource-document-file .file > img {
   display: none;
 }
 
+.field-name-field-resource-link-include .file > a,
+.field-name-field-resource-embed-include .file > a,
+.field-name-field-resource-document-include .file > a,
+.field-name-field-resource-audio-include .file > a,
+.field-name-field-resource-video-include .file > a,
 #cboxWrapper .field-name-field-publish-file .file > a,
 .node-type-resource-document .field-name-field-resource-document-file .file > a,
 #cboxWrapper .field-name-field-resource-document-file .file > a {
@@ -1562,6 +1577,13 @@ html.js fieldset.collapsed {
   width: 50%;
 }
 
+.field-name-field-resource-link-include .file > a,
+.field-name-field-resource-embed-include .file > a,
+.field-name-field-resource-document-include .file > a,
+.field-name-field-resource-audio-include .file > a,
+.field-name-field-resource-video-include .file > a {
+  margin: 0 auto 1%;
+}
 #cboxWrapper .node-publish .field-name-field-publish-image {
   float: left;
   margin: 0;
