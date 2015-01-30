@@ -1822,6 +1822,7 @@ html.js fieldset.collapsed {
   display: block;
 }
 
+#block-menu-menu-sitemap-menu,
 #site-map {
   border: 1px solid #58585a;
 }
@@ -1830,11 +1831,13 @@ html.js fieldset.collapsed {
   margin-bottom: 0;
 }
 
+#block-menu-menu-sitemap-menu .menu,
 #site-map .site-map-box ul {
   padding-left: 0;
   margin-left: 0;
 }
 
+#block-menu-menu-sitemap-menu .menu a,
 #site-map .site-map-box ul a {
   background: #f9f9f9;
   border-bottom: 3px solid #FFF;
@@ -1845,10 +1848,12 @@ html.js fieldset.collapsed {
   padding-top: 15px;
 }
 
+#block-menu-menu-sitemap-menu li,
 #site-map li {
   list-style: none;
 }
 
+#block-menu-menu-sitemap-menu a,
 #site-map a {
   color: #000;
 }
