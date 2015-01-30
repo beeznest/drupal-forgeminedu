@@ -462,7 +462,7 @@ textarea.error {
 .main-content-not-logged-in .block > .content { 
   background: #fafafa;
   border-bottom: 2px solid #cfcfcf;
-  padding: 10px 43px 28px;
+  padding: 1% 6% 2.8%;
 }
 
 .main-content-not-logged-in .block h3 { 
@@ -471,8 +471,8 @@ textarea.error {
   color: #000;
   font-size: 25px;
   font-weight: bold;
-  padding-top: 28px;
-  padding-left: 43px;
+  padding-top: 2.8%;
+  padding-left: 6%;
 }
 
 /*-----------------------------------------------------------------------------
@@ -545,7 +545,7 @@ html.js fieldset.collapsed {
 
 .page-user-edit fieldset .fieldset-legend,
 .page-user-edit fieldset .fieldset-title {
-  padding: 15px 25px 10px;
+  padding: 1.5% 2.5% 1%;
 }
 
 .page-user fieldset .fieldset-title:hover {
@@ -558,7 +558,7 @@ html.js fieldset.collapsed {
 
 .page-user fieldset .fieldset-wrapper {
   background: #f7f7f7;
-  padding: 30px;
+  padding: 2.5%;
 }
 
 .page-user .fieldset-wrapper .field-label {
@@ -586,7 +586,11 @@ html.js fieldset.collapsed {
 
 .page-user-edit fieldset fieldset .fieldset-wrapper {
   border: 1px solid #99c89c;
-  padding: 0 15px 10px;
+  padding: 0 1.5% 1%;
+}
+
+.container-inline-date .date-padding {
+  padding: 1%;
 }
 
 .form-item-duser .description,
@@ -616,7 +620,7 @@ html.js fieldset.collapsed {
 #user-profile-form > div > .form-type-textfield {
   background: #f7f7f7;
   margin-bottom: 20px;
-  padding: 30px 60px;
+  padding: 3% 5%;
 }
 
 .page-user-edit form label {
@@ -656,6 +660,11 @@ html.js fieldset.collapsed {
 .page-user-edit .user-picture {
   float: left;
   margin-right: 30px;
+}
+
+.page-user-edit .element-invisible {
+  padding: 0;
+  width: auto;
 }
 
 /*-----------------------------------------------------------------------------
@@ -1537,8 +1546,8 @@ html.js fieldset.collapsed {
 .field-name-field-resource-document-include,
 .node-type-resource-document .field-name-field-resource-document-file,
 #cboxWrapper .field-name-field-resource-document-file {
-  background: #000;
-  margin: 0 5%;
+  background: #6F6F6F;
+  margin: 1% 5% 0;
   padding: 42px;
 }
 

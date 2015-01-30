@@ -122,6 +122,47 @@
     margin-bottom: 10%;
   }
 
+  .page-user .fieldset-wrapper .field-name-field-user-job-title .field-label,
+  .page-user .fieldset-wrapper .field-name-field-user-department .field-label {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+  .page-user-edit form label {
+    width: 100%;
+  }
+
+  .confirm-parent, 
+  .password-parent {
+    width: 100% !important;
+  }
+
+  .page-user-edit .form-text, 
+  .page-user-edit .form-select, 
+  .page-user-edit .form-textarea {
+    width: 100% !important;
+  }
+
+  .page-user-edit .form-item input.element-invisible {
+    padding: 0;
+    width: auto !important;
+  }
+
+  .password-strength {
+    width: 17em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  div.form-item div.password-suggestions {
+    width: 100%;
+  }
+
+  .page-user-edit .form-submit {
+    width: 30%;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -149,6 +190,20 @@
 }
 
 @media only screen and (max-width : 430px) {
+  .chosen-container-single .chosen-single span {
+    white-space: normal;
+  }
+
+  .page-user-edit form label {
+    display: block;
+    width: auto !important;
+  }
+
+  .page-user-edit .form-item input.element-invisible {
+    padding: 0;
+    width: auto !important;
+  }
+
   .logo img {
     width: 100%;
   }
@@ -239,13 +294,47 @@
     font-size: 16px;
     width: 100%;
   }
+
+  .footer .region-footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width : 398px) {
+  .page-user-edit .user-picture {
+    margin-right: 0;
+  }
+
+  .page-user-edit .user-picture img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  #edit-picture-upload {
+    width: 100%;
+  }
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
+  #user-login .form-submit {
+    width: 100%;
+  } 
+
+  .password-strength,
+  .page-user .fieldset-wrapper .field-label,
+  .page-user .fieldset-wrapper .field-items {
+    width: 100%;
+  }
+
   .block-views .view-publishes-and-resources-views .views-row {
     height: auto;
     margin-bottom: 20px;
+  }
+
+  .page-user fieldset .fieldset-legend {
+    font-size: 16px;
   }
 }
 
