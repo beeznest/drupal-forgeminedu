@@ -9,8 +9,10 @@
         $('.main-content .resource-document .file a:nth-child(3)').addClass('counter-link');
 
         $( ".main-content .file a" ).each(function( index ) {
-          if (!$(this).hasClass('counter-link')) {
-            $(this).attr( "href", "#");
+          if (!$('body').hasClass('node-type-publish')) {
+            if (!$(this).hasClass('counter-link')) {
+              $(this).attr( "href", "#");
+            };
           };
         });
 
