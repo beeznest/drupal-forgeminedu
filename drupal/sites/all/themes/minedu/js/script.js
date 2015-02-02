@@ -10,8 +10,10 @@
 
         $( ".main-content .file a" ).each(function( index ) {
           if (!$('body').hasClass('node-type-publish')) {
-            if (!$(this).hasClass('counter-link')) {
-              $(this).attr( "href", "#");
+            if (!$('body').hasClass('node-type-resource-document')) {
+              if (!$(this).hasClass('counter-link')) {
+                $(this).attr( "href", "#");
+              };
             };
           };
         });
