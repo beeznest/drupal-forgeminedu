@@ -2161,6 +2161,31 @@ html.js fieldset.collapsed {
   text-align: center;
 }
 
+.page-programas .cb-program-link,
+.page-especializaciones .cb-courses-link,
+.page-capacitaciones .cb-capacity-link,
+.page-cursos-practicos .cb-speciality-link {
+  text-indent: -9999px;
+  height: 7px;
+  padding: 0;
+}
+
+.cb-program-link {
+  background: #653074; 
+}
+
+.cb-speciality-link {
+  background: #f26b45; 
+}
+
+.cb-capacity-link {
+  background: #94c4cc;
+}
+
+.cb-courses-link {
+  background: #b0b81c; 
+}
+
 /*-----------------------------------------------------------------------------
  *           SUB-MENUS            
  *---------------------------------------------------------------------------*/
