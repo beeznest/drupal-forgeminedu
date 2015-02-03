@@ -2135,6 +2135,10 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           CAPACITY BUILDING            
  *---------------------------------------------------------------------------*/
+#block-menu-menu-cb-programs > .content ul {
+  margin-bottom: 45px;
+}
+
 #block-menu-menu-cb-programs > .content ul,
 #block-menu-menu-capacity-building > .content ul {
   margin-left: 0;
@@ -2160,6 +2164,10 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           SUB-MENUS            
  *---------------------------------------------------------------------------*/
+#block-menu-menu-cb-programs {
+  margin-bottom: 40px;
+}
+
 #block-menu-menu-cb-programs > .content li {
   display: block;
   float: left;
@@ -2169,7 +2177,7 @@ html.js fieldset.collapsed {
 }
 
 #block-menu-menu-cb-programs > .content li a {
-  background: #653074 url('../img/bg_programs_menu_icon.png') no-repeat bottom center; 
+  background: #9b49b2; 
   color: #FFF;
   display: block;
   font-size: 20px;
@@ -2180,5 +2188,11 @@ html.js fieldset.collapsed {
 }
 
 #block-menu-menu-cb-programs > .content li span {
-  background: url('../img/bg_programs_menu_icon.png') no-repeat bottom center; 
+  background: url('../img/bg_programs_menu_icon.png') no-repeat bottom center;
+  bottom: -8px;
+  display: block;
+  height: 9px;
+  left: 40.5%;
+  position: absolute;
+  width: 100px;
 }
