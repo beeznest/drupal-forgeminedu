@@ -2270,3 +2270,16 @@ html.js fieldset.collapsed {
 #block-menu-menu-cb-practical-courses > .content li span {
   background: url('../img/bg_courses_menu_icon.png') no-repeat bottom center;
 }
+
+.page-programas .view-chamilo-courses .views-row {
+  border: 1px solid #a8a8aa;
+  margin: 0.5% 2%;
+  padding: 1%;
+}
+
+.page-programas .view-chamilo-courses .views-row h4 {
+  color: #653074;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1.6% 0% 1.3%;
+}
