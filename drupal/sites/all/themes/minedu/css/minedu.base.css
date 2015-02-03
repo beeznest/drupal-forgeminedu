@@ -1259,7 +1259,6 @@ html.js fieldset.collapsed {
 }
 
 .page-node .main-content,
-.page-programas .main-content,
 .page-search .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
@@ -1267,6 +1266,12 @@ html.js fieldset.collapsed {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
   padding: 50px 46px;
+}
+
+.page-programas .main-content {
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px #A09898;
+  padding: 0 0 50px;
 }
   
 #block-views-exp-resources-page,
@@ -2130,6 +2135,7 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           CAPACITY BUILDING            
  *---------------------------------------------------------------------------*/
+#block-menu-menu-cb-programs > .content ul,
 #block-menu-menu-capacity-building > .content ul {
   margin-left: 0;
 }
@@ -2138,8 +2144,8 @@ html.js fieldset.collapsed {
   display: block;
   float: left;
   list-style: none;
-  margin: 0 0.5%;
-  width: 24%;
+  margin: 0 0.09%;
+  width: 24.8%;
 }
 
 #block-menu-menu-capacity-building > .content li a {
@@ -2149,4 +2155,25 @@ html.js fieldset.collapsed {
   font-size: 18px;
   padding: 4.5%;
   text-align: center;
+}
+
+/*-----------------------------------------------------------------------------
+ *           SUB-MENUS            
+ *---------------------------------------------------------------------------*/
+#block-menu-menu-cb-programs > .content li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 0.5%;
+  width: 49%;
+}
+
+#block-menu-menu-cb-programs > .content li a {
+  background: #653074 url('../img/bg_programs_menu_icon.png') no-repeat bottom center; 
+  color: #FFF;
+  display: block;
+  font-size: 20px;
+  padding: 4%;
+  text-align: center;
+  text-transform: uppercase;
 }
