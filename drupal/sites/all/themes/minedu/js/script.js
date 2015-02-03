@@ -27,6 +27,9 @@
           }
           $('.user-option').slideToggle(250);
         });
+
+        //
+        $('.cb-inner-menu a.active').after('<span></span>');
       });
     }  
   }

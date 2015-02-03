@@ -2173,7 +2173,12 @@ html.js fieldset.collapsed {
   color: #FFF;
   display: block;
   font-size: 20px;
-  padding: 4%;
+  line-height: 1;
+  padding: 2.5%;
   text-align: center;
   text-transform: uppercase;
+}
+
+#block-menu-menu-cb-programs > .content li span {
+  background: url('../img/bg_programs_menu_icon.png') no-repeat bottom center; 
 }
