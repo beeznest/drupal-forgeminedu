@@ -4,8 +4,19 @@
       $(document).ready(function() {
 
         //Add Class to counter link
-        $('.publish .file a:last-of-type').addClass('counter-link');
-        $('.resource-document .file a:last-of-type').addClass('counter-link');
+        $('.main-content .publish .file a:nth-child(3)').addClass('counter-link');
+        $('.node-type-resource-document .file a:nth-child(3)').addClass('counter-link');
+        $('.main-content .resource-document .file a:nth-child(3)').addClass('counter-link');
+
+        $( ".main-content .file a" ).each(function( index ) {
+          if (!$('body').hasClass('node-type-publish')) {
+            if (!$('body').hasClass('node-type-resource-document')) {
+              if (!$(this).hasClass('counter-link')) {
+                $(this).attr( "href", "#");
+              };
+            };
+          };
+        });
 
         // Accordion effect to blocks in sidebar 
         $('.user-button-option').unbind('click');
@@ -16,6 +27,9 @@
           }
           $('.user-option').slideToggle(250);
         });
+
+        //
+        $('.cb-inner-menu a.active').after('<span></span>');
       });
     }  
   }
