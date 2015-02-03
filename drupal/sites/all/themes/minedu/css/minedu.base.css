@@ -90,6 +90,8 @@ a:active {
 .pager:after,
 .clearfix:after,
 .clearfix:before,
+.views-row:after,
+.views-row:before,
 .fieldset-wrapper:after,
 .fieldset-wrapper:before,
 .fieldset-wrapper .field:after, 
@@ -101,6 +103,7 @@ a:active {
 .form:after,
 .pager:after,
 .clearfix:after,
+.views-row:after,
 .fieldset-wrapper:after,
 .fieldset-wrapper .field:after {
   clear: both;
@@ -109,6 +112,7 @@ a:active {
 .form,
 .pager,
 .clearfix,
+.views-row,
 .fieldset-wrapper,
 .fieldset-wrapper .field {
   *zoom: 1;
@@ -2167,7 +2171,7 @@ html.js fieldset.collapsed {
 .page-cursos-practicos .cb-speciality-link {
   text-indent: -9999px;
   height: 7px;
-  padding: 0;
+  padding: 0 !important;
 }
 
 .cb-program-link {
@@ -2282,4 +2286,32 @@ html.js fieldset.collapsed {
   font-size: 20px;
   font-weight: bold;
   padding: 1.6% 0% 1.3%;
+}
+
+.page-programas .view-chamilo-courses .views-row > div {
+  background: #f9f9f9;
+  padding: 1%;
+  margin: 0.5%;
+  width: 15.65%;
+}
+
+.page-programas .view-chamilo-courses .views-row > div em {
+  color: #4d4c4e;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.page-programas .view-chamilo-courses .views-row > div p {
+  color: #4d4d4d;
+  font-family: 'Arial';
+  font-size: 16px;
+}
+
+#ajax-link {
+  clear: both;
+  width: auto !important;
+}
+
+.session-detail {
+  padding: 0 !important;
 }
