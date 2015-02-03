@@ -2174,20 +2174,20 @@ html.js fieldset.collapsed {
   padding: 0 !important;
 }
 
-.cb-program-link {
-  background: #653074; 
+.cb-program-link a {
+  background: #653074 !important; 
 }
 
 .cb-speciality-link {
-  background: #f26b45; 
+  background: #f26b45 !important; 
 }
 
 .cb-capacity-link {
-  background: #94c4cc;
+  background: #94c4cc !important;
 }
 
 .cb-courses-link {
-  background: #b0b81c; 
+  background: #b0b81c !important; 
 }
 
 /*-----------------------------------------------------------------------------
