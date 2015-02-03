@@ -2164,11 +2164,15 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           SUB-MENUS            
  *---------------------------------------------------------------------------*/
+#block-menu-menu-desarrollo-de-capacidades-, 
+#block-menu-menu-cb-practical-courses,
 #block-menu-menu-cb-speciality,
 #block-menu-menu-cb-programs {
   margin-bottom: 40px;
 }
 
+#block-menu-menu-desarrollo-de-capacidades- > .content li, 
+#block-menu-menu-cb-practical-courses > .content li,
 #block-menu-menu-cb-speciality > .content li,
 #block-menu-menu-cb-programs > .content li {
   display: block;
@@ -2179,6 +2183,8 @@ html.js fieldset.collapsed {
   width: 49%;
 }
 
+#block-menu-menu-desarrollo-de-capacidades- > .content li a, 
+#block-menu-menu-cb-practical-courses > .content li a,
 #block-menu-menu-cb-speciality > .content li a,
 #block-menu-menu-cb-programs > .content li a {
   color: #FFF;
@@ -2190,6 +2196,9 @@ html.js fieldset.collapsed {
   text-transform: uppercase;
 }
 
+#block-menu-menu-desarrollo-de-capacidades- > .content li span, 
+#block-menu-menu-cb-practical-courses > .content li span,
+#block-menu-menu-cb-speciality > .content li span,
 #block-menu-menu-cb-programs > .content li span {
   bottom: -8px;
   display: block;
