@@ -2278,20 +2278,27 @@ html.js fieldset.collapsed {
 .page-programas .view-chamilo-courses .views-row {
   border: 1px solid #a8a8aa;
   margin: 0.5% 2%;
-  padding: 1%;
+  padding: 1% 1% 3%;
+  position: relative;
 }
 
 .page-programas .view-chamilo-courses .views-row h4 {
   color: #653074;
   font-size: 20px;
   font-weight: bold;
-  padding: 1.6% 0% 1.3%;
+  padding: 1.6% 0% 0.3%;
+}
+
+.page-programas .view-chamilo-courses .views-row > p {
+  color: #58585a;
+  font-family: 'Arial';
+  font-size: 16px;
 }
 
 .page-programas .view-chamilo-courses .views-row > div {
   background: #f9f9f9;
-  padding: 1%;
-  margin: 0.5%;
+  margin: 0.5% 1% 0.5% 0;
+  padding: 0.5% 1% 0.05%;
   width: 15.65%;
 }
 
@@ -2308,8 +2315,23 @@ html.js fieldset.collapsed {
 }
 
 #ajax-link {
+  bottom: 0;
   clear: both;
+  left: 0;
+  margin: 0 !important;
+  padding: 0;
+  position: absolute;
   width: auto !important;
+}
+
+#ajax-link a {
+  background: #c799d5;
+  color: #FFF;
+  border-radius: 0 7px 0 0;
+  display: block;
+  font-size: 19px;
+  line-height: 1;
+  padding: 4% 50px;
 }
 
 .session-detail {
