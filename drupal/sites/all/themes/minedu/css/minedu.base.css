@@ -1259,6 +1259,7 @@ html.js fieldset.collapsed {
 }
 
 .page-node .main-content,
+.page-programas .main-content,
 .page-search .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
@@ -2124,4 +2125,28 @@ html.js fieldset.collapsed {
   text-indent: -9999px;
   top: 0;
   width: 35px;
+}
+
+/*-----------------------------------------------------------------------------
+ *           CAPACITY BUILDING            
+ *---------------------------------------------------------------------------*/
+#block-menu-menu-capacity-building > .content ul {
+  margin-left: 0;
+}
+
+#block-menu-menu-capacity-building > .content li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 0.5%;
+  width: 24%;
+}
+
+#block-menu-menu-capacity-building > .content li a {
+  background: #653074; 
+  color: #FFF;
+  display: block;
+  font-size: 18px;
+  padding: 4.5%;
+  text-align: center;
 }
