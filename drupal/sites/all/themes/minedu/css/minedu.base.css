@@ -831,7 +831,7 @@ html.js fieldset.collapsed {
 }
 
 .block h3 {
-  background: #797a7d;
+  background: #99C89C;
   border-radius: 5px 5px 0 0;
   color: #FFF;
   line-height: 1; 
@@ -2345,4 +2345,40 @@ html.js fieldset.collapsed {
 
 .session-detail {
   padding: 0 !important;
+}
+
+/* POLL AND FORUM */
+.block-forum .content {
+  background: whiteSmoke;
+  margin-bottom: 5%;
+  padding: 7%;
+}
+
+.block-forum .item-list ul {
+  margin: 0;
+}
+
+.block-forum .item-list li {
+  list-style: none;
+}
+
+.block-forum .item-list li a {
+  border-bottom: 1px dotted #CCC;
+  color: #707070;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4%;
+  padding: 4%;
+}
+
+.block .more-link a {
+  background: #99C89C;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  line-height: 1;
+  margin: 10% auto 0;
+  padding: 3%;
+  text-align: center;
+  width: 50%;
 }
