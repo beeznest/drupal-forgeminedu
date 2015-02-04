@@ -2353,7 +2353,7 @@ html.js fieldset.collapsed {
 .block-poll .content,
 .block-forum .content {
   background: whiteSmoke;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   padding: 7%;
 }
 
@@ -2416,9 +2416,10 @@ html.js fieldset.collapsed {
   font-family: 'Arial';
   font-size: 16px;
   height: auto;
-  padding: 3px 0;
-  width: 50%;
-  margin-top: 10%;
+  margin-left: 5%;
+  margin-top: 10px;
+  padding: 8px 22px;
+  width: auto;
 }
 
 .block-poll ul.links {
@@ -2445,12 +2446,14 @@ html.js fieldset.collapsed {
 }
 
 .page-poll .inner-container li {
+  border: 1px solid #99C89C;
   color: #6E6E6E;
   display: block;
-  font-family: Arial;
-  font-size: 16px;
+  font-family: "Arial";
+  font-size: 14px;
   list-style: none;
   margin-bottom: 1.5%;
+  padding: 2%;
 }
 
 .page-poll .inner-container li a {
@@ -2467,10 +2470,17 @@ html.js fieldset.collapsed {
   font-family: 'Arial';
   font-size: 16px;
   margin-bottom: 2%;
+  margin-top: 0.5%;
 }
 
 .poll .total {
   font-size: 18px;
   margin-top: 3%;
   color: #99C89C;
+}
+
+.block-poll .poll .total {
+  color: #4C4C4C;
+  margin-bottom: 4%;
+  margin-top: 6%;
 }
