@@ -84,10 +84,14 @@ a:active {
 }
 
 /* CLEARFIX */
+form:before,
+form:after,
 .form:before,
 .form:after,
 .pager:before,
 .pager:after,
+.links:before,
+.links:after,
 .clearfix:after,
 .clearfix:before,
 .views-row:after,
@@ -100,8 +104,10 @@ a:active {
   display: table;
 }
 
+form:after,
 .form:after,
 .pager:after,
+.links:after,
 .clearfix:after,
 .views-row:after,
 .fieldset-wrapper:after,
@@ -109,8 +115,10 @@ a:active {
   clear: both;
 }
 
+form,
 .form,
 .pager,
+.links,
 .clearfix,
 .views-row,
 .fieldset-wrapper,
@@ -258,14 +266,23 @@ caption {
   padding: 5px 8px;
 }
 
+th a {
+  color: #FFF;
+}
+
+th a:hover {
+  color: #CACACA;
+}
+
 caption {
   background: #000;
   color: #FFF;
   border-bottom: 3px solid #3A3A3A;
 }
 
-th {
-  background: #616161;
+th,
+thead > tr > th.active {
+  background: #616161 !important;
   color: #FFF;
 }
 
@@ -861,6 +878,7 @@ html.js fieldset.collapsed {
   border-radius: 10px 10px 0 0;
 }
 
+.page-comment h3,
 .page-node.not-front .node h3 {
   background: #99c89c;
   border-radius: 8px 8px 0 0;
@@ -892,6 +910,7 @@ html.js fieldset.collapsed {
   text-align: right;
 }
 
+.comment-form .form-text,
 .node-type-webform .form-select, 
 .node-type-webform .form-textarea,
 .node-type-webform .form-text {
@@ -1262,9 +1281,11 @@ html.js fieldset.collapsed {
   padding: 0;
 }
 
-.page-poll .main-content,
 .page-node .main-content,
+.page-poll .main-content,
+.page-forum .main-content,
 .page-search .main-content,
+.page-comment .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
 .page-publicaciones .main-content {
@@ -1488,6 +1509,8 @@ html.js fieldset.collapsed {
 }
 
 .page-poll .main-title,
+.page-forum .main-title,
+.page-comment .main-title,
 .page-user-edit .special-main-title,
 .page-actividades .special-main-title,
 .page-publicaciones .special-main-title,
@@ -2408,11 +2431,15 @@ html.js fieldset.collapsed {
   background-color: #777;
 }
 
+.comment .links li a,
+.node-type-forum .links li a,
+#comment-form #edit-actions .form-submit,
 .poll .form-submit {
   background: url('../img/bg_button.png') repeat-x #24a3b4;
   border: 1px solid #24a3b4;
   border-radius: 5px;
   color: #FFF;
+  float: left;
   font-family: 'Arial';
   font-size: 16px;
   height: auto;
@@ -2420,6 +2447,12 @@ html.js fieldset.collapsed {
   margin-top: 10px;
   padding: 8px 22px;
   width: auto;
+}
+
+.comment .links li a,
+.node-type-forum .links li a,
+.poll #edit-actions .form-submit {
+  margin-left: 0;
 }
 
 .block-poll ul.links {
@@ -2483,4 +2516,162 @@ html.js fieldset.collapsed {
   color: #4C4C4C;
   margin-bottom: 4%;
   margin-top: 6%;
+}
+
+/*-----------------------------------------------------------------------------
+ *           JUST FORUM             
+ *---------------------------------------------------------------------------*/
+.node-type-forum .user-picture {
+  float: left;
+  height: auto;
+  margin: 0 1% 1% 0;
+  width: 15%;
+}
+
+.node-type-forum .user-picture a {
+  display: block;
+}
+
+.node-type-forum .user-picture img {
+  height: auto;
+  width: 100%;
+}
+
+.comment .submitted,
+.node-type-forum .submitted {
+  color: #767676;
+  font-family: "Arial";
+  font-size: 13px;
+}
+
+.field-name-taxonomy-forums {
+  clear: both;
+}
+
+.field-name-taxonomy-forums a {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  color: #D8D8D8;
+  display: block;
+  float: right;
+  margin-bottom: 5%;
+  padding: 0.5% 2%;
+  width: auto;
+}
+
+.comment .links,
+.node-type-forum .links {
+  clear: both;
+  margin-left: 0;
+}
+
+.comment .links li,
+.node-type-forum .links li {
+  list-style: none;
+}
+
+.comment .links li a,
+.node-type-forum .links li a {
+  display: block;
+}
+
+/* COMMENTS */
+#comments h3 a {
+  color: #FFF;
+}
+
+.comment {
+  margin-top: 5%;
+}
+
+.comment,
+#comments .comment {
+  background: #F5F5F5;
+  border-radius: 10px 12px 0 0;
+  padding-bottom: 4%;
+}
+
+.comment .submitted,
+#comments .submitted {
+  padding: 1% 2% 0;
+}
+
+.comment .content,
+#comments .comment .content {
+  padding: 0 2%;
+}
+
+.comment .links,
+#comments .comment .links {
+  padding: 0 2%;
+}
+
+.comment .links a {
+  font-size: 12px !important;
+  line-height: 1;
+  margin-right: 1%;
+  padding: 0.5% !important;
+}
+
+.title.comment-form {
+  font-size: 20px;
+  margin-top: 5%;
+  padding-left: 0;
+}
+
+.comment-form label {
+  display: block;
+  float: left;
+  margin-right: 4%;
+  width: 100%;
+}
+
+.form-textarea-wrapper {
+  clear: both;
+}
+
+.comment-form .form-text {
+  padding: 0.15% 1%; 
+}
+
+#comment-form #edit-actions .form-submit {
+  background: #939393;
+  border: #818181 1px solid;
+  margin-left: 0 !important;
+  margin-right: 1%;
+}
+
+#comment-form {
+  background: #FDFDFD;
+  border: 1px solid #E2E2E2;
+  padding: 2%;
+}
+
+.page-comment h3 a {
+  color: #FFF;
+}
+
+.indented {
+  background: #F5F5F5;
+  border-top: 1px dotted #CCC;
+  margin-left: 0;
+  padding-left: 2%;
+}
+
+.indented h3 {
+  background: transparent !important;
+  padding-left: 0;
+}
+
+.indented h3 a {
+  color: #909090 !important;
+}
+
+span.new {
+  background: rgb(255, 214, 207);
+  color: #D09595;
+  display: block;
+  font-size: 20px;
+  padding: 1%;
+  text-align: center;
 }
