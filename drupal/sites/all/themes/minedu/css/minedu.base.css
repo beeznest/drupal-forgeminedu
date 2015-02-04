@@ -1262,6 +1262,7 @@ html.js fieldset.collapsed {
   padding: 0;
 }
 
+.page-poll .main-content,
 .page-node .main-content,
 .page-search .main-content,
 .page-recursos .main-content,
@@ -1486,6 +1487,7 @@ html.js fieldset.collapsed {
   display: none;
 }
 
+.page-poll .main-title,
 .page-user-edit .special-main-title,
 .page-actividades .special-main-title,
 .page-publicaciones .special-main-title,
@@ -2384,8 +2386,26 @@ html.js fieldset.collapsed {
   width: 50%;
 }
 
+.block-poll .title {
+  color: #99C89C;
+  font-size: 16px;
+  padding-bottom: 5%;
+}
+
+.block-poll .text {
+  font-family: 'Arial';
+}
+
+.block-poll .percent {
+  color: #99C89C;
+}
+
 .poll .vote-form .choices {
   width: 90%;
+}
+
+.poll .bar .foreground {
+  background-color: #777;
 }
 
 .poll .form-submit {
@@ -2401,10 +2421,10 @@ html.js fieldset.collapsed {
   margin-top: 10%;
 }
 
-.block-poll .links {
+.block-poll ul.links {
   border-top: 1px dotted #CCC;
   display: block;
-  margin: 0;
+  margin: 1% 0 0;
   padding-top: 5%;
 }
 
@@ -2418,4 +2438,39 @@ html.js fieldset.collapsed {
   font-size: 16px;
   line-height: 1;
   padding: 3% 0;
+}
+
+.page-poll .inner-container ul {
+  margin: 0; 
+}
+
+.page-poll .inner-container li {
+  color: #6E6E6E;
+  display: block;
+  font-family: Arial;
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 1.5%;
+}
+
+.page-poll .inner-container li a {
+  color: #99C89C;
+  display: block;
+  font-size: 20px;
+}
+
+.node-type-poll .poll .text {
+  font-size: 20px;
+}
+
+.node-type-poll .poll .percent {
+  font-family: 'Arial';
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.poll .total {
+  font-size: 18px;
+  margin-top: 3%;
+  color: #99C89C;
 }
