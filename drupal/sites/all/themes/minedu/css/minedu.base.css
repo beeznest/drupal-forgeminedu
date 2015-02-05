@@ -1294,7 +1294,10 @@ html.js fieldset.collapsed {
   padding: 50px 46px;
 }
 
-.page-programas .main-content {
+.page-programas .main-content,
+.page-capacitaciones .main-content,
+.page-especializaciones .main-content,
+.page-cursos-practicos .main-content {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
   padding: 0 0 50px;
@@ -2173,16 +2176,16 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           CAPACITY BUILDING            
  *---------------------------------------------------------------------------*/
-#block-menu-menu-cb-programs > .content ul {
-  margin-bottom: 45px;
+.cb-inner-menu > .content ul {
+  margin-top: 45px;
 }
 
-#block-menu-menu-cb-programs > .content ul,
+.cb-inner-menu > .content ul,
 #block-menu-menu-capacity-building > .content ul {
   margin-left: 0;
 }
 
-#block-menu-menu-capacity-building > .content li {
+.cb-inner-menu > .content li {
   display: block;
   float: left;
   list-style: none;
