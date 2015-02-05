@@ -2185,7 +2185,7 @@ html.js fieldset.collapsed {
   margin-left: 0;
 }
 
-.cb-inner-menu > .content li {
+#block-menu-menu-capacity-building > .content li {
   display: block;
   float: left;
   list-style: none;
@@ -2312,40 +2312,40 @@ html.js fieldset.collapsed {
   background: url('../img/bg_courses_menu_icon.png') no-repeat bottom center;
 }
 
-.page-programas .view-chamilo-courses .views-row {
+.view-chamilo-courses .views-row {
   border: 1px solid #a8a8aa;
   margin: 0.5% 2% 2.5%;
   padding: 1% 1% 3%;
   position: relative;
 }
 
-.page-programas .view-chamilo-courses .views-row h4 {
+.view-chamilo-courses .views-row h4 {
   color: #653074;
   font-size: 20px;
   font-weight: bold;
   padding: 1.6% 0% 0.3%;
 }
 
-.page-programas .view-chamilo-courses .views-row > p {
+.view-chamilo-courses .views-row > p {
   color: #58585a;
   font-family: 'Arial';
   font-size: 16px;
 }
 
-.page-programas .view-chamilo-courses .views-row > div {
+.view-chamilo-courses .views-row > div {
   background: #f9f9f9;
   margin: 0.5% 1% 0.5% 0;
   padding: 0.5% 1% 0.05%;
   width: 15.65%;
 }
 
-.page-programas .view-chamilo-courses .views-row > div em {
+.view-chamilo-courses .views-row > div em {
   color: #4d4c4e;
   font-size: 18px;
   font-weight: bold;
 }
 
-.page-programas .view-chamilo-courses .views-row > div p {
+.view-chamilo-courses .views-row > div p {
   color: #4d4d4d;
   font-family: 'Arial';
   font-size: 16px;
