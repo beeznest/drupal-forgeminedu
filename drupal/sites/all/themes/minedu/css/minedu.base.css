@@ -2212,6 +2212,13 @@ html.js fieldset.collapsed {
   text-align: center;
 }
 
+.page-programas .inner-container .main-title ,
+.page-capacitaciones .inner-container .main-title ,
+.page-cursos-practicos .inner-container .main-title ,
+.page-especializaciones .inner-container .main-title {
+  display: none; 
+}
+
 .page-programas .cb-program-link,
 .page-cursos-practicos .cb-courses-link,
 .page-capacitaciones .cb-capacity-link,
@@ -2428,23 +2435,23 @@ html.js fieldset.collapsed {
 .session-detail.ajax-changed {
   clear: both;
   padding: 8% 0% !important;
-  width: 100%;
+  width: 100% !important;
 }
 
 .cb-inner-container-right,
 .cb-inner-container-middle,
 .cb-inner-container-left {
-  float: left;
   padding: 0 1.5%;
   width: 33.333%;
 }
 
 .session-detail .cb-inner-container-left strong {
+  float: left;
   padding-right: 10%;
 }
 
 .session-detail .cb-inner-container-left p {
-  padding-left: 10%;
+  padding-left: 22%;
 }
 
 /* POLL AND FORUM */
