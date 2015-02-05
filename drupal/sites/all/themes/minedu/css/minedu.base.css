@@ -2376,7 +2376,7 @@ html.js fieldset.collapsed {
 
 .view-chamilo-courses .views-row > div em {
   color: #4d4c4e;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -2421,9 +2421,30 @@ html.js fieldset.collapsed {
   color: #762008;
 }
 
-
 .session-detail {
   padding: 0 !important;
+}
+
+.session-detail.ajax-changed {
+  clear: both;
+  padding: 8% 0% !important;
+  width: 100%;
+}
+
+.cb-inner-container-right,
+.cb-inner-container-middle,
+.cb-inner-container-left {
+  float: left;
+  padding: 0 1.5%;
+  width: 33.333%;
+}
+
+.session-detail .cb-inner-container-left strong {
+  padding-right: 10%;
+}
+
+.session-detail .cb-inner-container-left p {
+  padding-left: 10%;
 }
 
 /* POLL AND FORUM */
