@@ -140,14 +140,26 @@
   .page-capacitaciones .cb-capacity-link, 
   .page-cursos-practicos .cb-courses-link, 
   .page-especializaciones .cb-speciality-link {
+    background: transparent !important;
     height: auto;
     padding: 4.5% !important;
     text-indent: 0;
   }
 
-  .page-programas #block-menu-menu-capacity-building > .content li a {
-    background: transparent;
+  .page-programas #block-menu-menu-capacity-building > .content li a.cb-program-link {
     color: #653074;
+  }
+
+  .page-capacitaciones #block-menu-menu-capacity-building > .content li a.cb-capacity-link {
+    color: #94c4cc;
+  }
+
+  .page-cursos-practicos #block-menu-menu-capacity-building > .content li a.cb-courses-link {
+    color: #b0b81c;
+  }
+
+  .page-especializaciones #block-menu-menu-capacity-building > .content li a.cb-speciality-link {
+    color: #f26b45;
   }
 
   #block-menu-menu-cb-programs > .content li span {
