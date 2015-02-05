@@ -2441,6 +2441,7 @@ html.js fieldset.collapsed {
 .cb-inner-container-right,
 .cb-inner-container-middle,
 .cb-inner-container-left {
+  float: left;
   padding: 0 1.5%;
   width: 33.333%;
 }
