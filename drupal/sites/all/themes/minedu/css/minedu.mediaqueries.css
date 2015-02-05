@@ -9,6 +9,10 @@
   .node-type-webform .form-select, .node-type-webform .form-text {
     width: 100%;
   }
+
+  .comment-form .form-text {
+    width: 100%;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -185,6 +189,10 @@
   .page-node .field-name-field-publish-image img {
     height: auto;
     width: 100%;
+  }
+
+  #forum {
+    overflow: auto;
   }
 
 }

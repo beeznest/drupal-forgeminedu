@@ -1593,6 +1593,10 @@ html.js fieldset.collapsed {
   padding: 42px;
 }
 
+.node-type-resource-document .field-name-field-resource-document-includei {
+  margin: 0;
+}
+
 .node-type-resource-document .field-name-field-resource-document-file {
   margin: 0;
 }
@@ -1671,6 +1675,8 @@ html.js fieldset.collapsed {
 .node-type-resource-document .field-name-field-resource-document-file .file > .counter-link {
   background: transparent;
   color: #24a3b4;
+  /* hide counter to resources */
+  display: none;
   margin: 0;
   left: 0;
   padding: 0 !important;
