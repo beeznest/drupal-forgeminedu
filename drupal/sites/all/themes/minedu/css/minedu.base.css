@@ -2312,6 +2312,7 @@ html.js fieldset.collapsed {
   background: url('../img/bg_courses_menu_icon.png') no-repeat bottom center;
 }
 
+/* CHAMILO COURSES */
 .view-chamilo-courses .views-row {
   border: 1px solid #a8a8aa;
   margin: 0.5% 2% 2.5%;
@@ -2319,11 +2320,35 @@ html.js fieldset.collapsed {
   position: relative;
 }
 
+.page-capacitaciones .view-chamilo-courses .views-row {
+  border: 1px solid #94c4cc;
+}
+
+.page-cursos-practicos .view-chamilo-courses .views-row {
+  border: 1px solid #b0b81c;
+}
+
+.page-especializaciones .view-chamilo-courses .views-row {
+  border: 1px solid #f26b45;
+}
+
 .view-chamilo-courses .views-row h4 {
   color: #653074;
   font-size: 20px;
   font-weight: bold;
   padding: 1.6% 0% 0.3%;
+}
+
+.page-capacitaciones .view-chamilo-courses .views-row h4 {
+  color: #94c4cc;
+}
+
+.page-cursos-practicos .view-chamilo-courses .views-row h4 {
+  color: #b0b81c;
+}
+
+.page-especializaciones .view-chamilo-courses .views-row h4 {
+  color: #f26b45;
 }
 
 .view-chamilo-courses .views-row > p {
@@ -2370,6 +2395,22 @@ html.js fieldset.collapsed {
   line-height: 1;
   padding: 4% 50px;
 }
+
+.page-capacitaciones #ajax-link a {
+  background: #d0e5e8;
+  color: #386c75;
+}
+
+.page-cursos-practicos #ajax-link a {
+  background: #dfe659;
+  color: #5b5f0e;
+}
+
+.page-especializaciones #ajax-link a {
+  background: #f9b6a4;
+  color: #762008;
+}
+
 
 .session-detail {
   padding: 0 !important;
