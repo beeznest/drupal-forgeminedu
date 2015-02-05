@@ -1159,8 +1159,12 @@ html.js fieldset.collapsed {
   color: #000;
 }
 
-.publish .counter-link {
+.counter-link {
   display: none;
+}
+
+.publish .counter-link {
+  display: block !important;
 }
 
 .resource-document {
