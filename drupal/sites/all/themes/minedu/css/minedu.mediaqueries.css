@@ -132,7 +132,7 @@
   }
 
   #block-menu-menu-capacity-building > .content li {
-    margin: 0 0.09% 0.15%;
+    margin: 0 0.09% 0.3%;
     width: 49.5%;
   }
 
@@ -162,15 +162,17 @@
     color: #f26b45;
   }
 
-  #block-menu-menu-cb-programs > .content li span {
-    left: 35.5%;
-  }
-
   #block-menu-menu-cb-programs > .content li span,
   #block-menu-menu-cb-speciality > .content li span, 
   #block-menu-menu-cb-practical-courses > .content li span, 
   #block-menu-menu-desarrollo-de-capacidades- > .content li span {
     left: 35.5%;
+  }
+
+  #block-menu-menu-desarrollo-de-capacidades- > .content li a, 
+  #block-menu-menu-cb-practical-courses > .content li a, 
+  #block-menu-menu-cb-speciality > .content li a, #block-menu-menu-cb-programs > .content li a {
+    padding: 5% 2.5%;
   }
 
 }
@@ -209,6 +211,28 @@
   .page-user-edit .form-submit {
     width: 30%;
   }
+
+  /* CHAMILO COURSES */
+  .view-chamilo-courses .views-row {
+    padding: 1% 1% 6%;
+  }
+
+  .view-chamilo-courses .views-row h4 {
+    font-size: 16px;
+  }
+
+  .view-chamilo-courses .views-row > div em {
+    font-size: 12px;
+  }
+
+  .view-chamilo-courses .views-row > div p {
+    font-size: 14px;
+  }
+
+  #ajax-link a {
+    font-size: 16px;
+  }
+
 }
 
 /* Extra Small Devices, Phones */ 
@@ -348,6 +372,10 @@
   .footer .region-footer {
     width: 100%;
   }
+
+  #block-menu-menu-capacity-building > .content li {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width : 398px) {
@@ -387,4 +415,3 @@
     font-size: 16px;
   }
 }
-
