@@ -43,7 +43,7 @@ function chamilo_views_data() {
     ),
   );
 
-  $data['chamilo_ws']['as_description'] = array(
+  $data['chamilo_ws']['short_description'] = array(
     'title' => t('Description'),
     'help' => t('Description chamilo session.'),
     'field' => array(
