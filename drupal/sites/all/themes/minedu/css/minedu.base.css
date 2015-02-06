@@ -2394,7 +2394,7 @@ html.js fieldset.collapsed {
 }
 
 #ajax-link {
-  bottom: 0;
+  top: 139px;
   clear: both;
   left: 0;
   margin: 0 !important;
@@ -2434,7 +2434,8 @@ html.js fieldset.collapsed {
 
 .session-detail.ajax-changed {
   clear: both;
-  padding: 8% 0% !important;
+  margin-top: 9.65% !important;
+  padding: 2% 0% 1% !important;
   width: 100% !important;
 }
 
@@ -2442,8 +2443,17 @@ html.js fieldset.collapsed {
 .cb-inner-container-middle,
 .cb-inner-container-left {
   float: left;
-  padding: 0 1.5%;
+  padding: 0 2%;
   width: 33.333%;
+}
+
+.cb-inner-container-middle{
+  border-right: 1px dotted #CCC;
+  width: 45%;
+}
+
+.cb-inner-container-right{
+  width: 21%;
 }
 
 .session-detail .cb-inner-container-left strong {
