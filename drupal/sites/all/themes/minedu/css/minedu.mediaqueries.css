@@ -152,7 +152,7 @@
     width: 100%;
   }
 
-  #block-menu-menu-capacity-building > .content li {
+  #block-menu-menu-menu-capacity-building > .content li {
     margin: 0 0.09% 0.3%;
     width: 49.5%;
   }
@@ -167,32 +167,33 @@
     text-indent: 0;
   }
 
-  .page-programas #block-menu-menu-capacity-building > .content li a.cb-program-link {
+  .page-programas #block-menu-menu-menu-capacity-building > .content li a.cb-program-link {
     color: #653074;
   }
 
-  .page-capacitaciones #block-menu-menu-capacity-building > .content li a.cb-capacity-link {
+  .page-capacitaciones #block-menu-menu-menu-capacity-building > .content li a.cb-capacity-link {
     color: #94c4cc;
   }
 
-  .page-cursos-practicos #block-menu-menu-capacity-building > .content li a.cb-courses-link {
+  .page-cursos-practicos #block-menu-menu-menu-capacity-building > .content li a.cb-courses-link {
     color: #b0b81c;
   }
 
-  .page-especializaciones #block-menu-menu-capacity-building > .content li a.cb-speciality-link {
+  .page-especializaciones #block-menu-menu-menu-capacity-building > .content li a.cb-speciality-link {
     color: #f26b45;
   }
 
-  #block-menu-menu-cb-programs > .content li span,
-  #block-menu-menu-cb-speciality > .content li span, 
-  #block-menu-menu-cb-practical-courses > .content li span, 
-  #block-menu-menu-desarrollo-de-capacidades- > .content li span {
+  #block-menu-menu-menu-capacity-building-prog > .content li span,
+  #block-menu-menu-menu-capacity-building-spec > .content li span, 
+  #block-menu-menu-menu-capacity-building-cour > .content li span, 
+  #block-menu-menu-menu-capacity-building-capa > .content li span {
     left: 35.5%;
   }
 
-  #block-menu-menu-desarrollo-de-capacidades- > .content li a, 
-  #block-menu-menu-cb-practical-courses > .content li a, 
-  #block-menu-menu-cb-speciality > .content li a, #block-menu-menu-cb-programs > .content li a {
+  #block-menu-menu-menu-capacity-building-capa > .content li a, 
+  #block-menu-menu-menu-capacity-building-cour > .content li a, 
+  #block-menu-menu-menu-capacity-building-spec > .content li a, 
+  #block-menu-menu-menu-capacity-building-prog > .content li a {
     padding: 5% 2.5%;
   }
 
@@ -373,7 +374,22 @@
     width: 100%;
   }
 
-  #block-menu-menu-capacity-building > .content li {
+  #block-menu-menu-menu-capacity-building > .content li {
+    width: 100%;
+  }
+
+  #block-bean-descripcion-especializaciones .field-name-field-cb-description-image, 
+  #block-bean-descripcion-capacitaciones .field-name-field-cb-description-image, 
+  #block-bean-descripcion-cursos-practicos .field-name-field-cb-description-image, 
+  #block-bean-descripcion-programas .field-name-field-cb-description-image {
+    float: none;
+  }
+
+  #block-bean-descripcion-especializaciones .field-name-field-cb-description-image img, 
+  #block-bean-descripcion-capacitaciones .field-name-field-cb-description-image img, 
+  #block-bean-descripcion-cursos-practicos .field-name-field-cb-description-image img, 
+  #block-bean-descripcion-programas .field-name-field-cb-description-image img {
+    height: auto;
     width: 100%;
   }
 }

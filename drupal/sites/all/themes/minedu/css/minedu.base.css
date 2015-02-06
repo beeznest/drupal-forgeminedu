@@ -1518,14 +1518,17 @@ html.js fieldset.collapsed {
 .page-poll .main-title,
 .page-forum .main-title,
 .page-comment .main-title,
+#block-bean-descripcion-programas h3,
 .page-user-edit .special-main-title,
 .page-actividades .special-main-title,
 .page-publicaciones .special-main-title,
 .page-recursos .special-main-title {
+  background: transparent;
+  color: #000;
   display: block;
   font-size: 30px;
   padding-left: 0;
-  padding-bottom: 40px;
+  padding-bottom: 40px !important;
   text-transform: uppercase;
 }
 
@@ -2198,16 +2201,20 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           CAPACITY BUILDING            
  *---------------------------------------------------------------------------*/
+#block-menu-menu-menu-capacity-building {
+  margin-bottom: 4%;
+}
+
 .cb-inner-menu > .content ul {
   margin-top: 45px;
 }
 
 .cb-inner-menu > .content ul,
-#block-menu-menu-capacity-building > .content ul {
+#block-menu-menu-menu-capacity-building > .content ul {
   margin-left: 0;
 }
 
-#block-menu-menu-capacity-building > .content li {
+#block-menu-menu-menu-capacity-building > .content li {
   display: block;
   float: left;
   list-style: none;
@@ -2215,7 +2222,7 @@ html.js fieldset.collapsed {
   width: 24.8%;
 }
 
-#block-menu-menu-capacity-building > .content li a {
+#block-menu-menu-menu-capacity-building > .content li a {
   background: #653074; 
   color: #FFF;
   display: block;
@@ -2259,17 +2266,17 @@ html.js fieldset.collapsed {
 /*-----------------------------------------------------------------------------
  *           SUB-MENUS            
  *---------------------------------------------------------------------------*/
-#block-menu-menu-desarrollo-de-capacidades-, 
-#block-menu-menu-cb-practical-courses,
-#block-menu-menu-cb-speciality,
-#block-menu-menu-cb-programs {
+#block-menu-menu-menu-capacity-building-prog,
+#block-menu-menu-menu-capacity-building-capa,
+#block-menu-menu-menu-capacity-building-cour,
+#block-menu-menu-menu-capacity-building-spec {
   margin-bottom: 40px;
 }
 
-#block-menu-menu-desarrollo-de-capacidades- > .content li, 
-#block-menu-menu-cb-practical-courses > .content li,
-#block-menu-menu-cb-speciality > .content li,
-#block-menu-menu-cb-programs > .content li {
+#block-menu-menu-menu-capacity-building-prog > .content li,
+#block-menu-menu-menu-capacity-building-capa > .content li,
+#block-menu-menu-menu-capacity-building-cour > .content li,
+#block-menu-menu-menu-capacity-building-spec > .content li {
   display: block;
   float: left;
   list-style: none;
@@ -2278,10 +2285,10 @@ html.js fieldset.collapsed {
   width: 49%;
 }
 
-#block-menu-menu-desarrollo-de-capacidades- > .content li a, 
-#block-menu-menu-cb-practical-courses > .content li a,
-#block-menu-menu-cb-speciality > .content li a,
-#block-menu-menu-cb-programs > .content li a {
+#block-menu-menu-menu-capacity-building-prog > .content li a,
+#block-menu-menu-menu-capacity-building-capa > .content li a,
+#block-menu-menu-menu-capacity-building-cour > .content li a,
+#block-menu-menu-menu-capacity-building-spec > .content li a {
   color: #FFF;
   display: block;
   font-size: 20px;
@@ -2291,10 +2298,10 @@ html.js fieldset.collapsed {
   text-transform: uppercase;
 }
 
-#block-menu-menu-desarrollo-de-capacidades- > .content li span, 
-#block-menu-menu-cb-practical-courses > .content li span,
-#block-menu-menu-cb-speciality > .content li span,
-#block-menu-menu-cb-programs > .content li span {
+#block-menu-menu-menu-capacity-building-prog > .content li span,
+#block-menu-menu-menu-capacity-building-capa > .content li span,
+#block-menu-menu-menu-capacity-building-cour > .content li span,
+#block-menu-menu-menu-capacity-building-spec > .content li span {
   bottom: -8px;
   display: block;
   height: 9px;
@@ -2304,41 +2311,65 @@ html.js fieldset.collapsed {
 }
 
 /* PROGRAMS */
-#block-menu-menu-cb-programs > .content li a {
+#block-menu-menu-menu-capacity-building-prog > .content li a {
   background: #9b49b2; 
 }
 
-#block-menu-menu-cb-programs > .content li span {
+#block-menu-menu-menu-capacity-building-prog > .content li span {
   background: url('../img/bg_programs_menu_icon.png') no-repeat bottom center;
 }
 
 /* SPECIALITY */
-#block-menu-menu-cb-speciality > .content li a {
+#block-menu-menu-menu-capacity-building-spec > .content li a {
   background: #f48464;
 }
 
-#block-menu-menu-cb-speciality > .content li span {
+#block-menu-menu-menu-capacity-building-spec > .content li span {
   background: url('../img/bg_speciality_menu_icon.png') no-repeat bottom center;
 }
 
 /* CAPACITY */
-#block-menu-menu-desarrollo-de-capacidades- > .content li a {
+#block-menu-menu-menu-capacity-building-capa > .content li a {
   background: #bedbe0;
   color: #294f55;
 }
 
-#block-menu-menu-desarrollo-de-capacidades- > .content li span {
+#block-menu-menu-menu-capacity-building-capa > .content li span {
   background: url('../img/bg_capacity_menu_icon.png') no-repeat bottom center;
 }
 
 /* PRACTICAL COURSES */
-#block-menu-menu-cb-practical-courses > .content li a {
+#block-menu-menu-menu-capacity-building-cour > .content li a {
   background: #d1d921;
   color: #6a6f11;
 }
 
-#block-menu-menu-cb-practical-courses > .content li span {
+#block-menu-menu-menu-capacity-building-cour > .content li span {
   background: url('../img/bg_courses_menu_icon.png') no-repeat bottom center;
+}
+
+/* BLOCK DESCRIPTION */
+#block-bean-descripcion-especializaciones,
+#block-bean-descripcion-capacitaciones,
+#block-bean-descripcion-cursos-practicos,
+#block-bean-descripcion-programas {
+  padding: 0 4%;
+}
+
+#block-bean-descripcion-especializaciones .field-name-field-cb-description-image,
+#block-bean-descripcion-capacitaciones .field-name-field-cb-description-image,
+#block-bean-descripcion-cursos-practicos .field-name-field-cb-description-image,
+#block-bean-descripcion-programas .field-name-field-cb-description-image {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+#block-bean-descripcion-especializaciones .field-name-field-cb-description-description,
+#block-bean-descripcion-capacitaciones .field-name-field-cb-description-description,
+#block-bean-descripcion-cursos-practicos .field-name-field-cb-description-description,
+#block-bean-descripcion-programas .field-name-field-cb-description-description {
+  color: #99999b;
 }
 
 /* CHAMILO COURSES */
