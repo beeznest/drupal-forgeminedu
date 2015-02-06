@@ -4,6 +4,7 @@
       $(document).ready(function() {
 
         //Add Class to counter link
+        $('.view-publish-views .file a:nth-child(3)').addClass('counter-link');
         $('.main-content .publish .file a:nth-child(3)').addClass('counter-link');
         $('.node-type-resource-document .file a:nth-child(3)').addClass('counter-link');
         $('.main-content .resource-document .file a:nth-child(3)').addClass('counter-link');

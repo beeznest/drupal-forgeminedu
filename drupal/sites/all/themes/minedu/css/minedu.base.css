@@ -1725,6 +1725,18 @@ html.js fieldset.collapsed {
   text-decoration: none; 
 }
 
+.view-publish-views .file img {
+  display: none;
+}
+
+.view-publish-views .file a {
+  display: none;
+}
+
+.view-publish-views .file .counter-link {
+  display: block !important;
+}
+
 /*-----------------------------------------------------------------------------
  *           SEARCH            
  *---------------------------------------------------------------------------*/
