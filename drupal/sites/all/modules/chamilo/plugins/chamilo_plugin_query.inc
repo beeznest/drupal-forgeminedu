@@ -17,9 +17,10 @@ class chamilo_plugin_query extends views_plugin_query {
     $params = array(
       'id' => $this->options['chamilo_course_category_id'],
       'name' => $this->options['chamilo_course_category'],
-      'publico_objetivo' => $this->options['chamilo_course_target_audience'],
+      'target' => $this->options['chamilo_course_target_audience'],
       'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY), 
     );
+
     $chamilo_list_courses_by_category = chamilo_soap_call('registration', 'HookAdvancedSubscription..WSSessionListInCategory', $params);
 
     $default_text_link = t('See detail');
@@ -27,13 +28,13 @@ class chamilo_plugin_query extends views_plugin_query {
       $row = new stdClass; 
       $row->id = $session->id; 
       $row->name = $session->name; 
-      //$row->as_description = $session->as_description; 
-      $row->mode = $session->modalidad; 
+      $row->short_description = $session->short_description; 
+      $row->mode = $session->mode; 
       $row->date_start = $session->date_start; 
       $row->date_end = $session->date_end; 
-      $row->duration = $session->duracion; 
-      $row->vacancies = $session->vacantes; 
-      $row->schedule = $session->horario; 
+      $row->duration = $session->duration; 
+      $row->vacancies = $session->vacancies; 
+      $row->schedule = $session->schedule; 
       $row->link = $default_text_link; 
       $view->result[] = $row;
     } 

@@ -43,13 +43,13 @@ function chamilo_views_data() {
     ),
   );
 
-  /*$data['chamilo_ws']['as_description'] = array(
+  $data['chamilo_ws']['as_description'] = array(
     'title' => t('Description'),
     'help' => t('Description chamilo session.'),
     'field' => array(
       'handler' => 'chamilo_handler_field',
     ),
-  );*/
+  );
 
   $data['chamilo_ws']['mode'] = array(
     'title' => t('mode'),
