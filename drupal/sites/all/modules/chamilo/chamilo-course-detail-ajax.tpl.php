@@ -23,7 +23,7 @@
       <p>
         <?php 
           if (!empty($output->allow_visitors)) {
-            print $output->allow_visitors;
+            print 'Si';
           } 
           else {
             print 'No';
