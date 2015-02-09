@@ -11,7 +11,7 @@ function chamilo_course_detail($user_id, $course_id) {
   $params = array(
     'user_id' => $user_id,
     'session_id' => $course_id,
-    'profile_completed' => chamilo_percentage_full_user_profile(),
+    'profile_completed' => chamilo_percentage_full_user_profile($user_id),
     'is_connected' => 1,
     'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
   );
@@ -28,7 +28,7 @@ function chamilo_course_ajax_detail($ajax, $course_id) {
   if (user_is_logged_in()) {
     global $user;
     $course_detail = chamilo_course_detail($user->uid, $course_id);
-$prueba = chamilo_percentage_full_user_profile();
+
     $variables = array(
       'output' => $course_detail,
     );
@@ -52,9 +52,8 @@ $prueba = chamilo_percentage_full_user_profile();
   } 
 }
 
-function chamilo_percentage_full_user_profile() {
-  global $user;
-  $user_load = user_load($user->uid);
+function chamilo_percentage_full_user_profile($user_id) {
+  $user_load = user_load($user_id);
 
   //fields should not be considered in the count.
   $skipped_fields = array('uid', 'theme', 'signature', 'signature_format', 'created', 'access', 'login', 'status', 'timezone', 'language', 'init', 'data', 'roles', 'metatags', 'rdf_mapping');
