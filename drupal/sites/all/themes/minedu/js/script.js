@@ -4,6 +4,7 @@
       $(document).ready(function() {
 
         //Add Class to counter link
+        $('#colorbox .file a:nth-child(3)').addClass('counter-link');
         $('.view-publish-views .file a:nth-child(3)').addClass('counter-link');
         $('.main-content .publish .file a:nth-child(3)').addClass('counter-link');
         $('.node-type-resource-document .file a:nth-child(3)').addClass('counter-link');
@@ -12,8 +13,10 @@
         $( ".main-content .file a" ).each(function( index ) {
           if (!$('body').hasClass('node-type-publish')) {
             if (!$('body').hasClass('node-type-resource-document')) {
-              if (!$(this).hasClass('counter-link')) {
-                $(this).attr( "href", "#");
+              if (!$('#colorbox')) {
+                if (!$(this).hasClass('counter-link')) {
+                  $(this).attr( "href", "#");
+                };
               };
             };
           };
