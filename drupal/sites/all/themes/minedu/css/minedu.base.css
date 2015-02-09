@@ -569,6 +569,12 @@ html.js fieldset.collapsed {
   padding: 1.5% 2.5% 1%;
 }
 
+.page-user-edit #edit-timezone,
+.page-user-edit #edit-locale,
+.page-user-edit .form-item-duser {
+  display: none;
+}
+
 .page-user fieldset .fieldset-title:hover {
   text-decoration: none;
 }
@@ -1515,6 +1521,7 @@ html.js fieldset.collapsed {
   display: none;
 }
 
+#colorbox .special-main-title,
 .page-poll .main-title,
 .page-forum .main-title,
 .page-comment .main-title,
@@ -2438,7 +2445,7 @@ html.js fieldset.collapsed {
 
 .ajax-container {
   clear: both;
-  margin: 100px 0 0 !important;
+  margin: 9% 0 0 !important;
   padding: 0 !important;
   position: relative;
   width: 100% !important;
@@ -2492,6 +2499,18 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
+.page-especializaciones .session-detail.ajax-changed {
+  border: 1px solid #f9b6a4;
+}
+
+.page-capacitaciones .session-detail.ajax-changed {
+  border: 1px solid #d0e5e8;
+}
+
+.page-cursos-practicos .session-detail.ajax-changed {
+  border: 1px solid #dfe659;
+}
+
 .cb-inner-container-right,
 .cb-inner-container-middle,
 .cb-inner-container-left {
@@ -2529,6 +2548,11 @@ html.js fieldset.collapsed {
   padding: 2%;
   text-align: center;
   width: 40%;
+}
+
+.download-link:hover {
+  color: #CCC;
+  text-decoration: none;
 }
 
 .cb-inner-container-right .session-register {
@@ -2866,4 +2890,64 @@ span.new {
   font-size: 20px;
   padding: 1%;
   text-align: center;
+}
+
+#colorbox .footer,
+#colorbox .logo-wrapper,
+#colorbox .header-top {
+  display: none;
+}
+
+#colorbox .main-content.container {
+  border: none;
+  box-shadow: none;
+  padding: 2%;
+  width: 100%;
+}
+
+#colorbox .file a {
+  font-size: 16px !important;
+  width: 100% !important;
+}
+
+#colorbox .file a.counter-link {
+  background: transparent;
+  color: #24A3B4;
+  float: none;
+  padding: 2% 4%;
+  position: relative;
+  text-align: left;
+}
+
+#colorbox .page-node .field-name-body p {
+  clear: both;
+}
+
+#colorbox .tabs, 
+#colorbox .node-resource-link .counter-link,
+#colorbox .node-resource-audio .counter-link,
+#colorbox .node-resource-embed .counter-link,
+#colorbox .node-resource-video .counter-link,
+#colorbox .node-resource-document .counter-link {
+  display: none !important;
+}
+
+#colorbox .special-main-title {
+  background: transparent;
+  color: #000;
+  display: block;
+  font-size: 20px;
+  padding-left: 0;
+  padding-bottom: 20px !important;
+  text-transform: uppercase;
+}
+
+#colorbox .field-name-field-resource-embed-include, 
+#colorbox .field-name-field-resource-link-include, 
+#colorbox .field-name-field-resource-video-include, 
+#colorbox .field-name-field-resource-audio-include, 
+#colorbox .field-name-field-resource-document-include, 
+#colorbox .field-name-field-resource-document-include,
+#colorbox .field-name-field-resource-document-file {
+  margin: 1% 0 1%;
 }
