@@ -11,7 +11,7 @@ function chamilo_course_detail($user_id, $course_id) {
   $params = array(
     'user_id' => $user_id,
     'session_id' => $course_id,
-    'profile_completed' => '',
+    'profile_completed' => chamilo_percentage_full_user_profile(),
     'is_connected' => 1,
     'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
   );
@@ -27,19 +27,7 @@ function chamilo_course_detail($user_id, $course_id) {
 function chamilo_course_ajax_detail($ajax, $course_id) {
   if (user_is_logged_in()) {
     global $user;
-    //$course_detail = chamilo_course_detail($user->uid, $course_id);
-    $course_detail = new stdClass();
-    $course_detail->id = 'PR876559';
-    $course_detail->cost = '200';
-    $course_detail->place = 'Calle del Comercio 193, San Borja - Lima, Perú';
-    $course_detail->allow_visitors = '';
-    $course_detail->duration = '40';
-    $course_detail->brochure = 'http://localhost/chamilo/chamilo/main/link_ajax_with_views_php.pdf';
-    $course_detail->banner = 'http://localhost/chamilo/chamilo/main/capacitaciones.png';
-    $course_detail->as_description = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
-    $course_detail->status = '-1';
-    $course_detail->action_url = 'http://localhost/chamilo/chamilo/plugin/advancedsubscription/ajax/advsub.ajax.php?data=%23%11%97%B9%60%E2s%B5%CEFG%B2%8F%3C%5D%D1%80%40%0C%FFb%B4%9E%11+%EE%9A%87U%5D%A1%C4%CAh4%9E%2B%04%81%81%A3cJ%A2%C2%0E%8A%CC%A0%B9%86%FA%A8%B5%5C+%88%82%04%7B%03H%BA%E8%CA%26%A4%A3%8Ds%DC%C8%C2%FF%7B%BE%1E%60o%1CX%29%00a%81%87%0F%E7%C8J%8B%F3%B6ic%1F%99%B3%96d6%CA%DC%A8%81%24%1F%BB6%FC%B1%E4%C5%91%CB%D8B%FB%CC%D1%07%9B%F3%EB%A5g%22%A4%AD%A6%80%CD%D8.e%C7%AF%9B';
-    $course_detail->message = 'AdvancedSubscriptionProfileIncomplete';
+    $course_detail = chamilo_course_detail($user->uid, $course_id);
 
     $variables = array(
       'output' => $course_detail,
@@ -67,7 +55,8 @@ function chamilo_course_ajax_detail($ajax, $course_id) {
 function chamilo_percentage_full_user_profile() {
   global $user;
   $user_load = user_load($user->uid);
-  unset($user_load->uid);
+
+  //fields should not be considered in the count.
   unset($user_load->theme);
   unset($user_load->signature);
   unset($user_load->signature_format);
@@ -77,7 +66,6 @@ function chamilo_percentage_full_user_profile() {
   unset($user_load->status);
   unset($user_load->timezone);
   unset($user_load->language);
-  unset($user_load->picture);
   unset($user_load->init);
   unset($user_load->data);
   unset($user_load->roles);
@@ -94,7 +82,8 @@ function chamilo_percentage_full_user_profile() {
     }    
   }
 
-  $percentage_full_user_profile = ($total_fields_full * 100) / $total_fields;
+  //both total is subtracted 1 by the uid.
+  $percentage_full_user_profile = (($total_fields_full - 1) * 100) / ($total_fields - 1);
 
   return $percentage_full_user_profile;
 }
