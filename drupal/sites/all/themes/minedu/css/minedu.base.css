@@ -1165,23 +1165,26 @@ html.js fieldset.collapsed {
   color: #000;
 }
 
-.counter-link {
-  display: none;
-}
-
 .publish .counter-link {
-  display: block !important;
+  display: none !important;
 }
 
 .resource-document {
   position: relative;
 }
 
-.counter-link {
+.counter-link,
+.resource-document .download-count-item {
+  display: none !important;
+}
+
+.counter-link,
+.download-count-item {
   background: rgb(135, 205, 222);
   border-radius: 25px;
   color: #FFF;
-  padding: 2px 5px;
+  display: block;
+  padding: 2px 8px;
   position: absolute;
   right: 20px;
   top: 0;
@@ -1190,6 +1193,7 @@ html.js fieldset.collapsed {
 .view-resources .file,
 .block-views .view-publishes-and-resources-views .file {
   display: block;
+  color: transparent;
 }
 
 .view-resources .file img,
@@ -1749,10 +1753,6 @@ html.js fieldset.collapsed {
 
 .view-publish-views .file a {
   display: none;
-}
-
-.view-publish-views .file .counter-link {
-  display: block !important;
 }
 
 /*-----------------------------------------------------------------------------
@@ -2958,4 +2958,8 @@ span.new {
 #colorbox .field-name-field-resource-document-include,
 #colorbox .field-name-field-resource-document-file {
   margin: 1% 0 1%;
+}
+
+.page-admin-reports-pubdlcnt .main-title {
+  display: none;
 }
