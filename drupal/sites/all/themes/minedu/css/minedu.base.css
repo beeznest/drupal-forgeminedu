@@ -1363,13 +1363,17 @@ html.js fieldset.collapsed {
   padding-top: 0;
 }
 
-.page-recursos .inner-container .view-resources h4 a {
+.page-recursos .inner-container .view-resources h4 {
   color: #000;
   font-family: 'Arial';
   font-size: 16px;
 }
 
-.page-recursos .inner-container .view-resources h4 a:hover {
+.page-recursos .inner-container .view-resources a:hover {
+  text-decoration: none;
+}
+
+.page-recursos .inner-container .view-resources h4:hover {
   color: #b0b81c;
   text-decoration: none;
 }
@@ -1448,18 +1452,18 @@ html.js fieldset.collapsed {
 }
 
 #block-views-resources-block-resources h4 {
+  color: #000;
   font-size: 14px;
+  font-weight: bold;
   padding: 10px 0;
 }
 
-#block-views-resources-block-resources h4 a {
-  color: #000;
-  font-weight: bold;
+#block-views-resources-block-resources a:hover {
+  text-decoration: none;
 }
 
-#block-views-resources-block-resources h4 a:hover {
+#block-views-resources-block-resources h4:hover {
   color: #d1da21;
-  text-decoration: none;
 }
 
 #block-views-resources-block-resources .view-resources li {
@@ -1537,6 +1541,10 @@ html.js fieldset.collapsed {
   padding-left: 0;
   padding-bottom: 40px !important;
   text-transform: uppercase;
+}
+
+.page-recursos #colorbox .main-title {
+  display: none;
 }
 
 .page-user-edit .special-main-title {
