@@ -1298,6 +1298,7 @@ html.js fieldset.collapsed {
 .page-node .main-content,
 .page-poll .main-content,
 .page-forum .main-content,
+.page-search404 .main-content,
 .page-search .main-content,
 .page-comment .main-content,
 .page-recursos .main-content,
@@ -1759,6 +1760,7 @@ html.js fieldset.collapsed {
  *           SEARCH            
  *---------------------------------------------------------------------------*/
 .page-faq-page .main-title,
+.page-search404 .main-title,
 .page-search .main-title {
   background: transparent;
   color: #000;
@@ -1770,6 +1772,7 @@ html.js fieldset.collapsed {
 }
 
 .faq-description, 
+.page-search404 h2,
 .page-search h2 {
   background: #99c89c;
   border-radius: 5px 5px 0 0;
@@ -1780,12 +1783,17 @@ html.js fieldset.collapsed {
   padding: 16px 20px 13px;
 }
 
+.page-search404 .inner-container .region-content > ul,
+.page-search .inner-container .region-content > ul,
 .search-results {
   border: 1px solid #99c89c;
+  display: block;
   margin: 0;
   padding: 3% 30px;
 }
 
+.page-search404 .inner-container .region-content > ul li,
+.page-search .inner-container .region-content > ul li,
 .search-results ol.search-results li {
   margin-left: 3em;
 }
