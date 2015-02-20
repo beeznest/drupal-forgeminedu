@@ -1679,6 +1679,7 @@ html.js fieldset.collapsed {
   width: auto;
 }
 
+#cboxWrapper .region-content-top,
 #cboxWrapper .node-publish .file img {
   display: none;
 }
