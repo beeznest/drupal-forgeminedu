@@ -1477,6 +1477,10 @@ html.js fieldset.collapsed {
 }
 
 /* PUBLICACIONES */
+.node-type-publish .main-content .region-content-top #block-bean-bloque-enlace-publicaciones {
+	width: 250px;
+}
+
 .inner-container .view-publish-views{
   padding: 50px 18px;
 }
