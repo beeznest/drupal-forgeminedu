@@ -1144,11 +1144,11 @@ html.js fieldset.collapsed {
   width: 56px;
 }
 
-.block-views .view-activities-views .date-display-single {
+.front .block-views .view-activities-views .date-display-single {
   font-size: 28px;
 }
 
-.block-views .view-activities-views .date-display-single:nth-of-type(2) {
+.front .block-views .view-activities-views .date-display-single:nth-of-type(2) {
   font-size: 17px;
 }
 
@@ -1394,6 +1394,7 @@ html.js fieldset.collapsed {
 .page-recursos .inner-container .view-resources .link-icon,
 .page-recursos .inner-container .view-resources .embed-icon {
   background-position: center left !important;
+
 }
 
 .page-recursos .inner-container .view-resources .item-list {
@@ -1982,7 +1983,7 @@ html.js fieldset.collapsed {
   padding-bottom: 15px;
 }
 
-.block-views .view-activities-views .views-row h4 {
+.front .block-views .view-activities-views .views-row h4 {
   font-size: 16px;
   padding: 9px 0 0 65px;
 }
