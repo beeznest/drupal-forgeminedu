@@ -2468,7 +2468,16 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
-#ajax-link {
+.ajax-container-close {
+  display: none;
+  margin: 9% 0 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  top: 94px;
+  width: 100% !important;
+}
+
+.ajax-link {
   top: -33px;
   clear: both;
   left: 0;
@@ -2478,7 +2487,7 @@ html.js fieldset.collapsed {
   width: auto !important;
 }
 
-#ajax-link a {
+.ajax-link a {
   background: #c799d5;
   color: #FFF;
   border-radius: 0 7px 0 0;
@@ -2488,17 +2497,17 @@ html.js fieldset.collapsed {
   padding: 4% 50px;
 }
 
-.page-capacitaciones #ajax-link a {
+.page-capacitaciones .ajax-link a {
   background: #d0e5e8;
   color: #386c75;
 }
 
-.page-cursos-practicos #ajax-link a {
+.page-cursos-practicos .ajax-link a {
   background: #dfe659;
   color: #5b5f0e;
 }
 
-.page-especializaciones #ajax-link a {
+.page-especializaciones .ajax-link a {
   background: #f9b6a4;
   color: #762008;
 }
@@ -2507,7 +2516,7 @@ html.js fieldset.collapsed {
   padding: 0 !important;
 }
 
-.session-detail.ajax-changed {
+.session-detail.detail-open {
   border: 1px solid #C799D5;
   clear: both;
   margin-bottom: 1.25%;
@@ -2516,15 +2525,15 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
-.page-especializaciones .session-detail.ajax-changed {
+.page-especializaciones .session-detail.detail-open {
   border: 1px solid #f9b6a4;
 }
 
-.page-capacitaciones .session-detail.ajax-changed {
+.page-capacitaciones .session-detail.detail-open {
   border: 1px solid #d0e5e8;
 }
 
-.page-cursos-practicos .session-detail.ajax-changed {
+.page-cursos-practicos .session-detail.detail.open {
   border: 1px solid #dfe659;
 }
 

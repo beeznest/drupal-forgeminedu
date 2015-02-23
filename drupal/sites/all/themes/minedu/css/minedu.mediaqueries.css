@@ -19,7 +19,7 @@
     padding: 1% 1% 3.75%;
   }
 
-  #ajax-link {
+  .ajax-link {
     top: -7.5%;
   }
 
@@ -39,7 +39,7 @@
     font-size: 14px;
   }
 
-  #ajax-link a {
+  .ajax-link a {
     font-size: 16px;
   }
 
@@ -216,7 +216,7 @@
     width: 100%;
   }
 
-  #ajax-link {
+  .ajax-link {
     top: -6%;
   }
 
@@ -476,7 +476,7 @@
     padding: 1% 1% 6.75%;
   }
 
-  #ajax-link {
+  .ajax-link {
     top: -5.25%;
   }
 }
@@ -518,7 +518,7 @@
     font-size: 16px;
   }
 
-  #ajax-link {
+  .ajax-link {
     top: -3.75%;
   }
 }

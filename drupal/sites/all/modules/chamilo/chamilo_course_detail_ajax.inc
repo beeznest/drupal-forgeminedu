@@ -38,12 +38,35 @@ function chamilo_course_ajax_detail($ajax, $course_id) {
       $id_replace = '#ajax-detail-' . $course_id;
       $id_new = 'ajax-detail-' . $course_id;
       $commands = array();
-      $commands[] = ajax_command_replace($id_replace, '<div id="' . $id_new . '" class="session-detail clearfix">' . $output . '</div>');
+      $commands[] = ajax_command_replace($id_replace, '<div id="' . $id_new . '" class="session-detail clearfix detail-open">' . $output . '</div>');
       $commands[] = ajax_command_changed($id_replace);
       ajax_deliver(array('#type' => 'ajax', '#commands' => $commands));
     }
     else {
       return $output;
+    }
+  }
+  else {
+    //drupal_goto('user');
+    drupal_set_message(t('You can not access this page.'), 'error');    
+  } 
+}
+
+/**
+ * Function to the calling ajax close.
+ */
+function chamilo_close_course_ajax_detail($ajax, $course_id) {
+  if (user_is_logged_in()) {
+    if ($ajax == 'ajax') {
+      $id_replace = '#ajax-detail-' . $course_id;
+      $id_new = 'ajax-detail-' . $course_id;
+      $commands = array();
+      $commands[] = ajax_command_replace($id_replace, '<div id="' . $id_new . '" class="session-detail clearfix"></div>');
+      $commands[] = ajax_command_changed($id_replace);
+      ajax_deliver(array('#type' => 'ajax', '#commands' => $commands));
+    }
+    else {
+      return;
     }
   }
   else {
