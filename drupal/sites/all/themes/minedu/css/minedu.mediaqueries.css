@@ -20,7 +20,11 @@
   }
 
   .ajax-link {
-    top: -7.5%;
+    top: -17.5%;
+  }
+
+  .ajax-container-close a {
+    padding: 1% 50px;
   }
 
   .ajax-container {
@@ -217,7 +221,11 @@
   }
 
   .ajax-link {
-    top: -6%;
+    top: -9%;
+  }
+
+  .ajax-container-close a {
+    top: -10%;
   }
 
   .download-link {
@@ -334,6 +342,18 @@
 
   .view-chamilo-courses .views-row > p {
     font-size: 14px;
+  }
+
+  .ajax-link {
+    position: relative;
+    width: 100% !important;
+  }
+
+  .ajax-container-close a {
+    top: -17%;
+    width: 100%;
+    position: absolute;
+    padding: 4%;
   }
 
 }
