@@ -2509,6 +2509,23 @@ html.js fieldset.collapsed {
   color: #762008;
 }
 
+.ajax-container-close a {
+  background: #f9b6a4;
+  color: #762008;
+  border-radius: 0 7px 0 0;
+  display: block;
+  font-size: 19px;
+  line-height: 1;
+  left: 0;
+  padding: 0.7% 50px;
+  position: absolute; 
+  top: -21%;
+}
+
+.ajax-progress-throbber {
+  display: none !important;
+}
+
 .session-detail {
   padding: 0 !important;
 }
@@ -2519,6 +2536,7 @@ html.js fieldset.collapsed {
   margin-bottom: 1.25%;
   margin-top: 1% !important;
   padding: 2% 1% 2% !important;
+  position: relative;
   width: 100% !important;
 }
 
