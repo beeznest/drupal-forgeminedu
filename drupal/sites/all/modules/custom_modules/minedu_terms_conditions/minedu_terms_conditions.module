@@ -1,0 +1,72 @@
+<?php
+/**
+ * @file
+ * Functionality to accept terms and conditions have to MINEDU develops.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function minedu_terms_conditions_block_info() {
+  $blocks['minedu_block_terms_conditions'] = array(
+    'info' => t('Block enabling accept the terms and conditions of MINEDU'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function minedu_terms_conditions_block_view($delta = '') {
+  $block = array();
+  switch($delta) {
+    case 'minedu_block_terms_conditions':
+      $block['content'] = drupal_get_form('minedu_terms_conditions_form'); 
+  }
+  
+  return $block;
+}
+
+/**
+ * Implements hook_form().
+ */
+function minedu_terms_conditions_form($form, &$form_state) {
+  $form['accept_terms_conditions'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Accept terms and conditions.',
+  );
+
+  $form['send'] = array(
+    '#type' => 'submit',
+    '#value' => t('Send'),
+    '#submit' => array('minedu_accept_terms_conditions'),
+  );
+
+  return $form;
+}
+
+/**
+ * Function for update field user "0" to "1" and redirect and redirect according to the value of the check.
+ */
+function minedu_accept_terms_conditions($form, $form_state) {
+  global $user;
+  if ($form_state['values']['accept_terms_conditions'] == 1) {
+    $account = user_load($user->id);
+    $edit = array(
+      'field_user_tac' => array(
+        'und' => array(
+          0 => array(
+            'value' => 'activo',
+          ),
+        ),
+      ),
+    );
+    user_save($account, $edit);
+    drupal_goto('<front>');
+  }
+  else {
+    drupal_goto('user/logout');
+    drupal_goto('user');
+  }
+}
