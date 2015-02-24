@@ -1,3 +1,6 @@
+<div class="ajax-container-close">
+  <a href="<?php print base_path(); ?>close-course-detail-ajax/nojs/<?php print $course_id; ?>" class="use-ajax">Cerrar detalle</a>
+</div>
 <div class="cb-inner-container-left"> 
   <ul> 
     <li class="clearfix">

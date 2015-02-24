@@ -2474,15 +2474,6 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
-.ajax-container-close {
-  display: none;
-  margin: 9% 0 0 !important;
-  padding: 0 !important;
-  position: absolute;
-  top: 94px;
-  width: 100% !important;
-}
-
 .ajax-link {
   top: -33px;
   clear: both;

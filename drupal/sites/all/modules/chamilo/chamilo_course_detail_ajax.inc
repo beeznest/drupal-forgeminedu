@@ -31,6 +31,7 @@ function chamilo_course_ajax_detail($ajax, $course_id) {
 
     $variables = array(
       'output' => $course_detail,
+      'course_id' => $course_id,
     );
     $output = theme('chamilo_course_detail_ajax', $variables);
 
