@@ -2180,12 +2180,12 @@ html.js fieldset.collapsed {
 
 .footer .region-footer {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
 }
 
 .footer #block-menu-menu-footer-menu {
   float: left;
-  width: 70%;
+  width: 50%;
 }
 
 .footer #block-menu-menu-footer-menu ul {
@@ -2207,21 +2207,37 @@ html.js fieldset.collapsed {
   text-align: center;
 }
 
+.footer #block-chamilo-chamilo-search-course,
 .footer #block-search-form {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
-.footer #block-search-form form {
+.fotter #block-search-form h3,
+.footer #block-chamilo-chamilo-search-course label {
+  color: #959595;
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  margin-top: -14px;
+  padding: 0;
+}
+
+.footer form {
   position: relative;
   margin: 0;
 }
 
-.footer #block-search-form .form-text {
+.footer .form-text {
   border-radius: 15px;
+  margin: 0;
   min-width: 0;
   padding: 1px;
   width: 100%;
+}
+
+.footer .form-item-text-search-course {
+  margin: 0;
 }
 
 .footer #edit-actions {
@@ -2231,7 +2247,7 @@ html.js fieldset.collapsed {
   top: 0;
 }
 
-.footer #block-search-form .form-submit {
+.footer .form-submit {
   background: url('../img/search_icon.png') no-repeat transparent center 5px;
   border: none !important;
   float: right;
