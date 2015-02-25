@@ -1305,6 +1305,7 @@ html.js fieldset.collapsed {
 .page-comment .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
+.page-buscar-curso .main-content,
 .page-publicaciones .main-content {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
@@ -1780,6 +1781,7 @@ html.js fieldset.collapsed {
  *           SEARCH            
  *---------------------------------------------------------------------------*/
 .page-faq-page .main-title,
+.page-buscar-curso .main-title,
 .page-search404 .main-title,
 .page-search .main-title {
   background: transparent;
@@ -2433,6 +2435,7 @@ html.js fieldset.collapsed {
 }
 
 /* CHAMILO COURSES */
+.chamilo-courses ul > li,
 .view-chamilo-courses .views-row {
   border: 1px solid #a8a8aa;
   margin: 0.5% 2% 2.5%;
@@ -2448,10 +2451,12 @@ html.js fieldset.collapsed {
   border: 1px solid #b0b81c;
 }
 
+.chamilo-courses ul > li,
 .page-especializaciones .view-chamilo-courses .views-row {
   border: 1px solid #f26b45;
 }
 
+.chamilo-courses ul > li h4,
 .view-chamilo-courses .views-row h4 {
   color: #653074;
   font-size: 20px;
@@ -2467,16 +2472,19 @@ html.js fieldset.collapsed {
   color: #b0b81c;
 }
 
+.chamilo-courses .chrow h4,
 .page-especializaciones .view-chamilo-courses .views-row h4 {
   color: #f26b45;
 }
 
+.chamilo-courses .chrow p,
 .view-chamilo-courses .views-row > p {
   color: #58585a;
   font-family: 'Arial';
   font-size: 16px;
 }
 
+.chamilo-courses .chrow > div,
 .view-chamilo-courses .views-row > div {
   background: #f9f9f9;
   margin: 0.5% 1% 0.5% 0;
@@ -2484,12 +2492,14 @@ html.js fieldset.collapsed {
   width: 15.65%;
 }
 
+.chamilo-courses .chrow > div em,
 .view-chamilo-courses .views-row > div em {
   color: #4d4c4e;
   font-size: 16px;
   font-weight: bold;
 }
 
+.chamilo-courses .chrow > div p,
 .view-chamilo-courses .views-row > div p {
   color: #4d4d4d;
   font-family: 'Arial';
@@ -2534,6 +2544,7 @@ html.js fieldset.collapsed {
   color: #5b5f0e;
 }
 
+.page-buscar-curso .ajax-link a,
 .page-especializaciones .ajax-link a {
   background: #f9b6a4;
   color: #762008;
@@ -2570,6 +2581,7 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
+.page-buscar-curso .session-detail.detail-open,
 .page-especializaciones .session-detail.detail-open {
   border: 1px solid #f9b6a4;
 }
