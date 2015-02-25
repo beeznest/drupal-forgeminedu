@@ -3005,6 +3005,9 @@ span.new {
   overflow: auto;
 }
 
+/*-----------------------------------------------------------------------------
+ *           CONDITIONAL TERMS            
+ *---------------------------------------------------------------------------*/
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit,
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
   float: left;
