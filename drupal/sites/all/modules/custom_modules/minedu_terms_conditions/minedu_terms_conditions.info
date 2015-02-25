@@ -1,0 +1,5 @@
+name = MINEDU terms and conditions
+description = Either accept the terms and conditions of MINEDU
+core = 7.x
+package = Minedu
+version = 0.1
