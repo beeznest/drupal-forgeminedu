@@ -269,6 +269,15 @@
     margin-top: 10% !important;
   }
 
+  #block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit {
+    width: 10%;
+  }
+
+  #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
+    padding: 1% 5%;
+    width: auto;
+  }
+
 }
 
 @media only screen and (max-width : 600px) {

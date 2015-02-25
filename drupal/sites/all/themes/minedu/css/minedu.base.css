@@ -2997,17 +2997,17 @@ span.new {
   display: none;
 }
 
-.page-node-60.node-type-informative-page {
-  background: #CCC;
+/*-----------------------------------------------------------------------------
+ *           CONDITIONAL TERMS            
+ *---------------------------------------------------------------------------*/
+.page-node-60.node-type-informative-page .field-name-body  {
+  background: #E8E8E8;
   border: 1px solid #CCC;
   padding: 4%;
   height: 500px;
   overflow: auto;
 }
 
-/*-----------------------------------------------------------------------------
- *           CONDITIONAL TERMS            
- *---------------------------------------------------------------------------*/
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit,
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
   float: left;
@@ -3021,11 +3021,14 @@ span.new {
   font-family: 'Arial';
   font-size: 16px;
   height: auto;
-  padding: 11px 0;
+  padding: 6px 0;
   width: 10%;
 }
 
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
-  font-size: 16px;
   width: 90%;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions label {
+  font-size: 16px;
 }
