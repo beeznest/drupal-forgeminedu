@@ -1385,6 +1385,18 @@ html.js fieldset.collapsed {
   text-decoration: none;
 }
 
+.page-recursos .inner-container .view-resources img {
+  float: left;
+  margin-right: 8%;
+}
+
+.page-recursos .inner-container .view-resources .only-link-icon,
+.page-recursos .inner-container .view-resources .only-embed-icon {
+  background-position-x: left;
+  float: left;
+  width: 20%;
+}
+
 .page-recursos .inner-container .view-resources .file,
 .page-recursos .inner-container .view-resources .link-icon,
 .page-recursos .inner-container .view-resources .embed-icon {
