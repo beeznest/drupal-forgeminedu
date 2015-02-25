@@ -270,12 +270,12 @@
   }
 
   #block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit {
-    width: 10%;
+    padding: 1% 5%;
+    width: auto;
   }
 
   #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
-    padding: 1% 5%;
-    width: auto;
+    width: 100%;
   }
 
 }
