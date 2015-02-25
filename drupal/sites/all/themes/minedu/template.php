@@ -30,4 +30,17 @@ function minedu_preprocess_html(&$vars) {
       drupal_add_css(path_to_theme() . '/css/ie-lte-8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
 }
 
+function minedu_media_formatter_large_icon($variables) {
+  $file = $variables['file'];
+  $icon_dir = drupal_get_path('theme', 'minedu') . '/img/resource';
+  $icon_url = file_icon_url($file, $icon_dir);
+  $mime = check_plain($file->filemime);
+  /*$variables['path'] = $icon_url;
+  // theme_image() requires the 'alt' attribute passed as its own variable.
+  if (!isset($variables['alt']) && isset($variables['attributes']['alt'])) {
+    $variables['alt'] = $variables['attributes']['alt'];
+  }
+  return theme('image', $variables);*/
 
+  return '<img alt="" class="file-icon" src="'. $icon_url .'" title="'. $mime .'"/>';
+}

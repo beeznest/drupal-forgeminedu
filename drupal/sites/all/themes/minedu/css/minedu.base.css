@@ -1203,6 +1203,7 @@ html.js fieldset.collapsed {
   display: none !important;
 }
 
+.resource-link .only-link-icon,
 .view-resources .link-icon {
   background: url('../img/resource/big_link_icon.png') no-repeat center center;
   display: block;
@@ -1217,6 +1218,7 @@ html.js fieldset.collapsed {
   text-indent: -9999px;
 }
 
+.resource-embed .only-embed-icon,
 .view-resources .embed-icon {
   background: url('../img/resource/big_embed_icon.png') no-repeat center center;
   display: block;
@@ -1381,6 +1383,18 @@ html.js fieldset.collapsed {
 .page-recursos .inner-container .view-resources h4:hover {
   color: #b0b81c;
   text-decoration: none;
+}
+
+.page-recursos .inner-container .view-resources img {
+  float: left;
+  margin-right: 8%;
+}
+
+.page-recursos .inner-container .view-resources .only-link-icon,
+.page-recursos .inner-container .view-resources .only-embed-icon {
+  background-position-x: left;
+  float: left;
+  width: 20%;
 }
 
 .page-recursos .inner-container .view-resources .file,
@@ -2995,4 +3009,40 @@ span.new {
 
 .page-admin-reports-pubdlcnt .main-title {
   display: none;
+}
+
+/*-----------------------------------------------------------------------------
+ *           CONDITIONAL TERMS            
+ *---------------------------------------------------------------------------*/
+.page-node-60.node-type-informative-page .field-name-body  {
+  background: #E8E8E8;
+  border: 1px solid #CCC;
+  padding: 4%;
+  height: 500px;
+  overflow: auto;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit,
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
+  float: left;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit {
+  background: url('../img/bg_button.png') repeat-x #24a3b4;
+  border: 1px solid #24a3b4;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Arial';
+  font-size: 16px;
+  height: auto;
+  padding: 6px 0;
+  width: 10%;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
+  width: 90%;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions label {
+  font-size: 16px;
 }
