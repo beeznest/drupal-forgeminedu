@@ -1203,6 +1203,7 @@ html.js fieldset.collapsed {
   display: none !important;
 }
 
+.resource-link .only-link-icon,
 .view-resources .link-icon {
   background: url('../img/resource/big_link_icon.png') no-repeat center center;
   display: block;
@@ -1217,6 +1218,7 @@ html.js fieldset.collapsed {
   text-indent: -9999px;
 }
 
+.resource-embed .only-embed-icon,
 .view-resources .embed-icon {
   background: url('../img/resource/big_embed_icon.png') no-repeat center center;
   display: block;
