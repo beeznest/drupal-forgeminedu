@@ -46,7 +46,7 @@
   </ul> 
 </div>
 <div class="cb-inner-container-middle">
-  <p><?php print $output->as_description; ?></p>
+  <p><?php print $output->description; ?></p>
   <a href="<?php print $output->brochure; ?>" class="download-link" donwload>Descargar brochure</a>
 </div>
 <div class="cb-inner-container-right">
