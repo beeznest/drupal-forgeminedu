@@ -456,6 +456,7 @@
     margin-bottom: 5%;
     width: 100%;
   }
+
   .page-recursos .inner-container .view-resources .file, 
   .page-recursos .inner-container .view-resources .link-icon, 
   .page-recursos .inner-container .view-resources .embed-icon {
@@ -477,6 +478,7 @@
   }
 
   .page-recursos .inner-container .view-resources h4 {
+    clear: both;
     padding: 0; 
   }
 
