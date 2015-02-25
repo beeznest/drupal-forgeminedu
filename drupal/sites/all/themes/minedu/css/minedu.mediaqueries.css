@@ -325,6 +325,11 @@
     width: 50%;
   }
 
+  .page-recursos .inner-container .view-resources .only-link-icon,
+  .page-recursos .inner-container .view-resources .only-embed-icon {
+    width: 30%;
+  }
+
   .page-recursos .main-title, .page-publicaciones .main-title, #block-views-resources-block-resources h3, #block-views-cf46b404572d9fa9e07f7d5ec92b99e0 h3, #views-exposed-form-publish-views-page .views-exposed-widget > label, #block-views-exp-resources-page .views-exposed-widget > label {
     padding: 6% 16%;
   }
@@ -454,8 +459,20 @@
   .page-recursos .inner-container .view-resources .file, 
   .page-recursos .inner-container .view-resources .link-icon, 
   .page-recursos .inner-container .view-resources .embed-icon {
-    width: 100%;
+    clear: both;
     float: none;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+.page-recursos .inner-container .view-resources .only-link-icon,
+.page-recursos .inner-container .view-resources .only-embed-icon {
+  float: none;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+  .page-recursos .inner-container .view-resources img {
     margin-bottom: 5%;
   }
 
