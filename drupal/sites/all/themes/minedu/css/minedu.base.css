@@ -2215,8 +2215,9 @@ html.js fieldset.collapsed {
   width: 25%;
 }
 
-.fotter #block-search-form h3,
+.footer #block-search-form h3,
 .footer #block-chamilo-chamilo-search-course label {
+  background: transparent;
   color: #959595;
   display: block;
   font-size: 13px;
