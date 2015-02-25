@@ -1305,6 +1305,7 @@ html.js fieldset.collapsed {
 .page-comment .main-content,
 .page-recursos .main-content,
 .page-actividades .main-content,
+.page-buscar-curso .main-content,
 .page-publicaciones .main-content {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 15px #A09898;
@@ -1780,6 +1781,7 @@ html.js fieldset.collapsed {
  *           SEARCH            
  *---------------------------------------------------------------------------*/
 .page-faq-page .main-title,
+.page-buscar-curso .main-title,
 .page-search404 .main-title,
 .page-search .main-title {
   background: transparent;
@@ -2180,12 +2182,12 @@ html.js fieldset.collapsed {
 
 .footer .region-footer {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
 }
 
 .footer #block-menu-menu-footer-menu {
   float: left;
-  width: 70%;
+  width: 50%;
 }
 
 .footer #block-menu-menu-footer-menu ul {
@@ -2207,21 +2209,37 @@ html.js fieldset.collapsed {
   text-align: center;
 }
 
+.footer #block-chamilo-chamilo-search-course,
 .footer #block-search-form {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
-.footer #block-search-form form {
+.fotter #block-search-form h3,
+.footer #block-chamilo-chamilo-search-course label {
+  color: #959595;
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  margin-top: -14px;
+  padding: 0;
+}
+
+.footer form {
   position: relative;
   margin: 0;
 }
 
-.footer #block-search-form .form-text {
+.footer .form-text {
   border-radius: 15px;
+  margin: 0;
   min-width: 0;
   padding: 1px;
   width: 100%;
+}
+
+.footer .form-item-text-search-course {
+  margin: 0;
 }
 
 .footer #edit-actions {
@@ -2231,7 +2249,7 @@ html.js fieldset.collapsed {
   top: 0;
 }
 
-.footer #block-search-form .form-submit {
+.footer .form-submit {
   background: url('../img/search_icon.png') no-repeat transparent center 5px;
   border: none !important;
   float: right;
@@ -2417,6 +2435,7 @@ html.js fieldset.collapsed {
 }
 
 /* CHAMILO COURSES */
+.chamilo-courses ul > li,
 .view-chamilo-courses .views-row {
   border: 1px solid #a8a8aa;
   margin: 0.5% 2% 2.5%;
@@ -2432,10 +2451,12 @@ html.js fieldset.collapsed {
   border: 1px solid #b0b81c;
 }
 
+.chamilo-courses ul > li,
 .page-especializaciones .view-chamilo-courses .views-row {
   border: 1px solid #f26b45;
 }
 
+.chamilo-courses ul > li h4,
 .view-chamilo-courses .views-row h4 {
   color: #653074;
   font-size: 20px;
@@ -2451,16 +2472,19 @@ html.js fieldset.collapsed {
   color: #b0b81c;
 }
 
+.chamilo-courses .chrow h4,
 .page-especializaciones .view-chamilo-courses .views-row h4 {
   color: #f26b45;
 }
 
+.chamilo-courses .chrow p,
 .view-chamilo-courses .views-row > p {
   color: #58585a;
   font-family: 'Arial';
   font-size: 16px;
 }
 
+.chamilo-courses .chrow > div,
 .view-chamilo-courses .views-row > div {
   background: #f9f9f9;
   margin: 0.5% 1% 0.5% 0;
@@ -2468,12 +2492,14 @@ html.js fieldset.collapsed {
   width: 15.65%;
 }
 
+.chamilo-courses .chrow > div em,
 .view-chamilo-courses .views-row > div em {
   color: #4d4c4e;
   font-size: 16px;
   font-weight: bold;
 }
 
+.chamilo-courses .chrow > div p,
 .view-chamilo-courses .views-row > div p {
   color: #4d4d4d;
   font-family: 'Arial';
@@ -2518,6 +2544,7 @@ html.js fieldset.collapsed {
   color: #5b5f0e;
 }
 
+.page-buscar-curso .ajax-link a,
 .page-especializaciones .ajax-link a {
   background: #f9b6a4;
   color: #762008;
@@ -2554,6 +2581,7 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
+.page-buscar-curso .session-detail.detail-open,
 .page-especializaciones .session-detail.detail-open {
   border: 1px solid #f9b6a4;
 }

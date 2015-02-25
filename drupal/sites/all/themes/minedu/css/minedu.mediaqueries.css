@@ -97,6 +97,7 @@
     width: 100%;
   }
 
+  .footer #block-chamilo-chamilo-search-course,
   .footer #block-search-form,
   .footer #block-menu-menu-footer-menu {
     float: none;
