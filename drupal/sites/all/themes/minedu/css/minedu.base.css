@@ -2996,3 +2996,33 @@ span.new {
 .page-admin-reports-pubdlcnt .main-title {
   display: none;
 }
+
+.page-node-60.node-type-informative-page {
+  background: #CCC;
+  border: 1px solid #CCC;
+  padding: 4%;
+  height: 500px;
+  overflow: auto;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit,
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
+  float: left;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit {
+  background: url('../img/bg_button.png') repeat-x #24a3b4;
+  border: 1px solid #24a3b4;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Arial';
+  font-size: 16px;
+  height: auto;
+  padding: 11px 0;
+  width: 10%;
+}
+
+#block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
+  font-size: 16px;
+  width: 90%;
+}
