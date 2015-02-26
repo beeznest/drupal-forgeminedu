@@ -2187,7 +2187,8 @@ html.js fieldset.collapsed {
 
 .footer #block-menu-menu-footer-menu {
   float: left;
-  width: 50%;
+  margin: 0 5%;
+  width: 40%;
 }
 
 .footer #block-menu-menu-footer-menu ul {
@@ -2198,7 +2199,11 @@ html.js fieldset.collapsed {
   border-right: 1px solid #000;
   float: left;
   list-style: none;
-  width: 45%;
+  width: 50%;
+}
+
+.footer #block-menu-menu-footer-menu li.first {
+  border-left: 1px solid #000;
 }
 
 .footer #block-menu-menu-footer-menu li a {
@@ -2215,8 +2220,9 @@ html.js fieldset.collapsed {
   width: 25%;
 }
 
-.fotter #block-search-form h3,
+.footer #block-search-form h3,
 .footer #block-chamilo-chamilo-search-course label {
+  background: transparent;
   color: #959595;
   display: block;
   font-size: 13px;
@@ -2435,7 +2441,18 @@ html.js fieldset.collapsed {
 }
 
 /* CHAMILO COURSES */
-.chamilo-courses ul > li,
+.chamilo-courses ul {
+  margin-left: 0;
+}
+
+.chamilo-courses .chrow {
+  border: 1px solid #99c89c;
+  list-style: none;
+  margin: 0.5% 0 2.5%;
+  padding: 1% 1% 0;
+  position: relative;
+}
+
 .view-chamilo-courses .views-row {
   border: 1px solid #a8a8aa;
   margin: 0.5% 2% 2.5%;
@@ -2456,7 +2473,13 @@ html.js fieldset.collapsed {
   border: 1px solid #f26b45;
 }
 
-.chamilo-courses ul > li h4,
+.chamilo-courses ul > li h4 {
+  color: #99c89c;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.6% 0% 0.3%;
+}
+
 .view-chamilo-courses .views-row h4 {
   color: #653074;
   font-size: 20px;
@@ -2472,12 +2495,15 @@ html.js fieldset.collapsed {
   color: #b0b81c;
 }
 
-.chamilo-courses .chrow h4,
+.chamilo-courses .chrow h4 {
+  color: #6C8F6E;
+}
+
 .page-especializaciones .view-chamilo-courses .views-row h4 {
   color: #f26b45;
 }
 
-.chamilo-courses .chrow p,
+.chamilo-courses .chrow > p,
 .view-chamilo-courses .views-row > p {
   color: #58585a;
   font-family: 'Arial';
@@ -2544,7 +2570,11 @@ html.js fieldset.collapsed {
   color: #5b5f0e;
 }
 
-.page-buscar-curso .ajax-link a,
+.page-buscar-curso .ajax-link a {
+  background: #AFD7B1;
+  color: #5C6D5C;
+}
+
 .page-especializaciones .ajax-link a {
   background: #f9b6a4;
   color: #762008;

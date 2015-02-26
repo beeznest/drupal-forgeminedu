@@ -15,6 +15,7 @@
   }
 
   /* CHAMILO COURSES */
+  .chamilo-courses .chrow,
   .view-chamilo-courses .views-row {
     padding: 1% 1% 3.75%;
   }
@@ -31,14 +32,17 @@
     margin-top: 13% !important;
   }
 
+  .chamilo-courses .chrow h4,
   .view-chamilo-courses .views-row h4 {
     font-size: 16px;
   }
 
+  .chamilo-courses .chrow > div em,
   .view-chamilo-courses .views-row > div em {
     font-size: 12px;
   }
 
+  .chamilo-courses .chrow > div p,
   .view-chamilo-courses .views-row > div p {
     font-size: 14px;
   }
@@ -244,6 +248,7 @@
     margin-top: 2%;
   }
 
+  .chamilo-courses .chrow > div,
   .view-chamilo-courses .views-row > div {
     margin: 0;
     width: 50%;
@@ -261,6 +266,7 @@
 }
 
 @media only screen and (max-width : 668px) {
+  .chamilo-courses .chrow > div,
   .view-chamilo-courses .views-row > div {
     float: none;
     width: 100%;
@@ -355,6 +361,7 @@
     margin: 5% 0;
   }
 
+  .chamilo-courses .chrow > p,
   .view-chamilo-courses .views-row > p {
     font-size: 14px;
   }
@@ -521,6 +528,7 @@
     width: 100%;
   }
 
+  .chamilo-courses .chrow,
   .view-chamilo-courses .views-row {
     padding: 1% 1% 6.75%;
   }
@@ -573,12 +581,14 @@
 }
 
 @media only screen and (max-width : 320px) {
+  .chamilo-courses .chrow,
   .view-chamilo-courses .views-row {
     padding: 1% 1% 10.75%;
   }
 }
 
 @media only screen and (max-width : 245px) {
+  .chamilo-courses .chrow,
   .view-chamilo-courses .views-row {
     padding: 1% 1% 12.75%;
   }
