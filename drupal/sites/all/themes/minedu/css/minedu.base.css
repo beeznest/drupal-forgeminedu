@@ -2651,6 +2651,11 @@ html.js fieldset.collapsed {
   width: 33.333%;
 }
 
+.cb-inner-container-left img {
+  height: auto;
+  width: 100%;
+}
+
 .cb-inner-container-middle {
   border-right: 1px dotted #CCC;
   width: 45%;

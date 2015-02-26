@@ -373,11 +373,15 @@
     width: 100% !important;
   }
 
+  .ajax-link {
+    padding: 10px 5%;
+  }
+
   .ajax-container-close a {
-    top: -49px;
+    top: -38px;
     width: 100%;
     position: absolute;
-    padding: 10px;
+    padding: 10px 5%;
   }
 
 }
