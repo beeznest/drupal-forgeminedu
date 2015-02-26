@@ -4,13 +4,25 @@
  */
 function chamilo_search_course($text_search) {
   $params = array(
-    'term' => 'Hola',
-    'extrafields' => 'sssss',
+    'term' => $text_search,
+    'extrafields' => '',
   );
-  //$chamilo_search_course_list = chamilo_soap_call('registration', 'WSSearchSession', $params);
+  $chamilo_search_course_list = chamilo_soap_call('registration', 'WSSearchSession', $params);
+
+  foreach ($chamilo_search_course_list as $course) {
+    $view_more = array(
+      '#type' => 'link',
+      '#title' => t('View more'),
+      '#href' => 'course-detail-ajax/nojs/' . $course->id,
+      '#ajax' => array(
+        'effect' => 'fade',
+      ),
+    );
+    $course->link = drupal_render($view_more);
+  }
 
   $variables = array(
-    'output' => 'hola',
+    'output' => $chamilo_search_course_list,
   );
   $output = theme('chamilo_search_course_page', $variables);
 
