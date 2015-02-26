@@ -2479,7 +2479,6 @@ html.js fieldset.collapsed {
   border: 1px solid #b0b81c;
 }
 
-.chamilo-courses ul > li,
 .page-especializaciones .view-chamilo-courses .views-row {
   border: 1px solid #f26b45;
 }
@@ -2571,29 +2570,35 @@ html.js fieldset.collapsed {
   padding: 4% 50px;
 }
 
+.page-capacitaciones .ajax-container-close a,
 .page-capacitaciones .ajax-link a {
   background: #d0e5e8;
   color: #386c75;
 }
 
+.page-cursos-practicos .ajax-container-close a,
 .page-cursos-practicos .ajax-link a {
   background: #dfe659;
   color: #5b5f0e;
 }
 
+.page-buscar-curso .ajax-container-close a,
 .page-buscar-curso .ajax-link a {
   background: #AFD7B1;
   color: #5C6D5C;
 }
 
+.page-buscar-curso .chamilo-courses .chrow li {
+  list-style: none;
+}
+
+.page-especializaciones .ajax-container-close a,
 .page-especializaciones .ajax-link a {
   background: #f9b6a4;
   color: #762008;
 }
 
 .ajax-container-close a {
-  background: #f9b6a4;
-  color: #762008;
   border-radius: 0 7px 0 0;
   display: block;
   font-size: 19px;
@@ -2622,7 +2627,10 @@ html.js fieldset.collapsed {
   width: 100% !important;
 }
 
-.page-buscar-curso .session-detail.detail-open,
+.page-buscar-curso .session-detail.detail-open {
+  border: 1px solid #99c89c;
+}
+
 .page-especializaciones .session-detail.detail-open {
   border: 1px solid #f9b6a4;
 }
@@ -2643,7 +2651,7 @@ html.js fieldset.collapsed {
   width: 33.333%;
 }
 
-.cb-inner-container-middle{
+.cb-inner-container-middle {
   border-right: 1px dotted #CCC;
   width: 45%;
 }
@@ -2713,7 +2721,6 @@ html.js fieldset.collapsed {
 }
 
 /* POLL AND FORUM */
-.block-poll .content,
 .block-forum .content {
   background: whiteSmoke;
   margin-bottom: 10%;
