@@ -2378,6 +2378,11 @@ html.js fieldset.collapsed {
   width: 100px;
 }
 
+.bean-capacity-building-description p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 /* PROGRAMS */
 #block-menu-menu-menu-capacity-building-prog > .content li a {
   background: #9b49b2; 
