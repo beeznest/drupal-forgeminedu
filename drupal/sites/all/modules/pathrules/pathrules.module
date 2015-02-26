@@ -46,7 +46,7 @@ function pathrules_data_text_comparison_operation_list() {
  * Rules condition callback.
  */
 function pathrules_checkpath($path, $op = 'contains') {
-  $current_uri = request_path();
+  $current_uri = current_path();
   if ($op == 'equals') {
     return $current_uri == $path;
   }
