@@ -2603,10 +2603,10 @@ html.js fieldset.collapsed {
   display: block;
   font-size: 19px;
   line-height: 1;
-  left: 0;
-  padding: 0.7% 50px;
+  left: -1px;
+  padding: 0.75% 50px;
   position: absolute; 
-  top: -21%;
+  top: -34px;
 }
 
 .ajax-progress-throbber {
