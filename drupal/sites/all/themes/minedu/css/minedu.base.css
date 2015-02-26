@@ -3104,12 +3104,13 @@ span.new {
   font-family: 'Arial';
   font-size: 16px;
   height: auto;
+  margin-left: 1%;
   padding: 6px 0;
   width: 10%;
 }
 
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
-  width: 90%;
+  width: 78%;
 }
 
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions label {
