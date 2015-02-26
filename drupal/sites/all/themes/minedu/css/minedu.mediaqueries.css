@@ -106,6 +106,10 @@
     width: 100%;
   }
 
+  .footer #block-menu-menu-footer-menu li.first {
+    border-left: none;
+  }
+
   .footer #block-chamilo-chamilo-search-course,
   .footer #block-search-form,
   .footer #block-menu-menu-footer-menu {
@@ -371,10 +375,6 @@
     position: relative;
     top: 0;
     width: 100% !important;
-  }
-
-  .ajax-link {
-    padding: 10px 5%;
   }
 
   .ajax-container-close a {
