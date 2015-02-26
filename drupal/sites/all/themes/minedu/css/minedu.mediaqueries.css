@@ -21,11 +21,11 @@
   }
 
   .ajax-link {
-    top: -17.5%;
+    top: -28px;
   }
 
   .ajax-container-close a {
-    padding: 1% 50px;
+    padding: 1.05% 50px;
   }
 
   .ajax-container {
@@ -104,6 +104,10 @@
     border: none;
     float: none;
     width: 100%;
+  }
+
+  .footer #block-menu-menu-footer-menu li.first {
+    border-left: none;
   }
 
   .footer #block-chamilo-chamilo-search-course,
@@ -230,16 +234,12 @@
     width: 100%;
   }
 
-  .ajax-link {
-    top: -9%;
+  .download-link {
+    margin: 2% auto;
   }
 
   .ajax-container-close a {
-    top: -10%;
-  }
-
-  .download-link {
-    margin: 2% auto;
+    padding: 1.5% 50px;
   }
 
   .cb-inner-container-right .session-register {
@@ -373,14 +373,15 @@
 
   .ajax-link {
     position: relative;
+    top: 0;
     width: 100% !important;
   }
 
   .ajax-container-close a {
-    top: -17%;
+    top: -38px;
     width: 100%;
     position: absolute;
-    padding: 4%;
+    padding: 10px 5%;
   }
 
 }
@@ -539,7 +540,7 @@
   }
 
   .ajax-link {
-    top: -5.25%;
+    top: 0;
   }
 }
 
@@ -581,7 +582,7 @@
   }
 
   .ajax-link {
-    top: -3.75%;
+    top: 0;
   }
 }
 
