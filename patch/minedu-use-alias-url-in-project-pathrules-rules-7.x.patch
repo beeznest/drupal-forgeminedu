@@ -1,0 +1,13 @@
+diff --git a/drupal/sites/all/modules/pathrules/pathrules.module b/drupal/sites/all/modules/pathrules/pathrules.module
+index 043689e..f5ec822 100644
+--- a/drupal/sites/all/modules/pathrules/pathrules.module
++++ b/drupal/sites/all/modules/pathrules/pathrules.module
+@@ -46,7 +46,7 @@ function pathrules_data_text_comparison_operation_list() {
+  * Rules condition callback.
+  */
+ function pathrules_checkpath($path, $op = 'contains') {
+-  $current_uri = request_path();
++  $current_uri = current_path();
+   if ($op == 'equals') {
+     return $current_uri == $path;
+   }

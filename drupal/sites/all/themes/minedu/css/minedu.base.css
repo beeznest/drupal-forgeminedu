@@ -2229,6 +2229,7 @@ html.js fieldset.collapsed {
   line-height: 1;
   margin-top: -14px;
   padding: 0;
+  width: 100%;
 }
 
 .footer form {
@@ -2376,6 +2377,16 @@ html.js fieldset.collapsed {
   left: 40.5%;
   position: absolute;
   width: 100px;
+}
+
+.bean-capacity-building-description {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.bean-capacity-building-description p {
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 /* PROGRAMS */
@@ -3103,4 +3114,9 @@ span.new {
 
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions label {
   font-size: 16px;
+}
+
+#edit-custom-search-types {
+  margin-top: 11px;
+  width: 100%;
 }
