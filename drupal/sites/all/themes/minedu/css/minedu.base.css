@@ -2311,7 +2311,12 @@ html.js fieldset.collapsed {
   height: 7px;
   padding: 0 !important;
 }*/
-
+.cb-program-link:hover,
+.cb-speciality-link:hover,
+.cb-capacity-link:hover,
+.cb-courses-link:hover{
+  color: #ffffff;
+}
 .cb-program-link {
   background: #653074 !important;
   color:#ffffff;
@@ -2343,7 +2348,6 @@ html.js fieldset.collapsed {
   color:#94c4cc;
   border-top:4px solid #94c4cc;
 }
-/* demo */
 .cb-courses-link {
   background: #b0b81c !important;
   color:#ffffff;
