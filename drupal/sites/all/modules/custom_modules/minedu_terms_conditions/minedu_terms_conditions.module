@@ -37,9 +37,15 @@ function minedu_terms_conditions_form($form, &$form_state) {
     '#title' => 'Accept terms and conditions.',
   );
 
+  $form['cancel'] = array(
+    '#type' => 'submit',
+    '#value' => t('Cancel'),
+    '#submit' => array('minedu_cancel_terms_conditions'),
+  );
+
   $form['send'] = array(
     '#type' => 'submit',
-    '#value' => t('Send'),
+    '#value' => t('Accept'),
     '#submit' => array('minedu_accept_terms_conditions'),
   );
 
@@ -69,4 +75,9 @@ function minedu_accept_terms_conditions($form, $form_state) {
     drupal_goto('user/logout');
     drupal_goto('user');
   }
+}
+
+function minedu_cancel_terms_conditions($form, $form_state) {
+  drupal_goto('user/logout');
+  drupal_goto('user');
 }
