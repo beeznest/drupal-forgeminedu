@@ -3104,3 +3104,8 @@ span.new {
 #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions label {
   font-size: 16px;
 }
+
+#edit-custom-search-types {
+  margin-top: 11px;
+  width: 100%;
+}

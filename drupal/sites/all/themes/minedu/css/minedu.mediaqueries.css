@@ -54,6 +54,11 @@
   .cb-inner-container-middle {
     border-right: none;
   }
+
+  .footer .region-footer {
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 /* Small Devices, Tablets */
