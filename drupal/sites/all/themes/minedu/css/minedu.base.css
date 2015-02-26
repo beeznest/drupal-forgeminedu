@@ -2229,6 +2229,7 @@ html.js fieldset.collapsed {
   line-height: 1;
   margin-top: -14px;
   padding: 0;
+  width: 100%;
 }
 
 .footer form {
@@ -2378,9 +2379,14 @@ html.js fieldset.collapsed {
   width: 100px;
 }
 
+.bean-capacity-building-description {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
 .bean-capacity-building-description p {
-  font-size: 14px;
-  line-height: 1.75;
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 /* PROGRAMS */
