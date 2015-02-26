@@ -2187,7 +2187,8 @@ html.js fieldset.collapsed {
 
 .footer #block-menu-menu-footer-menu {
   float: left;
-  width: 50%;
+  margin: 0 5%;
+  width: 40%;
 }
 
 .footer #block-menu-menu-footer-menu ul {
@@ -2198,7 +2199,11 @@ html.js fieldset.collapsed {
   border-right: 1px solid #000;
   float: left;
   list-style: none;
-  width: 45%;
+  width: 50%;
+}
+
+.footer #block-menu-menu-footer-menu li.first {
+  border-left: 1px solid #000;
 }
 
 .footer #block-menu-menu-footer-menu li a {
