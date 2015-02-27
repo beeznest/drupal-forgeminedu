@@ -6,7 +6,7 @@
       <p><?php print $course->description; ?></p>
       <div class="session-mode f-left">
         <em>Modalidad</em>
-        <p>Online</p>  
+        <p><?php //print $course->mode; ?></p>  
       </div>
       <div class="session-date-start f-left">
         <em>Fecha de inicio</em>
@@ -22,11 +22,11 @@
       </div>
       <div class="session-vacancies f-left">
         <em>Cupos</em>
-        <p>20</p>
+        <p><?php //print $course->vacancies; ?></p>
       </div>
       <div class="session-schedule f-left">
         <em>Horario</em>
-        <p>16:00 - 18:00</p>
+        <p><?php //print $course->schedule; ?></p>
       </div>
       <div class="ajax-container">
         <div id="ajax-link-<?php print $course->id; ?>" class="ajax-link">
