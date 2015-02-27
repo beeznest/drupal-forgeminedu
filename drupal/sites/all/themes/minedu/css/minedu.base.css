@@ -2570,8 +2570,8 @@ html.js fieldset.collapsed {
   padding: 4% 50px;
 }
 
-.page-capacitaciones .ajax-container-close a,
-.page-capacitaciones .ajax-link a {
+.page-programas .ajax-container-close a,
+.page-programas .ajax-link a {
   background: #c799d5;
   color: #FFF;
 }
