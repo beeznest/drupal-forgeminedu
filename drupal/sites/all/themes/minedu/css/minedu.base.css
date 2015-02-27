@@ -2572,6 +2572,12 @@ html.js fieldset.collapsed {
 
 .page-capacitaciones .ajax-container-close a,
 .page-capacitaciones .ajax-link a {
+  background: #c799d5;
+  color: #FFF;
+}
+
+.page-capacitaciones .ajax-container-close a,
+.page-capacitaciones .ajax-link a {
   background: #d0e5e8;
   color: #386c75;
 }
