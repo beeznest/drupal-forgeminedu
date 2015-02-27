@@ -3,10 +3,10 @@
     <?php foreach ($output as $course): ?>
     <li class="chrow">
       <h4><?php print $course->name; ?></h4>
-      <p><?php print $course->extra[0]->value; ?></p>
+      <p><?php print $course->extra[3]->value; ?></p>
       <div class="session-mode f-left">
         <em>Modalidad</em>
-        <p><?php print $course->extra[1]->value; ?></p>  
+        <p><?php print $course->extra[2]->value; ?></p>  
       </div>
       <div class="session-date-start f-left">
         <em>Fecha de inicio</em>
@@ -22,11 +22,11 @@
       </div>
       <div class="session-vacancies f-left">
         <em>Cupos</em>
-        <p><?php print $course->extra[2]->value; ?></p>
+        <p><?php print $course->extra[0]->value; ?></p>
       </div>
       <div class="session-schedule f-left">
         <em>Horario</em>
-        <p><?php print $course->extra[3]->value; ?></p>
+        <p><?php print $course->extra[1]->value; ?></p>
       </div>
       <div class="ajax-container">
         <div id="ajax-link-<?php print $course->id; ?>" class="ajax-link">
