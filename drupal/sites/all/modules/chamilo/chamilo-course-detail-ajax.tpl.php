@@ -6,7 +6,7 @@
     <li class="clearfix">
       <strong>Id:</strong>
       <p>
-        <?php print $output->id; ?>
+        <?php print $output->code; ?>
       </p>
     </li>
     <li class="clearfix">
