@@ -5,7 +5,8 @@
 function chamilo_search_course($text_search) {
   $params = array(
     'term' => $text_search,
-    'extrafields' => '',
+    'extrafields' => 'short_description, mode, vacancies, schedule',
+    'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
   );
   $chamilo_search_course_list = chamilo_soap_call('registration', 'WSSearchSession', $params);
 

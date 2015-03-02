@@ -10,6 +10,7 @@
 function chamilo_course_detail($user_id, $course_id) {
   $params = array(
     'user_id' => $user_id,
+    'user_field' => 'drupal_user_id',
     'session_id' => $course_id,
     'profile_completed' => chamilo_percentage_full_user_profile($user_id),
     'is_connected' => 1,
