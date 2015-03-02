@@ -947,7 +947,7 @@ html.js fieldset.collapsed {
   color: #FFF;
   font-family: 'Arial';
   font-size: 16px;
-  height: auto;
+  height: 45px;
   padding: 11px 35px;
 }
 
@@ -2286,7 +2286,7 @@ html.js fieldset.collapsed {
 #block-menu-menu-menu-capacity-building > .content li {
   display: inline-block;
   list-style: none;
-  width: 24.8%;
+  width: 24.872%;
 }
 
 #block-menu-menu-menu-capacity-building > .content li a {
@@ -2418,7 +2418,7 @@ html.js fieldset.collapsed {
 
 /* PROGRAMS */
 #block-menu-menu-menu-capacity-building-prog > .content li a {
-  background: #9b49b2; 
+  background: #653074;
 }
 
 #block-menu-menu-menu-capacity-building-prog > .content li span {
@@ -2436,8 +2436,8 @@ html.js fieldset.collapsed {
 
 /* CAPACITY */
 #block-menu-menu-menu-capacity-building-capa > .content li a {
-  background: #bedbe0;
-  color: #294f55;
+  background: #94C4CC;
+  color: #ffffff;
 }
 
 #block-menu-menu-menu-capacity-building-capa > .content li span {
@@ -2446,8 +2446,8 @@ html.js fieldset.collapsed {
 
 /* PRACTICAL COURSES */
 #block-menu-menu-menu-capacity-building-cour > .content li a {
-  background: #d1d921;
-  color: #6a6f11;
+  background: #B0B81C;
+  color: #ffffff;
 }
 
 #block-menu-menu-menu-capacity-building-cour > .content li span {
