@@ -2590,7 +2590,9 @@ html.js fieldset.collapsed {
 .ajax-link a {
   background: #c799d5;
   color: #FFF;
-  border-radius: 0 7px 0 0;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
   display: block;
   font-size: 19px;
   line-height: 1;
