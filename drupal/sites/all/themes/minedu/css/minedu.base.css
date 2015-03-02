@@ -2571,7 +2571,7 @@ html.js fieldset.collapsed {
 
 .ajax-container {
   clear: both;
-  margin: 9% 0 0 !important;
+  margin: 9% 0 10px !important;
   padding: 0 !important;
   position: relative;
   width: 100% !important;
@@ -2634,14 +2634,14 @@ html.js fieldset.collapsed {
 }
 
 .ajax-container-close a {
-  border-radius: 0 7px 0 0;
+  border-radius: 7px 7px 0 0;
   display: block;
   font-size: 19px;
   line-height: 1;
   left: -1px;
   padding: 0.75% 50px;
   position: absolute; 
-  top: -34px;
+  top: -35px;
 }
 
 .ajax-progress-throbber {
