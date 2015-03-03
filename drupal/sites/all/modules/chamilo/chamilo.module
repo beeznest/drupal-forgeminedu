@@ -267,11 +267,10 @@ function chamilo_user_insert(&$edit, &$account, $category = NULL) {
   $connect_access = user_access('connect with own Chamilo account');
   $sync_access = user_access('sync users with Chamilo accounts');
   $users = array();
-//    if (!isset($edit['chamilo_settings']['sync_account']) && ($sync_access || $admin_access)) {
-        $sync_chamilo_accounts = variable_get('sync_chamilo_accounts', array());
-    if ($sync_chamilo_accounts && ($sync_access || $admin_access)) {
-//        $users = variable_get('chamilo_accounts', array());
-//        if (!is_array($users)) { $users = array(); }
+  $sync_chamilo_accounts = variable_get('sync_chamilo_accounts', array());
+  if ($sync_chamilo_accounts && ($sync_access || $admin_access)) {
+        $users = variable_get('chamilo_accounts', array());
+        if (!is_array($users)) { $users = array(); }
         $params = array(
                 'username' => $edit['name'],
                 'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
@@ -295,7 +294,9 @@ function chamilo_user_insert(&$edit, &$account, $category = NULL) {
                 'expiration_date' => '',
                 'original_user_id_name' => 'drupal_user_id',
                 'original_user_id_value' => $account->uid,
-                'extra' => '',
+                'extra' => array(
+                    getArea($account->uid)
+                ),
                 'active' => '1',
                 'status' => '1',
                 'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
@@ -304,10 +305,10 @@ function chamilo_user_insert(&$edit, &$account, $category = NULL) {
             $user = chamilo_soap_call('registration', 'WSCreateUser', $params);
 
             // Save
-//            if (!isset($users[$account->uid])) {
-//              $users[$account->uid] = $account->uid;
-//              variable_set('chamilo_accounts', $users);
-//            }
+            if (!isset($users[$account->uid])) {
+              $users[$account->uid] = $account->uid;
+              variable_set('chamilo_accounts', $users);
+            }
             drupal_set_message('User succesfully syncronized with Chamilo.');
         }        
 //      } else { // Unlink account
@@ -330,24 +331,14 @@ function chamilo_user_update(&$edit, &$account, $category = NULL) {
   $admin_access = user_access('administer chamilo');
   $connect_access = user_access('connect with own Chamilo account');
   $sync_access = user_access('sync users with Chamilo accounts');
-// FIX it has $category==account when editing the account tab and chamilo when editing chamilo's setting tab, so in both case we need to run the update i think 
-// if ($category == 'chamilo') {
-//    if (!isset($edit['chamilo_settings']['sync_account']) && ($sync_access || $admin_access)) {
-
-    $sync_chamilo_accounts = variable_get('sync_chamilo_accounts', array()); 
-    if ($sync_chamilo_accounts && ($sync_access || $admin_access)) {
-//      $users = variable_get('chamilo_accounts', array());
-//      if (!is_array($users)) { $users = array(); }
+  $sync_chamilo_accounts = variable_get('sync_chamilo_accounts', array());
+  if ($sync_chamilo_accounts && ($sync_access || $admin_access)) {
+      $users = variable_get('chamilo_accounts', array());
+      if (!is_array($users)) { $users = array(); }
       $fname = (isset($edit['field_first_name']['und'][0]['value'])?$edit['field_first_name']['und'][0]['value']:'');
       $lname = (isset($edit['field_last_name']['und'][0]['value'])?$edit['field_last_name']['und'][0]['value']:'');
       // Sync account
-// FIX  ['chamilo_settings']['sync_account'] is not included in the user form so it's never set
-// FIX in chamilo.admin.inc there is $form['chamilo_accounts'] that correspond to it but if it's set it works once and then it is disabled, I don know why. To get the value  variable_get('chamilo_accounts');
-//      if ($edit['chamilo_settings']['sync_account']) {
-
-//      if (!$edit['chamilo_settings']['sync_account']) {
-        // Check as chamilo account
-//        $chamilo_account = chamilo_soap_call('user_manager', 'WSGetUserFromUsername', array('username' => $edit['name']));
+      // Check as chamilo account
         $params = array(
                 'username' => $edit['name'],
                 'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
@@ -366,8 +357,7 @@ function chamilo_user_update(&$edit, &$account, $category = NULL) {
         // get user's picture URL
         $file = file_load($account->picture);
         $picture_url = file_create_url($file->uri);
-
-
+        $area = getArea($account->uid);
         // Deterimine wether to Create or update account at Chamilo
         if (isset($chamilo_account->user_id) ? $chamilo_account->user_id != '' : FALSE) {
           // Update update
@@ -382,7 +372,9 @@ function chamilo_user_update(&$edit, &$account, $category = NULL) {
                 'status' => null,
                 'phone' => null,
                 'expiration_date' => null,
-                'extra' => null,
+                'extra' => array(
+                    $area
+                ),
                 'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
                 'picture_url' => $picture_url,
             );
@@ -401,7 +393,9 @@ function chamilo_user_update(&$edit, &$account, $category = NULL) {
                 'expiration_date' => '',
                 'original_user_id_name' => 'drupal_user_id',
                 'original_user_id_value' => $account->uid,
-                'extra' => '',
+                'extra' => array(
+                    $area
+                ),
                 'active' => '1',
                 'status' => '1',
                 'secret_key' => chamilo_get_signature(CHAMILO_SECRET_KEY),
@@ -433,21 +427,12 @@ function chamilo_user_update(&$edit, &$account, $category = NULL) {
 //          'lastname' => $lname,
 //        ));
         // Save
-//        if (!isset($users[$account->uid])) {
-//          $users[$account->uid] = $account->uid;
-//          variable_set('chamilo_accounts', $users);
-//        }
+        if (!isset($users[$account->uid])) {
+          $users[$account->uid] = $account->uid;
+          variable_set('chamilo_accounts', $users);
+        }
         drupal_set_message('User succesfully syncronized with Chamilo.');
-      }
-      // Unlink account
-//      else {
-        // Save
-//        if (isset($users[$account->uid])) {
-//          unset($users[$account->uid]);
-//          variable_set('chamilo_accounts', $users);
-//        }
-//      }
-//    }
+    }
     if ($connect_access || $admin_access) {
       chamilo_save_user_data($edit, $account, $category);
     }
@@ -548,7 +533,7 @@ function chamilo_menu() {
     'page callback' => 'chamilo_close_course_ajax_detail',
     'access arguments' => array('access content'),
     'file' => 'chamilo_course_detail_ajax.inc',
-  ); 
+  );
 
   $items['buscar-curso'] = array( 
     'title' => t('Search course'),
@@ -556,7 +541,7 @@ function chamilo_menu() {
     'page callback' => 'chamilo_search_course',
     'access arguments' => array('access content'),
     'file' => 'chamilo_search_course.inc',
-  ); 
+  );
 
   return $items;
 }
@@ -869,4 +854,44 @@ function chamilo_search_course_form($form, &$form_state) {
 function chamilo_search_course_path($form, &$form_state) {
   $text_search = $form_state['values']['text_search_course'];
   drupal_goto('buscar-curso/' . $text_search);
+}
+
+/**
+ * getArea (returns the area field from a given drupal user id)
+ * @param   string  Drupal user id
+ * @return  array  Profile area field
+ */
+function getArea($drupalUserId) {
+    $area = array(
+        'field_name' => 'area',
+        'field_value' => '-'
+    );
+    $query = "SELECT field_user_belongs_to_tid FROM field_data_field_user_belongs_to
+          WHERE entity_id = '$drupalUserId' LIMIT 1";
+    $resultSet = db_query($query);
+    $result = 0;
+    foreach ($resultSet as $value) {
+        $result = $value->field_user_belongs_to_tid;
+    }
+    if (!$result) {
+        return $area;
+    }
+    // Maximum of iterations allowed in case of disastrous cyclical hierarchy
+    $iterations = 3;
+    $areaText = '';
+    do {
+        $iterations--;
+        $query = "SELECT name FROM taxonomy_term_data WHERE tid = $result LIMIT 1";
+        $resultSet = db_query($query);
+        foreach ($resultSet as $value) {
+            $areaText = empty($areaText) ? $value->name : $value->name . " > " . $areaText;
+        }
+        $query = "SELECT parent FROM taxonomy_term_hierarchy WHERE tid = $result LIMIT 1";
+        $resultSet = db_query($query);
+        foreach ($resultSet as $value) {
+            $result = $value->parent;
+        }
+    } while ($result && $iterations);
+    $area['field_value'] = utf8_encode($areaText);
+    return $area;
 }
