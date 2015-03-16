@@ -63,27 +63,35 @@
   <?php endif; ?>
 
   <?php if ($output->status == 1): ?>
-    <p class="session-message">
-      <?php print $output->message; ?>
-    </p>
+    <div class="session-message status-three">
+      <p class="session-message">
+        <?php print $output->message; ?>
+      </p>
+    </div>
   <?php endif; ?>
 
   <?php if ($output->status == 2): ?>
-    <p class="session-message">
-      <?php print $output->message; ?>
-    </p>
+    <div class="session-message status-two">
+      <p class="session-message">
+        <?php print $output->message; ?>
+      </p>
+    </div>
   <?php endif; ?>
 
   <?php if ($output->status == 3): ?>
-    <p class="session-message">
-      <?php print $output->message; ?>
-    </p>
+    <div class="session-message status-three">
+      <p class="session-message">
+        <?php print $output->message; ?>
+      </p>
+    </div>
   <?php endif; ?>
 
   <?php if ($output->status == 0): ?>
-    <p class="session-message">
-      <?php print $output->message; ?>
-    </p>
+    <div class="session-message status-one">
+      <p class="session-message">
+        <?php print $output->message; ?>
+      </p>
+    </div>
   <?php endif; ?>
 </div>
 
