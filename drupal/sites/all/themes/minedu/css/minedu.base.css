@@ -947,7 +947,7 @@ html.js fieldset.collapsed {
   color: #FFF;
   font-family: 'Arial';
   font-size: 16px;
-  height: auto;
+  height: 45px;
   padding: 11px 35px;
 }
 
@@ -2284,16 +2284,12 @@ html.js fieldset.collapsed {
 }
 
 #block-menu-menu-menu-capacity-building > .content li {
-  display: block;
-  float: left;
+  display: inline-block;
   list-style: none;
-  margin: 0 0.09%;
-  width: 24.8%;
+  width: 24.872%;
 }
 
 #block-menu-menu-menu-capacity-building > .content li a {
-  background: #653074; 
-  color: #FFF;
   display: block;
   font-size: 18px;
   padding: 4.5%;
@@ -2304,32 +2300,63 @@ html.js fieldset.collapsed {
 .page-capacitaciones .inner-container .main-title ,
 .page-cursos-practicos .inner-container .main-title ,
 .page-especializaciones .inner-container .main-title {
-  display: none; 
+  display: none;
 }
 
-.page-programas .cb-program-link,
+/*.page-programas .cb-program-link,
 .page-cursos-practicos .cb-courses-link,
 .page-capacitaciones .cb-capacity-link,
 .page-especializaciones .cb-speciality-link {
   text-indent: -9999px;
   height: 7px;
   padding: 0 !important;
+}*/
+.cb-program-link:hover,
+.cb-speciality-link:hover,
+.cb-capacity-link:hover,
+.cb-courses-link:hover{
+  color: #ffffff;
 }
-
-.cb-program-link a {
-  background: #653074 !important; 
+.cb-program-link {
+  background: #653074 !important;
+  color:#ffffff;
+  border-top:4px solid #653074;
+}
+.cb-program-link.active {
+  background: #ffffff !important;
+  color: #653074;
+  border-top:4px solid #653074;
 }
 
 .cb-speciality-link {
-  background: #f26b45 !important; 
+  background: #f26b45 !important;
+  color:#ffffff;
+  border-top:4px solid #f26b45;
 }
-
+.cb-speciality-link.active {
+  background: #ffffff !important;
+  color:#f26b45;
+  border-top:4px solid #f26b45;
+}
 .cb-capacity-link {
   background: #94c4cc !important;
+  color:#ffffff;
+  border-top:4px solid #94c4cc;
 }
-
+.cb-capacity-link.active {
+  background: #ffffff !important;
+  color:#94c4cc;
+  border-top:4px solid #94c4cc;
+}
 .cb-courses-link {
-  background: #b0b81c !important; 
+  background: #b0b81c !important;
+  color:#ffffff;
+  border-top:4px solid #b0b81c;
+}
+.cb-courses-link.active {
+  background: #ffffff !important;
+  color: #b0b81c;
+  border-top:4px solid #b0b81c;
 }
 
 /*-----------------------------------------------------------------------------
@@ -2391,7 +2418,7 @@ html.js fieldset.collapsed {
 
 /* PROGRAMS */
 #block-menu-menu-menu-capacity-building-prog > .content li a {
-  background: #9b49b2; 
+  background: #653074;
 }
 
 #block-menu-menu-menu-capacity-building-prog > .content li span {
@@ -2409,8 +2436,8 @@ html.js fieldset.collapsed {
 
 /* CAPACITY */
 #block-menu-menu-menu-capacity-building-capa > .content li a {
-  background: #bedbe0;
-  color: #294f55;
+  background: #94C4CC;
+  color: #ffffff;
 }
 
 #block-menu-menu-menu-capacity-building-capa > .content li span {
@@ -2419,8 +2446,8 @@ html.js fieldset.collapsed {
 
 /* PRACTICAL COURSES */
 #block-menu-menu-menu-capacity-building-cour > .content li a {
-  background: #d1d921;
-  color: #6a6f11;
+  background: #B0B81C;
+  color: #ffffff;
 }
 
 #block-menu-menu-menu-capacity-building-cour > .content li span {
@@ -2544,7 +2571,7 @@ html.js fieldset.collapsed {
 
 .ajax-container {
   clear: both;
-  margin: 9% 0 0 !important;
+  margin: 9% 0 10px !important;
   padding: 0 !important;
   position: relative;
   width: 100% !important;
@@ -2563,7 +2590,9 @@ html.js fieldset.collapsed {
 .ajax-link a {
   background: #c799d5;
   color: #FFF;
-  border-radius: 0 7px 0 0;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
   display: block;
   font-size: 19px;
   line-height: 1;
@@ -2605,14 +2634,14 @@ html.js fieldset.collapsed {
 }
 
 .ajax-container-close a {
-  border-radius: 0 7px 0 0;
+  border-radius: 7px 7px 0 0;
   display: block;
   font-size: 19px;
   line-height: 1;
   left: -1px;
   padding: 0.75% 50px;
   position: absolute; 
-  top: -34px;
+  top: -35px;
 }
 
 .ajax-progress-throbber {
