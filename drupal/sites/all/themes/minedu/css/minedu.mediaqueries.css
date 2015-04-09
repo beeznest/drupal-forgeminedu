@@ -1,0 +1,601 @@
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .node-type-webform form .form-item label,
+  .node-type-webform .form-select, .node-type-webform .form-text {
+    width: 100%;
+  }
+
+  .comment-form .form-text {
+    width: 100%;
+  }
+
+  /* CHAMILO COURSES */
+  .chamilo-courses .chrow,
+  .view-chamilo-courses .views-row {
+    padding: 1% 1% 3.75%;
+  }
+
+  .ajax-link {
+    top: -28px;
+  }
+
+  .ajax-container-close a {
+    padding: 1.05% 50px;
+  }
+
+  .ajax-container {
+    margin-top: 13% !important;
+  }
+
+  .chamilo-courses .chrow h4,
+  .view-chamilo-courses .views-row h4 {
+    font-size: 16px;
+  }
+
+  .chamilo-courses .chrow > div em,
+  .view-chamilo-courses .views-row > div em {
+    font-size: 12px;
+  }
+
+  .chamilo-courses .chrow > div p,
+  .view-chamilo-courses .views-row > div p {
+    font-size: 14px;
+  }
+
+  .ajax-link a {
+    font-size: 16px;
+  }
+
+  .cb-inner-container-middle {
+    border-right: none;
+  }
+
+  .footer .region-footer {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  /* USER LOGIN */
+  .logo img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  .notfront_capacity_logo {
+    margin: 6% auto 0;
+  }
+
+  .logo-wrapper {
+    padding-bottom: 30px;  
+  }
+
+  #user-login {
+    box-shadow: none;
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .capacity_logo {
+    width: 100%;
+  }
+
+  .block-views .view-publishes-and-resources-views h4 {
+    width: 100%;
+  }
+
+  #block-clock-clock {
+    display: none;
+  }
+
+  .region-header-top {
+    float: none;
+  }
+
+  .footer #block-menu-menu-footer-menu li {
+    border: none;
+    float: none;
+    width: 100%;
+  }
+
+  .footer #block-menu-menu-footer-menu li.first {
+    border-left: none;
+  }
+
+  .footer #block-chamilo-chamilo-search-course,
+  .footer #block-search-form,
+  .footer #block-menu-menu-footer-menu {
+    float: none;
+    width: auto;
+  }
+
+  .footer #block-search-form {
+    margin-top: 10px; 
+  }
+
+  #block-bean-aula-virtual {
+    float: right;
+  }
+
+  .main-content {
+    padding: 15px !important;
+  }
+
+  .node-type-webform .node form {
+    padding: 2% 5% 0;
+  }
+
+  .content-top .block-views .view-activities-views,
+  #block-views-resources-block-resources .view-resources,
+  .node-type-activity .inner-container .view-activities-views, 
+  .page-recursos .inner-container .view-resources .item-list,
+  .page-actividades .inner-container .view-activities-views {
+    padding: 10% 4% 0;
+  }
+
+  .node-type-activity .nodei {
+    padding: 2% 4%;
+  }
+
+  .main-content .view-display-id-page_activities_views h4 {
+    padding: 0;
+  }
+
+  #block-views-resources-block-resources .view-resources li {
+    width: 50%;
+  }
+
+  .page-publicaciones .inner-container .view-publish-views .views-row {
+    height: auto;
+    margin-bottom: 10%;
+  }
+
+  .view-publish-views .views-row h4,
+  .inner-container .view-publish-views h3 {
+    padding-top: 0;
+  }
+
+  .view-publish-views .views-row h4 a,
+  .inner-container .view-publish-views h3 a {
+    text-align: left;
+  }
+
+  .view-publish-views .views-row a img {
+    float: left;
+    margin-right: 5%;
+  }
+
+  .view-publish-views .views-row {
+    margin-bottom: 10%;
+  }
+
+  .page-user .fieldset-wrapper .field-name-field-user-job-title .field-label,
+  .page-user .fieldset-wrapper .field-name-field-user-department .field-label {
+    width: 100%;
+  }
+
+  #block-menu-menu-menu-capacity-building > .content li {
+    margin: 0 0.09% 0.3%;
+    width: 49.5%;
+  }
+
+  .page-programas .cb-program-link, 
+  .page-capacitaciones .cb-capacity-link, 
+  .page-cursos-practicos .cb-courses-link, 
+  .page-especializaciones .cb-speciality-link {
+    background: transparent !important;
+    height: auto;
+    padding: 4.5% !important;
+    text-indent: 0;
+  }
+
+  .page-programas #block-menu-menu-menu-capacity-building > .content li a.cb-program-link {
+    color: #653074;
+  }
+
+  .page-capacitaciones #block-menu-menu-menu-capacity-building > .content li a.cb-capacity-link {
+    color: #94c4cc;
+  }
+
+  .page-cursos-practicos #block-menu-menu-menu-capacity-building > .content li a.cb-courses-link {
+    color: #b0b81c;
+  }
+
+  .page-especializaciones #block-menu-menu-menu-capacity-building > .content li a.cb-speciality-link {
+    color: #f26b45;
+  }
+
+  #block-menu-menu-menu-capacity-building-prog > .content li span,
+  #block-menu-menu-menu-capacity-building-spec > .content li span, 
+  #block-menu-menu-menu-capacity-building-cour > .content li span, 
+  #block-menu-menu-menu-capacity-building-capa > .content li span {
+    left: 35.5%;
+  }
+
+  #block-menu-menu-menu-capacity-building-capa > .content li a, 
+  #block-menu-menu-menu-capacity-building-cour > .content li a, 
+  #block-menu-menu-menu-capacity-building-spec > .content li a, 
+  #block-menu-menu-menu-capacity-building-prog > .content li a {
+    padding: 5% 2.5%;
+  }
+
+  .cb-inner-container-right, 
+  .cb-inner-container-middle, 
+  .cb-inner-container-left {
+    float: none;
+    width: 100%;
+  }
+
+  .download-link {
+    margin: 2% auto;
+  }
+
+  .ajax-container-close a {
+    padding: 1.5% 50px;
+  }
+
+  .cb-inner-container-right .session-register {
+    padding: 2% 10%;
+    width: 40%;
+    margin: 2% auto;
+  }
+
+  .cb-inner-container-right {
+    border-top: 1px dotted #CCC;
+    margin-top: 2%;
+  }
+
+  .chamilo-courses .chrow > div,
+  .view-chamilo-courses .views-row > div {
+    margin: 0;
+    width: 50%;
+    border: 4px solid #FFF;
+  }
+
+  .ajax-container {
+    margin-top: 33% !important;
+  }
+
+  .session-detail.ajax-changed {
+    margin: 0 !important;
+  }
+
+}
+
+@media only screen and (max-width : 668px) {
+  .chamilo-courses .chrow > div,
+  .view-chamilo-courses .views-row > div {
+    float: none;
+    width: 100%;
+  }
+
+  .ajax-container {
+    margin-top: 10% !important;
+  }
+
+  #block-minedu-terms-conditions-minedu-block-terms-conditions .form-submit {
+    padding: 1% 5%;
+    width: auto;
+  }
+
+  #block-minedu-terms-conditions-minedu-block-terms-conditions .form-item-accept-terms-conditions {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width : 600px) {
+  .page-user-edit form label {
+    width: 100%;
+  }
+
+  .confirm-parent, 
+  .password-parent {
+    width: 100% !important;
+  }
+
+  .page-user-edit .form-text, 
+  .page-user-edit .form-select, 
+  .page-user-edit .form-textarea {
+    width: 100% !important;
+  }
+
+  .page-user-edit .form-item input.element-invisible {
+    padding: 0;
+    width: auto !important;
+  }
+
+  .password-strength {
+    width: 17em;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  div.form-item div.password-suggestions {
+    width: 100%;
+  }
+
+  .page-user-edit .form-submit {
+    width: 30%;
+  }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .page-recursos .inner-container .view-resources .file, 
+  .page-recursos .inner-container .view-resources .link-icon, 
+  .page-recursos .inner-container .view-resources .embed-icon {
+    width: 50%;
+  }
+
+  .page-recursos .inner-container .view-resources .only-link-icon,
+  .page-recursos .inner-container .view-resources .only-embed-icon {
+    width: 30%;
+  }
+
+  .page-recursos .main-title, .page-publicaciones .main-title, #block-views-resources-block-resources h3, #block-views-cf46b404572d9fa9e07f7d5ec92b99e0 h3, #views-exposed-form-publish-views-page .views-exposed-widget > label, #block-views-exp-resources-page .views-exposed-widget > label {
+    padding: 6% 16%;
+  }
+
+  .page-node .field-name-field-publish-image {
+    float: none;
+    margin: 0 0 10%;
+  }
+
+  .page-node .field-name-field-publish-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  #forum {
+    overflow: auto;
+  }
+
+  .download-link,
+  .cb-inner-container-right .session-register {
+    font-size: 14px;
+    margin: 5% 0;
+  }
+
+  .chamilo-courses .chrow > p,
+  .view-chamilo-courses .views-row > p {
+    font-size: 14px;
+  }
+
+  .ajax-link {
+    position: relative;
+    top: 0;
+    width: 100% !important;
+  }
+
+  .ajax-container-close a {
+    top: -38px;
+    width: 100%;
+    position: absolute;
+    padding: 10px 5%;
+  }
+
+}
+
+@media only screen and (max-width : 430px) {
+  .chosen-container-single .chosen-single span {
+    white-space: normal;
+  }
+
+  .page-user-edit form label {
+    display: block;
+    width: auto !important;
+  }
+
+  .page-user-edit .form-item input.element-invisible {
+    padding: 0;
+    width: auto !important;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+
+  #block-bean-aula-virtual {
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+
+  #block-views-users-block-user-information {
+    float: right;
+  }
+
+  .block-views .view-activities-views .views-row {
+    border-bottom: 1px dotted #CCC;
+  }
+
+  .block-views .view-activities-views .views-row.views-row-last {
+    border: none; 
+  }
+
+  .block-views .view-activities-views .views-row > .views-field-nothing {
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  .block-views .view-activities-views .views-row p,
+  .block-views .view-activities-views .views-row h4 {
+    padding: 0;
+  }
+
+  .block-views .view-activities-views,
+  .block-views .view-publishes-and-resources-views {
+    padding: 20px 5px;
+  }
+
+  .next-activity-inner-container,
+  .node-type-activity .field-name-field-activity-image {
+    margin: 0 0 5%;
+    width: 100%;
+  }
+
+  .next-activity-inner-container img,
+  .next-activity-inner-container .date-container,
+  .node-type-activity .field-name-field-activity-image img,
+  .node-type-activity .field-name-field-activity-date {
+    height: auto;
+    width: 100%;
+  }
+
+  .node-type-activity .field-name-field-activity-date {
+    margin: 0 0 5%;
+  }
+
+  .pager {
+    margin: 5% 4% !important;
+  }
+
+  .pager li {
+    margin-bottom: 3%;
+  }
+
+  #block-views-resources-block-resources .view-resources li {
+    border-bottom: 1px dotted #CCC;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  .page-recursos .inner-container .view-resources .file, 
+  .page-recursos .inner-container .view-resources .link-icon, 
+  .page-recursos .inner-container .view-resources .embed-icon {
+    clear: both;
+    float: none;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+.page-recursos .inner-container .view-resources .only-link-icon,
+.page-recursos .inner-container .view-resources .only-embed-icon {
+  float: none;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+  .page-recursos .inner-container .view-resources img {
+    margin-bottom: 5%;
+  }
+
+  .page-recursos .inner-container .view-resources h4 {
+    clear: both;
+    padding: 0; 
+  }
+
+  .field-name-field-resource-link-include .file > a,
+  .field-name-field-resource-embed-include .file > a,
+  .field-name-field-resource-document-include .file > a,
+  .field-name-field-resource-audio-include .file > a,
+  .field-name-field-resource-video-include .file > a,
+  .node-type-resource-document .field-name-field-resource-document-file .file > a {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .footer .region-footer {
+    width: 100%;
+  }
+
+  #block-menu-menu-menu-capacity-building > .content li {
+    width: 100%;
+  }
+
+  #block-bean-descripcion-especializaciones .field-name-field-cb-description-image, 
+  #block-bean-descripcion-capacitaciones .field-name-field-cb-description-image, 
+  #block-bean-descripcion-cursos-practicos .field-name-field-cb-description-image, 
+  #block-bean-descripcion-programas .field-name-field-cb-description-image {
+    float: none;
+  }
+
+  #block-bean-descripcion-especializaciones .field-name-field-cb-description-image img, 
+  #block-bean-descripcion-capacitaciones .field-name-field-cb-description-image img, 
+  #block-bean-descripcion-cursos-practicos .field-name-field-cb-description-image img, 
+  #block-bean-descripcion-programas .field-name-field-cb-description-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .download-link,
+  .cb-inner-container-right .session-register {
+    width: 100%;
+  }
+
+  .chamilo-courses .chrow,
+  .view-chamilo-courses .views-row {
+    padding: 1% 1% 6.75%;
+  }
+
+  .ajax-link {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 398px) {
+  .page-user-edit .user-picture {
+    margin-right: 0;
+  }
+
+  .page-user-edit .user-picture img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  #edit-picture-upload {
+    width: 100%;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  #user-login .form-submit {
+    width: 100%;
+  } 
+
+  .password-strength,
+  .page-user .fieldset-wrapper .field-label,
+  .page-user .fieldset-wrapper .field-items {
+    width: 100%;
+  }
+
+  .block-views .view-publishes-and-resources-views .views-row {
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .page-user fieldset .fieldset-legend {
+    font-size: 16px;
+  }
+
+  .ajax-link {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .chamilo-courses .chrow,
+  .view-chamilo-courses .views-row {
+    padding: 1% 1% 10.75%;
+  }
+}
+
+@media only screen and (max-width : 245px) {
+  .chamilo-courses .chrow,
+  .view-chamilo-courses .views-row {
+    padding: 1% 1% 12.75%;
+  }
+}

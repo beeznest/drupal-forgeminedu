@@ -1,0 +1,8 @@
+Seguir los siguientes pasos:
+1. Aplicar el parche
+   a. Colocar el parche en la carpeta sites/all/modules/date
+   b. Ejecutar git apply title_date_formats-2294973-6.patch
+   c. Borrar el archivo title_date_formats-2294973-6.patch
+   
+   NOTA.- Si se tiene un sistema de controlador de versiones es posible que no deje aplicar el parche, por lo que se podría aplicar a mano.
+2. Ir a la ruta admin/config/regional/date-time/date-views y guardar el formulario (presionar el botón Guardar)

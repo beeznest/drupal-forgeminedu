@@ -1,0 +1,36 @@
+name = Mockup
+description = Base theme like a mockup
+version = VERSION
+core = 7.x
+engine = phptemplate
+
+;stylesheets
+stylesheets[all][] = css/yui-reset.css
+stylesheets[all][] = css/system.theme.css
+stylesheets[all][] = css/system.menus.css
+stylesheets[all][] = css/debug.css
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/text.css
+stylesheets[all][] = css/bootstrap/bootstrap.css
+stylesheets[all][] = css/mockup.base.css
+
+;scripts
+scripts[] = js/script.js
+
+;regions
+regions[header_top] = Header top
+regions[header] = Header
+regions[header_bottom] = Header Bottom
+regions[help] = Help
+regions[highlighted] = Highlighted 
+regions[before_content] = Before Content 
+regions[content_top] = Content Top
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[sidebar_left] = Sidebar Left
+regions[sidebar_right] = Sidebar Right
+regions[after_content] = After Content 
+regions[footer_top] = Footer Top
+regions[footer] = Footer
+regions[footer_bottom] = Footer Bottom  
